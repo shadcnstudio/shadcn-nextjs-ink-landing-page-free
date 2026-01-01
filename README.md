@@ -59,7 +59,6 @@
 - [Documentation 📚](#documentation-)
 - [Community 🤝](#community-)
 - [Credits 🤘](#credits-)
-- [License ©](#license-)
 - [Useful Links 🎁](#useful-links-)
 - [Social Media :earth_africa:](#social-media-earth_africa)
 
@@ -112,7 +111,7 @@ An open-source & premium collection of copy-and-paste shadcn components, blocks,
 
 ## Documentation 📚
 
-For comprehensive documentation, please visit [shadcnstudio.com](https://shadcnstudio.com).
+For comprehensive documentation, please visit [shadcn/studio documentation](https://shadcnstudio.com/docs/getting-started/introduction).
 
 ## Community 🤝
 
@@ -129,12 +128,6 @@ We are grateful for the contributions of the open-source community, particularly
 - [tweakcn](https://tweakcn.com/) (Our Theme Generator is heavily inspired by tweakcn)
 
 These projects form the backbone of shadcn/studio, allowing us to build a powerful copy-and-paste components.
-
-## License ©
-
-- Copyright © [ThemeSelection](https://themeselection.com/)
-- Licensed under [MIT](https://github.com/themeselection/shadcn-studio/blob/main/LICENSE.md)
-- shadcn/studio is an open-source collection of copy-and-paste shadcn components, blocks, and templates - paired with a powerful theme generator to craft, customize, and ship faster.
 
 ## Useful Links 🎁
 
