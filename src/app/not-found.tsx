@@ -1,3 +1,5 @@
+import Link from 'next/link'
+
 import { Button } from '@/components/ui/button'
 
 import Icon404 from '@/assets/svg/404'
@@ -9,7 +11,7 @@ const NotFound = () => {
       <div className='flex flex-col items-center gap-4 text-center'>
         <p className='text-muted-foreground text-xl sm:text-2xl'>We couldn&apos;t find the page you are looking for</p>
         <Button className='rounded-full' asChild>
-          <a href='/'>Go back to home</a>
+          <Link href='/'>Go back to home</Link>
         </Button>
       </div>
     </div>

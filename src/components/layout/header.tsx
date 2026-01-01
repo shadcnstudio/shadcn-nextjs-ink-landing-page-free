@@ -1,6 +1,7 @@
 'use client'
 
 import { usePathname } from 'next/navigation'
+import Link from 'next/link'
 
 import { Button } from '@/components/ui/button'
 import { ModeToggle } from '@/components/layout/mode-toggle'
@@ -12,31 +13,31 @@ const Header = () => {
 
   return (
     <div className='flex h-16 items-center justify-between gap-4 border-b px-6'>
-      <a href='/'>Template Name</a>
+      <Link href='/'>Template Name</Link>
 
       <nav className='flex items-center gap-4'>
-        <a
+        <Link
           href='/'
           className={cn('text-muted-foreground hover:text-foreground active:text-foreground font-medium', {
             'text-primary': pathname === '/'
           })}
         >
           Home
-        </a>
-        <a
+        </Link>
+        <Link
           href='/contact'
           className={cn('text-muted-foreground hover:text-foreground active:text-foreground font-medium', {
             'text-primary': pathname === '/contact'
           })}
         >
           Contact
-        </a>
+        </Link>
       </nav>
 
       <div className='flex items-center gap-2'>
         <ModeToggle />
         <Button variant='outline' asChild>
-          <a href='/login'>Login</a>
+          <Link href='/login'>Login</Link>
         </Button>
       </div>
     </div>

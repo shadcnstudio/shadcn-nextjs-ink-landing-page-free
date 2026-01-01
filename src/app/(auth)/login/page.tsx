@@ -1,3 +1,4 @@
+import Link from 'next/link'
 import type { Metadata } from 'next'
 
 import { Button } from '@/components/ui/button'
@@ -17,10 +18,10 @@ const LoginPage = () => {
 
       <div className='flex items-center gap-4'>
         <Button variant='outline' asChild>
-          <a href='/register'>Create Account</a>
+          <Link href='/register'>Create Account</Link>
         </Button>
         <Button variant='outline' asChild>
-          <a href='/'>Back to home</a>
+          <Link href='/'>Back to home</Link>
         </Button>
       </div>
     </div>
