@@ -1,46 +1,95 @@
 'use client'
 
-import { usePathname } from 'next/navigation'
-import Link from 'next/link'
+import { useEffect, useState } from 'react'
+
+import { MailIcon, MenuIcon } from 'lucide-react'
 
 import { Button } from '@/components/ui/button'
-import { ModeToggle } from '@/components/layout/mode-toggle'
+import { Tooltip, TooltipContent, TooltipTrigger } from '@/components/ui/tooltip'
+
+import MenuDropdown from '@/components/blocks/menu-dropdown'
+import MenuNavigation from '@/components/blocks/menu-navigation'
+import type { NavigationSection } from '@/components/blocks/menu-navigation'
 
 import { cn } from '@/lib/utils'
 
-const Header = () => {
-  const pathname = usePathname()
+import InkLogo from '@/assets/svg/ink-logo'
+
+type HeaderProps = {
+  navigationData: NavigationSection[]
+  className?: string
+}
+
+const Header = ({ navigationData, className }: HeaderProps) => {
+  const [isScrolled, setIsScrolled] = useState(false)
+
+  useEffect(() => {
+    const handleScroll = () => {
+      setIsScrolled(window.scrollY > 0)
+    }
+
+    window.addEventListener('scroll', handleScroll)
+    handleScroll()
+
+    return () => {
+      window.removeEventListener('scroll', handleScroll)
+    }
+  }, [])
 
   return (
-    <div className='flex h-16 items-center justify-between gap-4 border-b px-6'>
-      <Link href='/'>Template Name</Link>
+    <header
+      className={cn(
+        'fixed top-0 z-50 h-17.5 w-full transition-all duration-300',
+        {
+          'bg-background shadow-sm': isScrolled
+        },
+        className
+      )}
+    >
+      <div className='mx-auto flex h-full max-w-7xl items-center justify-between gap-6 px-4 sm:px-6'>
+        {/* Logo */}
+        <a href='#' className='flex items-center gap-3'>
+          <InkLogo />
+          <span className='text-primary text-[20px] font-semibold'>INK</span>
+        </a>
 
-      <nav className='flex items-center gap-4'>
-        <Link
-          href='/'
-          className={cn('text-muted-foreground hover:text-foreground active:text-foreground font-medium', {
-            'text-primary': pathname === '/'
-          })}
-        >
-          Home
-        </Link>
-        <Link
-          href='/contact'
-          className={cn('text-muted-foreground hover:text-foreground active:text-foreground font-medium', {
-            'text-primary': pathname === '/contact'
-          })}
-        >
-          Contact
-        </Link>
-      </nav>
+        {/* Navigation */}
+        <MenuNavigation navigationData={navigationData} className='max-lg:hidden' />
 
-      <div className='flex items-center gap-2'>
-        <ModeToggle />
-        <Button variant='outline' asChild>
-          <Link href='/login'>Login</Link>
-        </Button>
+        {/* Actions */}
+        <div className='flex gap-4'>
+          <Button variant='outline' className='max-sm:hidden' asChild>
+            <a href='/#get-in-touch'>Get in Touch</a>
+          </Button>
+
+          {/* Navigation for small screens */}
+          <div className='flex gap-3'>
+            <Tooltip>
+              <TooltipTrigger asChild>
+                <Button variant='outline' size='icon' className='sm:hidden' asChild>
+                  <a href='#get-in-touch'>
+                    <MailIcon />
+                    <span className='sr-only'>Get in Touch</span>
+                  </a>
+                </Button>
+              </TooltipTrigger>
+              <TooltipContent>Get in Touch</TooltipContent>
+            </Tooltip>
+
+            <MenuDropdown
+              align='end'
+              navigationData={navigationData}
+              trigger={
+                <Button variant='outline' size='icon' className='lg:hidden'>
+                  <MenuIcon />
+                  <span className='sr-only'>Menu</span>
+                </Button>
+              }
+            />
+          </div>
+        </div>
       </div>
-    </div>
+    </header>
   )
 }
 

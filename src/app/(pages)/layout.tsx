@@ -1,12 +1,40 @@
 import type { ReactNode } from 'react'
 
 import Header from '@/components/layout/header'
+import Footer from '@/components/layout/footer'
+
+import type { NavigationSection } from '@/components/blocks/menu-navigation'
+
+const navigationData: NavigationSection[] = [
+  {
+    title: 'Home',
+    href: '/#'
+  },
+  {
+    title: 'Categories',
+    href: '/#categories'
+  },
+  {
+    title: 'Team',
+    href: '#'
+  },
+  {
+    title: 'About Us',
+    href: '#'
+  }
+]
 
 const PagesLayout = ({ children }: Readonly<{ children: ReactNode }>) => {
   return (
-    <div className='flex h-full w-full min-w-0 flex-col'>
-      <Header />
-      <main className='flex flex-1 flex-col'>{children}</main>
+    <div>
+      {/* Header Section */}
+      <Header navigationData={navigationData} />
+
+      {/* Main Content */}
+      <main className='flex flex-col pt-16'>{children}</main>
+
+      {/* Footer Section */}
+      <Footer />
     </div>
   )
 }
