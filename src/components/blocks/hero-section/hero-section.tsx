@@ -4,22 +4,9 @@ import { Button } from '@/components/ui/button'
 import { Badge } from '@/components/ui/badge'
 import { Input } from '@/components/ui/input'
 import { Card, CardContent } from '@/components/ui/card'
+import { type BlogPost } from '@/blog'
 
-export type BlogData = {
-  title: string
-  description: string
-  imageUrl: string
-  imageAlt: string
-  date: string
-  category: string
-  author: string
-  authorLink: string
-  blogLink: string
-  categoryLink: string
-  featured: boolean
-}
-
-const HeroSection = ({ blogdata }: { blogdata: BlogData[] }) => {
+const HeroSection = ({ blogdata }: { blogdata: BlogPost[] }) => {
   const featuredPosts = blogdata.filter(post => post.featured)
 
   return (
@@ -68,26 +55,22 @@ const HeroSection = ({ blogdata }: { blogdata: BlogData[] }) => {
                       <CalendarDaysIcon className='size-6' />
                       <p>{item.date}</p>
                     </div>
-                    <a href={item.categoryLink}>
-                      <Badge className='bg-primary/10 text-primary border-0 text-sm'>{item.category}</Badge>
-                    </a>
+                    <Badge className='bg-primary/10 text-primary border-0 text-sm'>{item.category}</Badge>
                   </div>
-                  <a href={item.blogLink}>
+                  <a href={`/blog-detail/${item.slug}`}>
                     <h3 className='text-xl font-medium'>{item.title}</h3>
                   </a>
 
                   <p className='text-muted-foreground'>{item.description}</p>
                   <div className='flex w-full items-center justify-between gap-1 py-1'>
-                    <a href={item.authorLink} className='text-sm font-medium'>
-                      {item.author}
-                    </a>
+                    <span className='text-sm font-medium'>{item.author}</span>
                     <Button
                       size='icon'
                       variant='outline'
                       className='group-hover:bg-primary! hover:bg-primary! hover:text-primary-foreground group-hover:text-primary-foreground group-hover:border-transparent hover:border-transparent'
                       asChild
                     >
-                      <a href={item.blogLink}>
+                      <a href={`/blog-detail/${item.slug}`}>
                         <ArrowUpRightIcon />
                       </a>
                     </Button>

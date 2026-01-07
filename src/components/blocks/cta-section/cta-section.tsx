@@ -7,7 +7,7 @@ import { Input } from '@/components/ui/input'
 
 const CTA = () => {
   return (
-    <section className='bg-muted py-8 sm:py-16 lg:py-24' id='team'>
+    <section className='bg-muted py-8 sm:py-16 lg:py-24' id='get-in-touch'>
       <div className='container mx-auto max-w-5xl px-4 sm:px-6 lg:px-8'>
         <Card className='shadow-none'>
           <CardContent>
@@ -15,7 +15,7 @@ const CTA = () => {
               {/* Left Column - Image */}
               <div className='relative h-64 sm:h-80 lg:h-auto'>
                 <img
-                  src='https://cdn.shadcnstudio.com/ss-assets/template/landing-page/ink/image-01.png'
+                  src='/images/cta.webp'
                   alt='Workspace with laptop'
                   className='h-full w-full rounded-lg object-cover'
                 />

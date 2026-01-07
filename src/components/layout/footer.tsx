@@ -15,13 +15,13 @@ const Footer = () => {
         </a>
 
         <div className='flex items-center gap-5 whitespace-nowrap'>
-          <a href='#' className='opacity-80 transition-opacity duration-300 hover:opacity-100'>
+          <a href='/#' className='opacity-80 transition-opacity duration-300 hover:opacity-100'>
             Home
           </a>
-          <a href='#categories' className='opacity-80 transition-opacity duration-300 hover:opacity-100'>
+          <a href='/#categories' className='opacity-80 transition-opacity duration-300 hover:opacity-100'>
             Categories
           </a>
-          <a href='#team' className='opacity-80 transition-opacity duration-300 hover:opacity-100'>
+          <a href='#' className='opacity-80 transition-opacity duration-300 hover:opacity-100'>
             Team
           </a>
           <a href='#' className='opacity-80 transition-opacity duration-300 hover:opacity-100'>

@@ -4,6 +4,8 @@ import { useEffect, useState } from 'react'
 
 import { MailIcon, MenuIcon } from 'lucide-react'
 
+import { ModeToggle } from '@/components/layout/mode-toggle'
+
 import { Button } from '@/components/ui/button'
 import { Tooltip, TooltipContent, TooltipTrigger } from '@/components/ui/tooltip'
 
@@ -58,8 +60,9 @@ const Header = ({ navigationData, className }: HeaderProps) => {
 
         {/* Actions */}
         <div className='flex gap-4'>
+          <ModeToggle />
           <Button variant='outline' className='max-sm:hidden' asChild>
-            <a href='/#get-in-touch'>Get in Touch</a>
+            <a href='#get-in-touch'>Get in Touch</a>
           </Button>
 
           {/* Navigation for small screens */}

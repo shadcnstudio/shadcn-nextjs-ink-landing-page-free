@@ -21,45 +21,20 @@ import {
   BreadcrumbSeparator
 } from '@/components/ui/breadcrumb'
 
-// Import the consolidated blog data
-import { blogPosts as fullBlogPosts } from '@/assets/data/blog-detail'
+// Import the blog posts data for navigation
+import { allBlogPosts as allBlogPostsData, type BlogPost } from '@/blog'
 
-export type BlogPost = {
-  title: string
-  description: string
-  imageUrl: string
-  imageAlt: string
-  date: string
-  category: string
-  author: string
-  authorLink: string
-  blogLink: string
-  categoryLink: string
-  featured: boolean
-}
-
-type BlogProps = {
-  blogPosts: BlogPost[]
+// Simply use all blog posts since they already have correct slugs and correspond to existing pages
+const getAvailableBlogPosts = () => {
+  return allBlogPostsData
 }
 
 const BlogGrid = ({ posts, onCategoryClick }: { posts: BlogPost[]; onCategoryClick: (category: string) => void }) => {
   const router = useRouter()
 
   const handleCardClick = (post: BlogPost) => {
-    // Find the corresponding blog post from full data to get the slug
-    const fullPost = fullBlogPosts.find(
-      fp =>
-        fp.title === post.title ||
-        fp.title.toLowerCase().includes(post.title.toLowerCase().substring(0, 15)) ||
-        post.title.toLowerCase().includes(fp.title.toLowerCase().substring(0, 15))
-    )
-
-    if (fullPost && fullPost.slug) {
-      router.push(`/blog-detail?slug=${fullPost.slug}`)
-    } else {
-      // Fallback: navigate to default blog-detail page
-      router.push('/blog-detail')
-    }
+    // Navigate to individual blog pages using the slug
+    router.push(`/blog-detail/${post.slug}`)
   }
 
   return (
@@ -113,13 +88,17 @@ const BlogGrid = ({ posts, onCategoryClick }: { posts: BlogPost[]; onCategoryCli
   )
 }
 
-const Blog = ({ blogPosts }: BlogProps) => {
+const Blog = () => {
   const [selectedTab, setSelectedTab] = useState('All')
 
-  // Filter out featured posts to avoid duplication with hero section
-  const nonFeaturedPosts = blogPosts.filter(post => !post.featured)
+  // Get only the blog posts that have corresponding pages
+  const availableBlogPosts = getAvailableBlogPosts()
 
-  // Dynamically generate categories from the data
+  // Filter out featured posts to avoid duplication with hero section
+  // Sort posts by ID in descending order (newest first)
+  const nonFeaturedPosts = availableBlogPosts.filter(post => !post.featured).sort((a, b) => b.id - a.id)
+
+  // Dynamically generate categories from the available data
   const uniqueCategories = [...new Set(nonFeaturedPosts.map(post => post.category))]
   const categories = ['All', ...uniqueCategories.sort()]
 
