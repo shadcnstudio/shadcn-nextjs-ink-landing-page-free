@@ -13,6 +13,8 @@ import {
   DropdownMenuTrigger
 } from '@/components/ui/dropdown-menu'
 
+import { cn } from '@/lib/utils'
+
 export type NavigationItem = {
   title: string
   href: string
@@ -35,19 +37,24 @@ export type NavigationSection = {
 type Props = {
   trigger: ReactNode
   navigationData: NavigationSection[]
+  activeSection?: string
   align?: 'center' | 'end' | 'start'
 }
 
-const MenuDropdown = ({ trigger, navigationData, align = 'start' }: Props) => {
+const MenuDropdown = ({ trigger, navigationData, activeSection, align = 'start' }: Props) => {
   return (
     <DropdownMenu>
       <DropdownMenuTrigger asChild>{trigger}</DropdownMenuTrigger>
       <DropdownMenuContent className='w-56' align={align}>
         {navigationData.map(navItem => {
           if (navItem.href) {
+            // Extract section ID from href (e.g., "/#categories" -> "categories", "/#" -> "home")
+            const sectionFromHref = navItem.href === '/#' ? 'home' : navItem.href.replace('/#', '')
+            const isActive = sectionFromHref === activeSection
+
             return (
               <DropdownMenuItem key={navItem.title} asChild>
-                <a href={navItem.href}>
+                <a href={navItem.href} className={cn(isActive && 'bg-accent text-accent-foreground font-medium')}>
                   {navItem.icon}
                   {navItem.title}
                 </a>

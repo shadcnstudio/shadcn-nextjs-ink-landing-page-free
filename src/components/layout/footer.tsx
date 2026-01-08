@@ -7,7 +7,7 @@ import Logo from '@/components/logo'
 const Footer = () => {
   return (
     <footer>
-      <div className='mx-auto flex max-w-7xl items-center justify-between gap-3 px-4 py-4 max-md:flex-col sm:px-6 sm:py-6 md:gap-6 md:py-8'>
+      <div className='mx-auto flex max-w-7xl items-center justify-between gap-3 px-4 py-4 max-md:flex-col sm:px-6 sm:py-6 md:gap-6 md:py-8 lg:px-8'>
         <a href='#'>
           <div className='flex items-center gap-3'>
             <Logo className='gap-3' />
@@ -47,13 +47,13 @@ const Footer = () => {
 
       <Separator />
 
-      <div className='mx-auto flex max-w-7xl justify-center px-4 py-8 sm:px-6'>
+      <div className='mx-auto flex max-w-7xl justify-center px-4 py-8 sm:px-6 lg:px-8'>
         <p className='flex items-center gap-1 text-center font-medium text-balance'>
           {`©${new Date().getFullYear()}`}{' '}
           <a href='#' className='hover:underline'>
             INK
           </a>
-          , Made with <HeartIcon fill='black' className='size-4' /> for better web.
+          , Made with <HeartIcon fill='black' className='size-4 text-black' /> for better web.
         </p>
       </div>
     </footer>

@@ -3,7 +3,7 @@ export const scalableCodeData = {
   id: 6,
   slug: 'scalable-code',
   title: 'Code That Grows: Writing Scalable Applications',
-  description: 'Architecture patterns and practices for building maintainable code.',
+  description: 'Architecture patterns and practices for building maintainable code that adapts to growth.',
   imageUrl: '/images/blog-post/post-8.webp',
   imageAlt: 'Code architecture diagram',
   date: 'July 03, 2025',

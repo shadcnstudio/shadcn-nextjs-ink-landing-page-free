@@ -20,24 +20,18 @@ export const ComponentSystemDesignContent = () => {
   const blogSections = [
     {
       id: 'scaling-design',
-      icon: '🚀',
-      iconSize: 'text-3xl',
       type: 'main-section',
       headingClass: 'blog-title',
       headingSize: 'text-2xl',
-      title: 'Design Systems at Scale',
-      content: [
-        "Building products shouldn't mean reinventing interfaces over and over again. When teams create consistent, reusable foundations, great design spreads faster, feels more coherent, and drives exponential impact."
-      ],
-      contentSize: 'text-xl'
+      marginClass: 'mb-6',
+      title: '🚀 Scaling Design the Right Way with a Solid Component System'
     },
     {
       id: 'long-term-growth',
-      icon: '📈',
-      iconSize: 'text-2xl',
       type: 'sub-section',
       headingClass: 'blog-subtitle',
       headingSize: 'text-xl',
+      marginClass: 'mb-6',
       title: 'Long-Term Growth',
       content: [
         'Creating a product that can grow over time means preparing for constant change - new features, new layouts, shifting brand identity, and new team members. Without scalable foundations, even simple updates become slow, inconsistent, and frustrating.'
@@ -45,11 +39,10 @@ export const ComponentSystemDesignContent = () => {
     },
     {
       id: 'why-it-matters',
-      icon: '🌐',
-      iconSize: 'text-2xl',
       type: 'sub-section',
       headingClass: 'blog-subtitle',
       headingSize: 'text-xl',
+      marginClass: 'mb-6',
       title: 'Why It Matters',
       content: [
         'A strong component system turns design chaos into clarity. It ensures teams move faster, maintain consistency, and ship polished experiences as the product evolves.'
@@ -57,12 +50,12 @@ export const ComponentSystemDesignContent = () => {
     },
     {
       id: 'why-component-systems',
-      icon: '❤️',
-      iconSize: 'text-2xl',
       type: 'main-section',
       headingClass: 'blog-title',
       headingSize: 'text-xl',
-      title: 'Why Component Systems Matter',
+      spacingBetweenSections: 'mt-10',
+      marginClass: 'mb-6',
+      title: '🎯 Why Component Systems Matter',
       content: [
         'A component system is more than reusable UI elements; it is a shared language between design and engineering.'
       ],
@@ -72,6 +65,7 @@ export const ComponentSystemDesignContent = () => {
           type: 'bullet-section',
           headingClass: 'blog-subtitle',
           headingSize: 'text-xl',
+          marginClass: 'mb-6',
           title: 'What They Solve',
           bulletPoints: [
             'Inconsistency across pages and flows',
@@ -87,20 +81,19 @@ export const ComponentSystemDesignContent = () => {
     },
     {
       id: 'collaborative-design',
-      icon: '🌐',
-      iconSize: 'text-2xl',
       type: 'main-section',
       headingClass: 'blog-title',
       headingSize: 'text-xl',
-      title: 'Collaborative Design: Bridging the Gap Between Teams',
+      marginClass: 'mb-4',
+      spacingBetweenSections: 'mt-16',
+      title: '🌐 Collaborative Design: Bridging the Gap Between Teams',
       subSections: [
         {
           id: 'stronger-collaboration',
-          icon: '💪',
-          iconSize: 'text-2xl',
           type: 'sub-section',
           headingClass: 'blog-subtitle',
           headingSize: 'text-xl',
+          marginClass: 'mb-4',
           title: 'Stronger Collaboration',
           content: [
             'Strong design-development collaboration is essential for speed and quality. Shared tools, open communication, and clear standards reduce friction and help teams deliver better outcomes.',
@@ -111,20 +104,18 @@ export const ComponentSystemDesignContent = () => {
     },
     {
       id: 'design-tokens',
-      icon: '🛠️',
-      iconSize: 'text-2xl',
       type: 'main-section',
       headingClass: 'blog-title',
       headingSize: 'text-xl',
-      title: 'The Power of Design Tokens in Your Workflow',
+      marginClass: 'mb-6',
+      title: '🛠️ The Power of Design Tokens in Your Workflow',
       subSections: [
         {
           id: 'visual-consistency',
-          icon: '👀',
-          iconSize: 'text-2xl',
           type: 'sub-section',
           headingClass: 'blog-subtitle',
           headingSize: 'text-xl',
+          marginClass: 'mb-4',
           title: 'Visual Consistency',
           content: [
             "Design tokens are the visual design atoms of the product, representing values such as spacing, colors, and typography. They allow teams to create a cohesive design language across platforms, ensuring that every pixel aligns with the brand's identity.",
@@ -135,21 +126,20 @@ export const ComponentSystemDesignContent = () => {
     },
     {
       id: 'real-impact',
-      icon: '💡',
-      iconSize: 'text-2xl',
       type: 'main-section',
       headingClass: 'blog-title',
       headingSize: 'text-xl',
+      marginClass: 'mb-4',
+      spacingBetweenSections: 'mt-12',
       title: 'Real Impact: What Teams Gain',
       content: ['When your component system becomes mature, results are visible everywhere:'],
       subSections: [
         {
           id: 'system-benefits',
-          icon: '🏆',
-          iconSize: 'text-2xl',
           type: 'checklist-section',
           headingClass: 'blog-subtitle',
           headingSize: 'text-xl',
+          marginClass: 'mb-4',
           title: 'System Benefits',
           checklistItems: [
             'Design velocity increases by 2x–10x',
@@ -164,11 +154,11 @@ export const ComponentSystemDesignContent = () => {
     },
     {
       id: 'conclusion',
-      icon: '🎯',
-      iconSize: 'text-2xl',
       type: 'main-section',
       headingClass: 'blog-title',
       headingSize: 'text-xl',
+      marginClass: 'mb-6',
+      spacingBetweenSections: 'mt-16',
       title: 'Conclusion: Scale with Intent, Not by Accident',
       content: [
         'A solid component system is the backbone of scalable design. With the right foundations, workflows, and rules, teams build faster, collaborate better, and keep the product visually aligned as it grows.',
@@ -178,19 +168,25 @@ export const ComponentSystemDesignContent = () => {
   ]
 
   const renderSection = (section: any, sectionIndex: number) => (
-    <section key={`section-${section.id}-${sectionIndex}`} id={section.id} className='space-y-6'>
+    <section
+      key={`section-${section.id}-${sectionIndex}`}
+      id={section.id}
+      className={` ${section.type === 'main-section' ? section.spacingBetweenSections || '' : ''}`}
+    >
       {(section.icon || section.title) && (
         <div className='flex items-start gap-4'>
           {section.icon && <span className={section.iconSize || 'text-2xl'}>{section.icon}</span>}
           <div>
-            <h2 className={`${section.headingClass} text-foreground mb-4 ${section.headingSize} font-semibold`}>
+            <h2
+              className={`${section.headingClass} text-foreground ${section.marginClass || ''} ${section.headingSize} font-semibold`}
+            >
               {section.title}
             </h2>
             {section.content &&
               section.content.map((paragraph: string, index: number) => (
                 <p
                   key={`content-${sectionIndex}-${index}`}
-                  className={`text-muted-foreground ${section.contentSize ? `${section.contentSize} leading-relaxed` : 'mb-4'}`}
+                  className={`text-muted-foreground text-xl ${section.contentSize ? `${section.contentSize} leading-relaxed` : `${section.marginClass || ''}`}`}
                 >
                   {paragraph}
                 </p>
@@ -201,20 +197,22 @@ export const ComponentSystemDesignContent = () => {
 
       {section.type === 'bullet-section' && !section.icon && (
         <>
-          <h3 className={`${section.headingClass} text-foreground mb-4 ${section.headingSize} font-semibold`}>
+          <h3
+            className={`${section.headingClass} text-foreground ${section.marginClass || ''} ${section.headingSize} font-semibold`}
+          >
             {section.title}
           </h3>
           <div className='space-y-4'>
             {section.bulletPoints?.map((point: string, index: number) => (
               <div key={`bullet-${sectionIndex}-${index}`} className='flex items-start gap-3'>
                 <span className='text-muted-foreground'>•</span>
-                <p className='text-muted-foreground'>{point}</p>
+                <p className='text-muted-foreground text-xl'>{point}</p>
               </div>
             ))}
           </div>
           {section.content &&
             section.content.map((paragraph: string, index: number) => (
-              <p key={`bullet-content-${sectionIndex}-${index}`} className='text-muted-foreground mt-4'>
+              <p key={`bullet-content-${sectionIndex}-${index}`} className='text-muted-foreground mt-6 text-xl'>
                 {paragraph}
               </p>
             ))}
@@ -222,21 +220,19 @@ export const ComponentSystemDesignContent = () => {
       )}
 
       {section.subSections?.map((subSection: any, subIndex: number) => (
-        <section
-          key={`subsection-${subSection.id}-${sectionIndex}-${subIndex}`}
-          id={subSection.id}
-          className='space-y-6'
-        >
+        <section key={`subsection-${subSection.id}-${sectionIndex}-${subIndex}`} id={subSection.id} className={``}>
           {subSection.type === 'bullet-section' && !subSection.icon ? (
             <>
-              <h3 className={`${subSection.headingClass} text-foreground mb-4 ${subSection.headingSize} font-semibold`}>
+              <h3
+                className={`${subSection.headingClass} text-foreground ${subSection.marginClass || ''} ${subSection.headingSize} font-semibold`}
+              >
                 {subSection.title}
               </h3>
               <div className='space-y-4'>
                 {subSection.bulletPoints?.map((point: string, index: number) => (
                   <div key={`subbullet-${sectionIndex}-${subIndex}-${index}`} className='flex items-start gap-3'>
                     <span className='text-muted-foreground'>•</span>
-                    <p className='text-muted-foreground'>{point}</p>
+                    <p className='text-muted-foreground text-xl'>{point}</p>
                   </div>
                 ))}
               </div>
@@ -244,7 +240,7 @@ export const ComponentSystemDesignContent = () => {
                 subSection.content.map((paragraph: string, index: number) => (
                   <p
                     key={`subbullet-content-${sectionIndex}-${subIndex}-${index}`}
-                    className='text-muted-foreground mt-4'
+                    className='text-muted-foreground mt-6 text-xl'
                   >
                     {paragraph}
                   </p>
@@ -255,7 +251,7 @@ export const ComponentSystemDesignContent = () => {
               {subSection.icon && <span className={subSection.iconSize || 'text-2xl'}>{subSection.icon}</span>}
               <div>
                 <h3
-                  className={`${subSection.headingClass} text-foreground mb-4 ${subSection.headingSize} font-semibold`}
+                  className={`${subSection.headingClass} text-foreground mb-6 ${subSection.headingSize} font-semibold`}
                 >
                   {subSection.title}
                 </h3>
@@ -265,7 +261,7 @@ export const ComponentSystemDesignContent = () => {
                     {subSection.checklistItems.map((item: string, index: number) => (
                       <div key={`checklist-${sectionIndex}-${subIndex}-${index}`} className='flex items-start gap-3'>
                         <span className='text-blue-500'>✓</span>
-                        <p className='text-muted-foreground'>{item}</p>
+                        <p className='text-muted-foreground text-xl'>{item}</p>
                       </div>
                     ))}
                   </div>
@@ -275,7 +271,7 @@ export const ComponentSystemDesignContent = () => {
                   subSection.content.map((paragraph: string, index: number) => (
                     <p
                       key={`subcontent-${sectionIndex}-${subIndex}-${index}`}
-                      className={`text-muted-foreground ${subSection.type === 'checklist-section' ? 'mt-4' : 'mb-4'}`}
+                      className={`text-muted-foreground text-xl ${subSection.type === 'checklist-section' ? 'mt-4' : 'mb-4'}`}
                     >
                       {paragraph}
                     </p>
@@ -288,5 +284,5 @@ export const ComponentSystemDesignContent = () => {
     </section>
   )
 
-  return <div className='space-y-12'>{blogSections.map((section, index) => renderSection(section, index))}</div>
+  return <div className=''>{blogSections.map((section, index) => renderSection(section, index))}</div>
 }

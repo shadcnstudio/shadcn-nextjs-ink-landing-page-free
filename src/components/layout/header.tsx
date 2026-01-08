@@ -2,6 +2,8 @@
 
 import { useEffect, useState } from 'react'
 
+import Link from 'next/link'
+
 import { MailIcon, MenuIcon } from 'lucide-react'
 
 import { ModeToggle } from '@/components/layout/mode-toggle'
@@ -38,6 +40,38 @@ const Header = ({ navigationData, className }: HeaderProps) => {
     }
   }, [])
 
+  const [activeSection, setActiveSection] = useState('home')
+
+  useEffect(() => {
+    const handleScroll = () => {
+      const sections = document.querySelectorAll('section[id]')
+      const scrollPosition = window.scrollY + window.innerHeight / 2
+
+      for (const section of sections) {
+        const element = section as HTMLElement
+        const { offsetTop, offsetHeight } = element
+
+        if (scrollPosition >= offsetTop && scrollPosition < offsetTop + offsetHeight) {
+          if (element.id !== activeSection) {
+            setActiveSection(element.id)
+          }
+
+          break
+        }
+      }
+    }
+
+    // Initial check
+    handleScroll()
+
+    // Listen for scroll events
+    window.addEventListener('scroll', handleScroll, { passive: true })
+
+    return () => {
+      window.removeEventListener('scroll', handleScroll)
+    }
+  }, [activeSection])
+
   return (
     <header
       className={cn(
@@ -48,18 +82,18 @@ const Header = ({ navigationData, className }: HeaderProps) => {
         className
       )}
     >
-      <div className='mx-auto flex h-full max-w-7xl items-center justify-between gap-6 px-4 sm:px-6'>
+      <div className='mx-auto flex h-full max-w-7xl items-center justify-between gap-6 px-4 sm:px-6 lg:px-8'>
         {/* Logo */}
-        <a href='#' className='flex items-center gap-3'>
+        <Link href='/#home' className='flex items-center gap-3'>
           <InkLogo />
           <span className='text-primary text-[20px] font-semibold'>INK</span>
-        </a>
+        </Link>
 
         {/* Navigation */}
-        <MenuNavigation navigationData={navigationData} className='max-lg:hidden' />
+        <MenuNavigation navigationData={navigationData} activeSection={activeSection} className='max-lg:hidden' />
 
         {/* Actions */}
-        <div className='flex gap-4'>
+        <div className='flex gap-3'>
           <ModeToggle />
           <Button variant='outline' className='max-sm:hidden' asChild>
             <a href='#get-in-touch'>Get in Touch</a>
@@ -82,6 +116,7 @@ const Header = ({ navigationData, className }: HeaderProps) => {
             <MenuDropdown
               align='end'
               navigationData={navigationData}
+              activeSection={activeSection}
               trigger={
                 <Button variant='outline' size='icon' className='lg:hidden'>
                   <MenuIcon />

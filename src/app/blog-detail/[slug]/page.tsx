@@ -92,40 +92,27 @@ const PostNavigation = ({ currentPost }: { currentPost: BlogPost }) => {
   const nextPost = currentIndex < sortedPosts.length - 1 ? sortedPosts[currentIndex + 1] : null
 
   return (
-    <div className='flex justify-between'>
+    <div className='flex w-full justify-between'>
       {previousPost ? (
         <Link href={`/blog-detail/${previousPost.slug}`}>
-          <Button className='rounded-[8px]' variant='outline'>
+          <Button
+            className='rounded-[8px] bg-sky-600/10 text-sky-600 hover:bg-sky-600/20 focus-visible:ring-sky-600/20 dark:bg-sky-400/10 dark:text-sky-400 dark:hover:bg-sky-400/20 dark:focus-visible:ring-sky-400/40'
+            variant='outline'
+          >
             <ChevronLeftIcon className='size-4' />
             Previous Post
           </Button>
         </Link>
-      ) : (
-        <Button
-          disabled
-          className='rounded-[8px] bg-sky-600/10 text-sky-600 hover:bg-sky-600/20 focus-visible:ring-sky-600/20 dark:bg-sky-400/10 dark:text-sky-400 dark:hover:bg-sky-400/20 dark:focus-visible:ring-sky-400/40'
-        >
-          <ChevronLeftIcon className='size-4' />
-          Previous Post
-        </Button>
-      )}
+      ) : null}
 
       {nextPost ? (
-        <Link href={`/blog-detail/${nextPost.slug}`}>
+        <Link className='ms-auto' href={`/blog-detail/${nextPost.slug}`}>
           <Button className='rounded-[8px]' variant='outline'>
             Next Post
             <ChevronRightIcon className='size-4' />
           </Button>
         </Link>
-      ) : (
-        <Button
-          disabled
-          className='rounded-[8px] bg-sky-600/10 text-sky-600 hover:bg-sky-600/20 focus-visible:ring-sky-600/20 dark:bg-sky-400/10 dark:text-sky-400 dark:hover:bg-sky-400/20 dark:focus-visible:ring-sky-400/40'
-        >
-          Next Post
-          <ChevronRightIcon className='size-4' />
-        </Button>
-      )}
+      ) : null}
     </div>
   )
 }
@@ -157,12 +144,12 @@ export default async function BlogDetailPage({ params }: { params: Promise<{ slu
       <main className='flex flex-col pt-16'>
         <section className='py-8 sm:pt-16 sm:pb-24'>
           <div className='mx-auto max-w-7xl space-y-8 px-4 sm:px-6 lg:space-y-16 lg:px-8'>
-            <div className='grid grid-cols-7 gap-16'>
-              <div className='col-span-2'>
+            <div className='gap-16 md:grid md:grid-cols-5 lg:grid-cols-7'>
+              <div className='hidden md:col-span-2 md:block lg:col-span-2'>
                 <DynamicToc />
               </div>
 
-              <div className='col-span-5 space-y-16'>
+              <div className='space-y-12 md:col-span-3 lg:col-span-5'>
                 <div className='space-y-6'>
                   <Breadcrumb>
                     <BreadcrumbList>
@@ -200,16 +187,16 @@ export default async function BlogDetailPage({ params }: { params: Promise<{ slu
                       </Avatar>
                       <div className='flex flex-col gap-1'>
                         <span className='text-muted-foreground text-sm'>Written by</span>
-                        <span className='text-foreground text-xs'>{post.author}</span>
+                        <span className='text-foreground text-sm font-medium'>{post.author}</span>
                       </div>
                     </div>
                     <div className='flex flex-col gap-1.5'>
                       <span className='text-muted-foreground text-sm'>Read Time</span>
-                      <span className='text-foreground text-xs'>{post.readTime} minute read</span>
+                      <span className='text-foreground text-sm font-medium'>{post.readTime} minute read</span>
                     </div>
                     <div className='flex flex-col gap-1.5'>
                       <span className='text-muted-foreground text-sm'>Posted on</span>
-                      <span className='text-foreground text-xs'>{post.date}</span>
+                      <span className='text-foreground text-sm font-medium'>{post.date}</span>
                     </div>
                   </div>
                 </div>

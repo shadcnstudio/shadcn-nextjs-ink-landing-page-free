@@ -8,7 +8,7 @@ import type { NavigationSection } from '@/components/blocks/menu-navigation'
 const navigationData: NavigationSection[] = [
   {
     title: 'Home',
-    href: '/#'
+    href: '/#home'
   },
   {
     title: 'Categories',

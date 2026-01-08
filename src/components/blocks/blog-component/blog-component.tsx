@@ -63,6 +63,7 @@ const BlogGrid = ({ posts, onCategoryClick }: { posts: BlogPost[]; onCategoryCli
                 onClick={e => {
                   e.stopPropagation()
                   onCategoryClick(post.category)
+                  router.push(`/#categories`)
                 }}
               >
                 {post.category}

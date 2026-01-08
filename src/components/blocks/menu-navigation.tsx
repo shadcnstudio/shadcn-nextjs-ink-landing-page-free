@@ -33,23 +33,29 @@ export type NavigationSection = {
 
 type MenuNavigationProps = {
   navigationData: NavigationSection[]
+  activeSection?: string
   className?: string
 }
 
-const MenuNavigation = ({ navigationData, className }: MenuNavigationProps) => {
+const MenuNavigation = ({ navigationData, activeSection, className }: MenuNavigationProps) => {
   return (
     <NavigationMenu viewport={false} className={className}>
-      <NavigationMenuList className='flex-wrap justify-start gap-0'>
+      <NavigationMenuList className='flex-wrap justify-start gap-3'>
         {navigationData.map(navItem => {
           if (navItem.href) {
             // Root link item
+            // Extract section ID from href (e.g., "/#categories" -> "categories", "/#" -> "home")
+            const sectionFromHref = navItem.href === '/#' ? 'home' : navItem.href.replace('/#', '')
+            const isActive = sectionFromHref === activeSection
+
             return (
               <NavigationMenuItem key={navItem.title}>
                 <NavigationMenuLink
                   href={navItem.href}
                   className={cn(
                     navigationMenuTriggerStyle(),
-                    'text-muted-foreground hover:text-primary dark:hover:bg-accent/50 bg-transparent px-3 py-1.5 text-base!'
+                    'hover:text-primary dark:hover:bg-accent/50 bg-transparent px-3 py-1.5 text-base!',
+                    isActive ? 'text-primary bg-accent/50 font-medium' : 'text-muted-foreground'
                   )}
                 >
                   {navItem.title}
