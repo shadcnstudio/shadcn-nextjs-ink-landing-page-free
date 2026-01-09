@@ -31,16 +31,16 @@ const Footer = () => {
         </div>
 
         <div className='flex items-center gap-4'>
-          <Link href='#'>
+          <Link href='#' target='blank'>
             <FacebookIcon className='size-5' />
           </Link>
-          <Link href='#'>
+          <Link href='#' target='blank'>
             <InstagramIcon className='size-5' />
           </Link>
-          <Link href='#'>
+          <Link href='#' target='blank'>
             <TwitterIcon className='size-5' />
           </Link>
-          <Link href='#'>
+          <Link href='#' target='blank'>
             <YoutubeIcon className='size-5' />
           </Link>
         </div>

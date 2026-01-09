@@ -91,6 +91,7 @@ const BlogGrid = ({ posts, onCategoryClick }: { posts: BlogPost[]; onCategoryCli
 
 const Blog = () => {
   const [selectedTab, setSelectedTab] = useState('All')
+  const router = useRouter()
 
   // Get only the blog posts that have corresponding pages
   const availableBlogPosts = getAvailableBlogPosts()
@@ -103,8 +104,12 @@ const Blog = () => {
   const uniqueCategories = [...new Set(nonFeaturedPosts.map(post => post.category))]
   const categories = ['All', ...uniqueCategories.sort()]
 
-  const handleCategoryClick = (category: string) => {
-    setSelectedTab(category)
+  const handleTabChange = (tab: string) => {
+    setSelectedTab(tab)
+
+    if (tab === 'All') {
+      router.push('#categories')
+    }
   }
 
   return (
@@ -137,7 +142,7 @@ const Blog = () => {
         </div>
 
         {/* Tabs and Search */}
-        <Tabs defaultValue='All' value={selectedTab} onValueChange={setSelectedTab} className='gap-8 lg:gap-16'>
+        <Tabs defaultValue='All' value={selectedTab} onValueChange={handleTabChange} className='gap-8 lg:gap-16'>
           <div className='flex flex-col items-start justify-between gap-4 sm:flex-row sm:items-center'>
             <ScrollArea className='bg-muted w-full rounded-lg sm:w-auto'>
               <TabsList className='h-auto gap-1'>
@@ -170,7 +175,7 @@ const Blog = () => {
 
           {/* All Posts Tab */}
           <TabsContent value='All'>
-            <BlogGrid posts={nonFeaturedPosts} onCategoryClick={handleCategoryClick} />
+            <BlogGrid posts={nonFeaturedPosts} onCategoryClick={handleTabChange} />
           </TabsContent>
 
           {/* Category-specific Tabs */}
@@ -178,7 +183,7 @@ const Blog = () => {
             <TabsContent key={index} value={category}>
               <BlogGrid
                 posts={nonFeaturedPosts.filter(post => post.category === category)}
-                onCategoryClick={handleCategoryClick}
+                onCategoryClick={handleTabChange}
               />
             </TabsContent>
           ))}
