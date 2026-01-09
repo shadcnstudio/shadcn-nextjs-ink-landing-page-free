@@ -7,7 +7,7 @@ export const aiDrivenWorkflowsData = {
   imageUrl: '/images/blog-post/post-7.webp',
   imageAlt: 'AI development tools',
   date: 'January 20, 2026',
-  category: 'UI',
+  category: 'Product',
   author: 'Allen Reilly',
   avatarUrl: '/images/avatars/avatar-1.webp',
   readTime: 6,

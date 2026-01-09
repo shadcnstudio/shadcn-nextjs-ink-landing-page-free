@@ -63,7 +63,7 @@ const BlogGrid = ({ posts, onCategoryClick }: { posts: BlogPost[]; onCategoryCli
                 onClick={e => {
                   e.stopPropagation()
                   onCategoryClick(post.category)
-                  router.push(`/#categories`)
+                  router.push(`/#category-${post.category}`)
                 }}
               >
                 {post.category}
@@ -145,6 +145,7 @@ const Blog = () => {
                   <TabsTrigger
                     key={category}
                     value={category}
+                    id={`category-${category}`}
                     className='hover:bg-primary/10 cursor-pointer rounded-lg px-4 text-base'
                   >
                     {category}

@@ -3,6 +3,8 @@
 import { ArrowRightIcon, CalendarDaysIcon } from 'lucide-react'
 import { useRouter } from 'next/navigation'
 
+import Link from 'next/link'
+
 import { Badge } from '@/components/ui/badge'
 import { Button } from '@/components/ui/button'
 import { Card, CardContent } from '@/components/ui/card'
@@ -35,13 +37,13 @@ const Blog = ({ blogPosts }: { blogPosts: BlogPost[] }) => {
             >
               <CardContent className='space-y-3.5'>
                 <div className='mb-6 overflow-hidden rounded-lg sm:mb-12'>
-                  <a href={`/blog-detail/${post.slug}`}>
+                  <Link href={`/blog-detail/${post.slug}`}>
                     <img
                       src={post.imageUrl}
                       alt={post.imageAlt}
                       className='h-59.5 w-full object-cover transition-transform duration-300 group-hover:scale-105'
                     />
-                  </a>
+                  </Link>
                 </div>
                 <div className='flex items-center justify-between gap-1.5'>
                   <div className='text-muted-foreground flex items-center gap-1.5'>
@@ -52,14 +54,14 @@ const Blog = ({ blogPosts }: { blogPosts: BlogPost[] }) => {
                     className='bg-primary/10 text-primary border-0 text-sm'
                     onClick={e => {
                       e.stopPropagation()
-                      router.push('/#categories')
+                      router.push(`/#category-${post.category}`)
                     }}
                   >
                     {post.category}
                   </Badge>
                 </div>
                 <h3 className='line-clamp-2 text-lg font-medium md:text-xl'>
-                  <a href={`/blog-detail/${post.slug}`}>{post.title}</a>
+                  <Link href={`/blog-detail/${post.slug}`}>{post.title}</Link>
                 </h3>
                 <p className='text-muted-foreground line-clamp-2'>{post.description}</p>
                 <div className='flex items-center justify-between'>
@@ -70,10 +72,10 @@ const Blog = ({ blogPosts }: { blogPosts: BlogPost[] }) => {
                     className='group-hover:bg-primary! group-hover:text-primary-foreground group-hover:border-primary hover:border-primary hover:bg-primary! hover:text-primary-foreground transition-colors duration-300'
                     asChild
                   >
-                    <a href={`/blog-detail/${post.slug}`}>
+                    <Link href={`/blog-detail/${post.slug}`}>
                       <ArrowRightIcon className='size-4 -rotate-45' />
                       <span className='sr-only'>Read more: {post.title}</span>
-                    </a>
+                    </Link>
                   </Button>
                 </div>
               </CardContent>

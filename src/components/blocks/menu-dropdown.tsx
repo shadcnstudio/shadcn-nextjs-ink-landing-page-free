@@ -4,6 +4,8 @@ import type { ReactNode } from 'react'
 
 import { ChevronRightIcon, CircleSmallIcon } from 'lucide-react'
 
+import Link from 'next/link'
+
 import { Collapsible, CollapsibleContent, CollapsibleTrigger } from '@/components/ui/collapsible'
 import {
   DropdownMenu,
@@ -54,10 +56,10 @@ const MenuDropdown = ({ trigger, navigationData, activeSection, align = 'start' 
 
             return (
               <DropdownMenuItem key={navItem.title} asChild>
-                <a href={navItem.href} className={cn(isActive && 'bg-accent text-accent-foreground font-medium')}>
+                <Link href={navItem.href} className={cn(isActive && 'bg-accent text-accent-foreground font-medium')}>
                   {navItem.icon}
                   {navItem.title}
-                </a>
+                </Link>
               </DropdownMenuItem>
             )
           }
@@ -75,10 +77,10 @@ const MenuDropdown = ({ trigger, navigationData, activeSection, align = 'start' 
                 <CollapsibleContent className='pl-2'>
                   {navItem.items?.map(item => (
                     <DropdownMenuItem key={item.title} asChild>
-                      <a href={item.href}>
+                      <Link href={item.href}>
                         <CircleSmallIcon />
                         <span>{item.title}</span>
-                      </a>
+                      </Link>
                     </DropdownMenuItem>
                   ))}
                 </CollapsibleContent>

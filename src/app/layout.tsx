@@ -26,22 +26,23 @@ const geistMono = Geist_Mono({
 
 export const metadata: Metadata = {
   title: {
-    template: '%s - Ink Landing Page',
-    default: 'Ink Landing Page - Your Gateway to Creativity'
+    template: 'Demo: %s - Ink | Shadcn Studio',
+    default: 'Demo: Ink - Blog Landing Page | Shadcn Studio'
   },
   description:
     'Explore the Ink Landing Page, a modern and creative template designed to showcase your ideas and projects.',
   robots: 'index,follow',
   keywords: ['Ink Landing Page', 'creative template', 'modern design', 'showcase projects'],
+  metadataBase: new URL(`${process.env.NEXT_PUBLIC_APP_URL}`),
   openGraph: {
     title: {
-      template: '%s - Ink Landing Page',
-      default: 'Ink Landing Page - Your Gateway to Creativity'
+      template: 'Demo: %s - Ink | Shadcn Studio',
+      default: 'Demo: Ink - Blog Landing Page | Shadcn Studio'
     },
     description:
       'Explore the Ink Landing Page, a modern and creative template designed to showcase your ideas and projects.',
     type: 'website',
-    siteName: 'Ink Landing Page',
+    siteName: 'Ink - Blog Landing Page',
     url: `${process.env.NEXT_PUBLIC_APP_URL}`,
     images: [
       {
@@ -49,15 +50,15 @@ export const metadata: Metadata = {
         type: 'image/png',
         width: 1200,
         height: 630,
-        alt: 'Ink Landing Page - Your Gateway to Creativity'
+        alt: 'Ink - Blog Landing Page | Shadcn Studio'
       }
     ]
   },
   twitter: {
     card: 'summary_large_image',
     title: {
-      template: '%s - Ink Landing Page',
-      default: 'Ink Landing Page - Your Gateway to Creativity'
+      template: 'Demo: %s - Ink | Shadcn Studio',
+      default: 'Demo: Ink - Blog Landing Page | Shadcn Studio'
     },
     description:
       'Explore the Ink Landing Page, a modern and creative template designed to showcase your ideas and projects.'

@@ -3,6 +3,8 @@ import { ArrowUpRightIcon, CalendarDaysIcon } from 'lucide-react'
 
 import { useRouter } from 'next/navigation'
 
+import Link from 'next/link'
+
 import { Button } from '@/components/ui/button'
 import { Badge } from '@/components/ui/badge'
 import { Input } from '@/components/ui/input'
@@ -67,15 +69,15 @@ const HeroSection = ({ blogdata }: { blogdata: BlogPost[] }) => {
                       className='bg-primary/10 text-primary cursor-pointer border-0 text-sm'
                       onClick={e => {
                         e.stopPropagation()
-                        router.push(`/#categories`)
+                        router.push(`/#category-${item.category}`)
                       }}
                     >
                       {item.category}
                     </Badge>
                   </div>
-                  <a href={`/blog-detail/${item.slug}`}>
+                  <Link href={`/blog-detail/${item.slug}`}>
                     <h3 className='text-xl font-medium'>{item.title}</h3>
-                  </a>
+                  </Link>
 
                   <p className='text-muted-foreground'>{item.description}</p>
                   <div className='flex w-full items-center justify-between gap-1 py-1'>
@@ -86,9 +88,9 @@ const HeroSection = ({ blogdata }: { blogdata: BlogPost[] }) => {
                       className='group-hover:bg-primary! hover:bg-primary! hover:text-primary-foreground group-hover:text-primary-foreground group-hover:border-transparent hover:border-transparent'
                       asChild
                     >
-                      <a href={`/blog-detail/${item.slug}`}>
+                      <Link href={`/blog-detail/${item.slug}`}>
                         <ArrowUpRightIcon />
-                      </a>
+                      </Link>
                     </Button>
                   </div>
                 </div>
