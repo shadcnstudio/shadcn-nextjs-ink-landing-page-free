@@ -20,25 +20,22 @@ export const UserBehaviorDesignContent = () => {
   const blogSections = [
     {
       id: 'design-smarter',
-      icon: '🔍',
-      iconSize: 'text-3xl',
       type: 'main-section',
       headingClass: 'blog-title',
       headingSize: 'text-2xl',
-      title: 'The Psychology Behind Product Success',
+      marginClass: 'mb-6',
+      title: '🔍 Design Smarter: How User Behavior Shapes Winning Products',
       content: [
         "Great products aren't built on assumptions—they're built on deep understanding of how users actually behave. When we shift from guessing to knowing, design becomes a powerful tool for creating meaningful experiences."
-      ],
-      contentSize: 'text-xl'
+      ]
     },
     {
       id: 'understanding-behavior',
-      icon: '🧠',
-      iconSize: 'text-2xl',
       type: 'sub-section',
       headingClass: 'blog-subtitle',
       headingSize: 'text-xl',
-      title: 'Understanding User Behavior Through Data',
+      marginClass: 'mb-6',
+      title: '🧠 Understanding User Behavior Through Data',
       content: [
         'User behavior tells us what people actually do, not what they say they do. This distinction is crucial for product teams who want to build experiences that truly resonate with their audience.',
         'By observing patterns in how users interact with products, we uncover insights that drive better design decisions and create more intuitive experiences.'
@@ -46,12 +43,12 @@ export const UserBehaviorDesignContent = () => {
     },
     {
       id: 'research-methods',
-      icon: '📊',
-      iconSize: 'text-2xl',
       type: 'main-section',
       headingClass: 'blog-title',
       headingSize: 'text-xl',
-      title: 'Research Methods That Matter',
+      marginClass: 'mb-6',
+      spacingBetweenSections: 'mt-10',
+      title: '📊 Research Methods That Matter',
       content: [
         'The most powerful insights come from combining different research methods to build a complete picture of user behavior and motivations.'
       ],
@@ -61,6 +58,7 @@ export const UserBehaviorDesignContent = () => {
           type: 'bullet-section',
           headingClass: 'blog-subtitle',
           headingSize: 'text-xl',
+          marginClass: 'mb-6',
           title: 'Key Behavioral Patterns to Consider',
           bulletPoints: [
             'Progressive disclosure - users scan before they read',
@@ -76,24 +74,23 @@ export const UserBehaviorDesignContent = () => {
     },
     {
       id: 'data-driven-decisions',
-      icon: '🧪',
-      iconSize: 'text-2xl',
       type: 'main-section',
       headingClass: 'blog-title',
       headingSize: 'text-xl',
-      title: 'Data-Driven Design Decisions',
+      marginClass: 'mb-6',
+      spacingBetweenSections: 'mt-16',
+      title: '🧪 Data-Driven Design Decisions',
       content: [
         'A/B testing and experimentation turn behavioral insights into validated improvements. The key is testing meaningful changes that align with user mental models.'
       ],
       subSections: [
         {
           id: 'testing-strategies',
-          icon: '✅',
-          iconSize: 'text-2xl',
           type: 'checklist-section',
           headingClass: 'blog-subtitle',
           headingSize: 'text-xl',
-          title: 'Effective Testing Strategies',
+          marginClass: 'mb-6',
+          title: '✅ Effective Testing Strategies',
           checklistItems: [
             'Test navigation patterns with task completion rates',
             'Optimize conversion flows through iterative improvements',
@@ -107,24 +104,23 @@ export const UserBehaviorDesignContent = () => {
     },
     {
       id: 'measuring-success',
-      icon: '📈',
-      iconSize: 'text-2xl',
       type: 'main-section',
       headingClass: 'blog-title',
       headingSize: 'text-xl',
-      title: 'Measuring Behavioral Design Success',
+      marginClass: 'mb-6',
+      spacingBetweenSections: 'mt-16',
+      title: '📈 Measuring Behavioral Design Success',
       content: [
         "Success isn't just about increasing metrics—it's about creating experiences that align with user goals and business objectives."
       ],
       subSections: [
         {
           id: 'key-metrics',
-          icon: '🎯',
-          iconSize: 'text-2xl',
           type: 'sub-section',
           headingClass: 'blog-subtitle',
           headingSize: 'text-xl',
-          title: 'Key Success Indicators',
+          marginClass: 'mb-6',
+          title: '🎯 Key Success Indicators',
           content: [
             'Task completion rates above 85% indicate strong usability. User satisfaction scores of 4.5+ out of 5 show genuine user value.',
             'Feature adoption rates of 40%+ for new features and 30%+ reduction in support tickets after improvements demonstrate real impact.'
@@ -134,24 +130,24 @@ export const UserBehaviorDesignContent = () => {
     },
     {
       id: 'building-empathy',
-      icon: '❤️',
-      iconSize: 'text-2xl',
       type: 'main-section',
       headingClass: 'blog-title',
       headingSize: 'text-xl',
-      title: 'Building Empathy Through Data',
+      marginClass: 'mb-6',
+      spacingBetweenSections: 'mt-16',
+      title: '❤️ Building Empathy Through Data',
       content: [
         'Data without context is just numbers. The real power comes from combining behavioral insights with human understanding to build genuine empathy for user experiences.'
       ],
       subSections: [
         {
           id: 'empathy-practices',
-          icon: '🤝',
-          iconSize: 'text-2xl',
           type: 'sub-section',
           headingClass: 'blog-subtitle',
           headingSize: 'text-xl',
-          title: 'Empathy-Building Practices',
+          marginClass: 'mb-6',
+          title: '🤝 Empathy-Building Practices',
+          iconSize: 'text-2xl',
           content: [
             'Create user journey maps that include emotional touchpoints and document user stories that connect behavior to motivations.',
             'Share user research findings across all team members and conduct regular user feedback sessions to maintain connection with real user needs.'
@@ -161,12 +157,12 @@ export const UserBehaviorDesignContent = () => {
     },
     {
       id: 'conclusion',
-      icon: '🎯',
-      iconSize: 'text-2xl',
       type: 'main-section',
       headingClass: 'blog-title',
       headingSize: 'text-xl',
-      title: 'From Insights to Impact',
+      marginClass: 'mb-6',
+      spacingBetweenSections: 'mt-16',
+      title: '🎯 From Insights to Impact',
       content: [
         'Understanding user behavior is just the beginning. The real impact comes from translating those insights into experiences that genuinely serve user needs while achieving business goals.',
         'When we design with behavioral insights, we create products that feel intuitive, reduce friction, and build lasting user satisfaction. The best products anticipate and guide behavior toward meaningful outcomes for everyone involved. 🚀'
@@ -175,19 +171,25 @@ export const UserBehaviorDesignContent = () => {
   ]
 
   const renderSection = (section: any, sectionIndex: number) => (
-    <section key={`section-${section.id}-${sectionIndex}`} id={section.id} className='space-y-6'>
+    <section
+      key={`section-${section.id}-${sectionIndex}`}
+      id={section.id}
+      className={` ${section.type === 'main-section' ? section.spacingBetweenSections || '' : ''}`}
+    >
       {(section.icon || section.title) && (
         <div className='flex items-start gap-4'>
           {section.icon && <span className={section.iconSize || 'text-2xl'}>{section.icon}</span>}
           <div>
-            <h2 className={`${section.headingClass} text-foreground mb-4 ${section.headingSize} font-semibold`}>
+            <h2
+              className={`${section.headingClass} text-foreground ${section.marginClass || ''} ${section.headingSize} font-semibold`}
+            >
               {section.title}
             </h2>
             {section.content &&
               section.content.map((paragraph: string, index: number) => (
                 <p
                   key={`content-${sectionIndex}-${index}`}
-                  className={`text-muted-foreground ${section.contentSize ? `${section.contentSize} leading-relaxed` : 'mb-4'}`}
+                  className={`text-muted-foreground text-xl ${section.contentSize ? `${section.contentSize} leading-relaxed` : `${section.marginClass || ''}`}`}
                 >
                   {paragraph}
                 </p>
@@ -285,5 +287,5 @@ export const UserBehaviorDesignContent = () => {
     </section>
   )
 
-  return <div className='space-y-12'>{blogSections.map((section, index) => renderSection(section, index))}</div>
+  return <div className=''>{blogSections.map((section, index) => renderSection(section, index))}</div>
 }

@@ -20,25 +20,22 @@ export const ScalableCodeContent = () => {
   const blogSections = [
     {
       id: 'code-that-grows',
-      icon: '🏗️',
-      iconSize: 'text-3xl',
       type: 'main-section',
       headingClass: 'blog-title',
       headingSize: 'text-2xl',
-      title: 'Architecture for Growth',
+      marginClass: 'mb-6',
+      title: '🏗️ Architecture for Growth',
       content: [
         "Great code doesn't just work today—it adapts and scales as your product, team, and user base grow. Writing scalable code is about creating systems that remain maintainable, performant, and extensible over time."
-      ],
-      contentSize: 'text-xl'
+      ]
     },
     {
       id: 'scalability-fundamentals',
-      icon: '📈',
-      iconSize: 'text-2xl',
       type: 'sub-section',
       headingClass: 'blog-subtitle',
       headingSize: 'text-xl',
-      title: 'Understanding Scalable Code',
+      marginClass: 'mb-6',
+      title: '📈 Understanding Scalable Code',
       content: [
         'Scalable code handles growth gracefully across multiple dimensions: increased user load, expanding feature sets, growing development teams, and evolving business requirements.',
         'The key is building systems that remain understandable and modifiable as complexity increases, rather than becoming tangled and brittle.'
@@ -46,23 +43,22 @@ export const ScalableCodeContent = () => {
     },
     {
       id: 'architectural-patterns',
-      icon: '🧩',
-      iconSize: 'text-2xl',
       type: 'main-section',
       headingClass: 'blog-title',
       headingSize: 'text-xl',
-      title: 'Modular Architecture Patterns',
+      spacingBetweenSections: 'mt-10',
+      marginClass: 'mb-6',
+      title: '🧩 Modular Architecture Patterns',
       content: [
         'Modular architecture is the foundation of scalable systems. Break your application into independent, loosely coupled modules that can evolve separately.'
       ],
       subSections: [
         {
           id: 'modular-principles',
-          icon: '🔧',
-          iconSize: 'text-2xl',
           type: 'checklist-section',
           headingClass: 'blog-subtitle',
           headingSize: 'text-xl',
+          marginClass: 'mb-6',
           title: 'Modular Design Principles',
           checklistItems: [
             'Single Responsibility - Each module handles one specific concern',
@@ -79,23 +75,22 @@ export const ScalableCodeContent = () => {
     },
     {
       id: 'clean-code-practices',
-      icon: '✨',
-      iconSize: 'text-2xl',
       type: 'main-section',
       headingClass: 'blog-title',
       headingSize: 'text-xl',
-      title: 'Clean Code for Scale',
+      spacingBetweenSections: 'mt-16',
+      marginClass: 'mb-6',
+      title: '✨ Clean Code for Scale',
       content: [
         'Clean code becomes exponentially more important as your codebase grows. Small inconsistencies compound into major maintenance headaches.'
       ],
       subSections: [
         {
           id: 'clean-code-essentials',
-          icon: '📝',
-          iconSize: 'text-2xl',
           type: 'checklist-section',
           headingClass: 'blog-subtitle',
           headingSize: 'text-xl',
+          marginClass: 'mb-6',
           title: 'Clean Code Essentials',
           checklistItems: [
             'Meaningful Names - Use descriptive, searchable variable and function names',
@@ -112,23 +107,22 @@ export const ScalableCodeContent = () => {
     },
     {
       id: 'testing-strategy',
-      icon: '🧪',
-      iconSize: 'text-2xl',
       type: 'main-section',
       headingClass: 'blog-title',
       headingSize: 'text-xl',
-      title: 'Comprehensive Testing Strategy',
+      spacingBetweenSections: 'mt-16',
+      marginClass: 'mb-6',
+      title: '🧪 Comprehensive Testing Strategy',
       content: [
         'A robust testing strategy is essential for scalable applications. Tests provide confidence when making changes and serve as living documentation of expected behavior.'
       ],
       subSections: [
         {
           id: 'testing-pyramid',
-          icon: '🔺',
-          iconSize: 'text-2xl',
           type: 'checklist-section',
           headingClass: 'blog-subtitle',
           headingSize: 'text-xl',
+          marginClass: 'mb-6',
           title: 'Testing Pyramid Approach',
           checklistItems: [
             'Unit Tests (70%) - Test individual functions and components in isolation',
@@ -145,12 +139,12 @@ export const ScalableCodeContent = () => {
     },
     {
       id: 'performance-scalability',
-      icon: '⚡',
-      iconSize: 'text-2xl',
       type: 'main-section',
       headingClass: 'blog-title',
       headingSize: 'text-xl',
-      title: 'Performance at Scale',
+      spacingBetweenSections: 'mt-16',
+      marginClass: 'mb-6',
+      title: '⚡ Performance at Scale',
       content: [
         'Performance characteristics change as applications scale. Design for performance from the beginning rather than optimizing later.'
       ],
@@ -160,6 +154,7 @@ export const ScalableCodeContent = () => {
           type: 'bullet-section',
           headingClass: 'blog-subtitle',
           headingSize: 'text-xl',
+          marginClass: 'mb-6',
           title: 'Essential Performance Patterns',
           bulletPoints: [
             'Lazy Loading - Load resources only when needed to reduce initial bundle size',
@@ -174,23 +169,22 @@ export const ScalableCodeContent = () => {
     },
     {
       id: 'data-management',
-      icon: '💾',
-      iconSize: 'text-2xl',
       type: 'main-section',
       headingClass: 'blog-title',
       headingSize: 'text-xl',
-      title: 'Scalable Data Management',
+      spacingBetweenSections: 'mt-16',
+      marginClass: 'mb-6',
+      title: '💾 Scalable Data Management',
       content: [
         'Data architecture decisions have long-term implications for application scalability. Plan for growth from the beginning.'
       ],
       subSections: [
         {
           id: 'data-strategies',
-          icon: '🗃️',
-          iconSize: 'text-2xl',
           type: 'checklist-section',
           headingClass: 'blog-subtitle',
           headingSize: 'text-xl',
+          marginClass: 'mb-6',
           title: 'Data Architecture Strategies',
           checklistItems: [
             'Database Normalization - Structure data to minimize redundancy and inconsistency',
@@ -205,12 +199,12 @@ export const ScalableCodeContent = () => {
     },
     {
       id: 'team-scalability',
-      icon: '👥',
-      iconSize: 'text-2xl',
       type: 'main-section',
       headingClass: 'blog-title',
       headingSize: 'text-xl',
-      title: 'Scaling Development Teams',
+      spacingBetweenSections: 'mt-16',
+      marginClass: 'mb-6',
+      title: '👥 Scaling Development Teams',
       content: [
         'As your team grows, code organization and development processes become critical for maintaining velocity and quality.'
       ],
@@ -220,6 +214,7 @@ export const ScalableCodeContent = () => {
           type: 'bullet-section',
           headingClass: 'blog-subtitle',
           headingSize: 'text-xl',
+          marginClass: 'mb-6',
           title: 'Core Team Practices',
           bulletPoints: [
             'Code Reviews - Establish thorough code review processes for knowledge sharing',
@@ -265,11 +260,11 @@ export const ScalableCodeContent = () => {
     },
     {
       id: 'conclusion',
-      icon: '🎯',
-      iconSize: 'text-2xl',
       type: 'main-section',
       headingClass: 'blog-title',
       headingSize: 'text-xl',
+      spacingBetweenSections: 'mt-16',
+      marginClass: 'mb-6',
       title: 'Building for Tomorrow',
       content: [
         "Scalable code is an investment in your product's future. While it requires more upfront planning and discipline, it pays dividends as your application, team, and user base grow.",
@@ -280,19 +275,25 @@ export const ScalableCodeContent = () => {
   ]
 
   const renderSection = (section: any, sectionIndex: number) => (
-    <section key={`section-${section.id}-${sectionIndex}`} id={section.id} className='space-y-6'>
+    <section
+      key={`section-${section.id}-${sectionIndex}`}
+      id={section.id}
+      className={` ${section.type === 'main-section' ? section.spacingBetweenSections || '' : ''}`}
+    >
       {(section.icon || section.title) && (
         <div className='flex items-start gap-4'>
           {section.icon && <span className={section.iconSize || 'text-2xl'}>{section.icon}</span>}
           <div>
-            <h2 className={`${section.headingClass} text-foreground mb-4 ${section.headingSize} font-semibold`}>
+            <h2
+              className={`${section.headingClass} text-foreground ${section.marginClass || ''} ${section.headingSize} font-semibold`}
+            >
               {section.title}
             </h2>
             {section.content &&
               section.content.map((paragraph: string, index: number) => (
                 <p
                   key={`content-${sectionIndex}-${index}`}
-                  className={`text-muted-foreground ${section.contentSize ? `${section.contentSize} leading-relaxed` : 'mb-4'}`}
+                  className={`text-muted-foreground text-xl ${section.contentSize ? `${section.contentSize} leading-relaxed` : `${section.marginClass || ''}`}`}
                 >
                   {paragraph}
                 </p>
@@ -303,20 +304,22 @@ export const ScalableCodeContent = () => {
 
       {section.type === 'bullet-section' && !section.icon && (
         <>
-          <h3 className={`${section.headingClass} text-foreground mb-4 ${section.headingSize} font-semibold`}>
+          <h3
+            className={`${section.headingClass} text-foreground ${section.marginClass || ''} ${section.headingSize} font-semibold`}
+          >
             {section.title}
           </h3>
           <div className='space-y-4'>
             {section.bulletPoints?.map((point: string, index: number) => (
               <div key={`bullet-${sectionIndex}-${index}`} className='flex items-start gap-3'>
                 <span className='text-muted-foreground'>•</span>
-                <p className='text-muted-foreground'>{point}</p>
+                <p className='text-muted-foreground text-xl'>{point}</p>
               </div>
             ))}
           </div>
           {section.content &&
             section.content.map((paragraph: string, index: number) => (
-              <p key={`bullet-content-${sectionIndex}-${index}`} className='text-muted-foreground mt-4'>
+              <p key={`bullet-content-${sectionIndex}-${index}`} className='text-muted-foreground mt-6 text-xl'>
                 {paragraph}
               </p>
             ))}
@@ -324,21 +327,19 @@ export const ScalableCodeContent = () => {
       )}
 
       {section.subSections?.map((subSection: any, subIndex: number) => (
-        <section
-          key={`subsection-${subSection.id}-${sectionIndex}-${subIndex}`}
-          id={subSection.id}
-          className='space-y-6'
-        >
+        <section key={`subsection-${subSection.id}-${sectionIndex}-${subIndex}`} id={subSection.id} className={``}>
           {subSection.type === 'bullet-section' && !subSection.icon ? (
             <>
-              <h3 className={`${subSection.headingClass} text-foreground mb-4 ${subSection.headingSize} font-semibold`}>
+              <h3
+                className={`${subSection.headingClass} text-foreground ${subSection.marginClass || ''} ${subSection.headingSize} font-semibold`}
+              >
                 {subSection.title}
               </h3>
               <div className='space-y-4'>
                 {subSection.bulletPoints?.map((point: string, index: number) => (
                   <div key={`subbullet-${sectionIndex}-${subIndex}-${index}`} className='flex items-start gap-3'>
                     <span className='text-muted-foreground'>•</span>
-                    <p className='text-muted-foreground'>{point}</p>
+                    <p className='text-muted-foreground text-xl'>{point}</p>
                   </div>
                 ))}
               </div>
@@ -346,7 +347,7 @@ export const ScalableCodeContent = () => {
                 subSection.content.map((paragraph: string, index: number) => (
                   <p
                     key={`subbullet-content-${sectionIndex}-${subIndex}-${index}`}
-                    className='text-muted-foreground mt-4'
+                    className='text-muted-foreground mt-6 text-xl'
                   >
                     {paragraph}
                   </p>
@@ -357,7 +358,7 @@ export const ScalableCodeContent = () => {
               {subSection.icon && <span className={subSection.iconSize || 'text-2xl'}>{subSection.icon}</span>}
               <div>
                 <h3
-                  className={`${subSection.headingClass} text-foreground mb-4 ${subSection.headingSize} font-semibold`}
+                  className={`${subSection.headingClass} text-foreground mb-6 ${subSection.headingSize} font-semibold`}
                 >
                   {subSection.title}
                 </h3>
@@ -367,7 +368,7 @@ export const ScalableCodeContent = () => {
                     {subSection.checklistItems.map((item: string, index: number) => (
                       <div key={`checklist-${sectionIndex}-${subIndex}-${index}`} className='flex items-start gap-3'>
                         <span className='text-blue-500'>✓</span>
-                        <p className='text-muted-foreground'>{item}</p>
+                        <p className='text-muted-foreground text-xl'>{item}</p>
                       </div>
                     ))}
                   </div>
@@ -377,7 +378,7 @@ export const ScalableCodeContent = () => {
                   subSection.content.map((paragraph: string, index: number) => (
                     <p
                       key={`subcontent-${sectionIndex}-${subIndex}-${index}`}
-                      className={`text-muted-foreground ${subSection.type === 'checklist-section' ? 'mt-4' : 'mb-4'}`}
+                      className={`text-muted-foreground text-xl ${subSection.type === 'checklist-section' ? 'mt-4' : 'mb-4'}`}
                     >
                       {paragraph}
                     </p>
@@ -390,5 +391,5 @@ export const ScalableCodeContent = () => {
     </section>
   )
 
-  return <div className='space-y-12'>{blogSections.map((section, index) => renderSection(section, index))}</div>
+  return <div className=''>{blogSections.map((section, index) => renderSection(section, index))}</div>
 }

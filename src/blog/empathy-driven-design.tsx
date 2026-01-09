@@ -20,12 +20,11 @@ export const EmpathyDrivenDesignContent = () => {
   const blogSections = [
     {
       id: 'creating-products',
-      icon: '💝',
-      iconSize: 'text-3xl',
       type: 'main-section',
       headingClass: 'blog-title',
       headingSize: 'text-2xl',
-      title: 'Human-Centered Design Excellence',
+      marginClass: 'mb-6',
+      title: '💝 Creating Products That Connect: The Power of Empathy in Design',
       content: [
         "Empathy is the cornerstone of great design. When we truly understand our users' emotions, frustrations, and aspirations, we create products that don't just function—they resonate deeply and create lasting connections."
       ],
@@ -33,12 +32,11 @@ export const EmpathyDrivenDesignContent = () => {
     },
     {
       id: 'understanding-empathy',
-      icon: '🧠',
-      iconSize: 'text-2xl',
       type: 'sub-section',
       headingClass: 'blog-subtitle',
       headingSize: 'text-xl',
-      title: 'Understanding Empathy in Design',
+      marginClass: 'mb-6',
+      title: '🧠 Understanding Empathy in Design',
       content: [
         "Empathy in design goes beyond user research—it's about genuinely caring about the people who use your product. It means acknowledging their context, constraints, and emotions at every touchpoint.",
         "True empathetic design requires us to step outside our own assumptions and experience the world through our users' eyes, considering their diverse backgrounds and needs."
@@ -46,24 +44,23 @@ export const EmpathyDrivenDesignContent = () => {
     },
     {
       id: 'empathy-methods',
-      icon: '🔍',
-      iconSize: 'text-2xl',
       type: 'main-section',
       headingClass: 'blog-title',
       headingSize: 'text-xl',
-      title: 'Methods for Building Empathy',
+      marginClass: 'mb-6',
+      spacingBetweenSections: 'mt-10',
+      title: '🔍 Methods for Building Empathy',
       content: [
         'Building empathy requires intentional methods and practices that help teams connect with users on a human level.'
       ],
       subSections: [
         {
           id: 'empathy-techniques',
-          icon: '🛠️',
-          iconSize: 'text-2xl',
           type: 'checklist-section',
           headingClass: 'blog-subtitle',
           headingSize: 'text-xl',
-          title: 'Core Empathy-Building Techniques',
+          marginClass: 'mb-6',
+          title: '🔧 Core Empathy-Building Techniques',
           checklistItems: [
             'Deep Listening Sessions - Go beyond typical user interviews with open, unstructured conversations',
             "Walk in Their Shoes - Experience your product from the user's perspective and constraints",
@@ -79,24 +76,23 @@ export const EmpathyDrivenDesignContent = () => {
     },
     {
       id: 'emotional-journey',
-      icon: '🗺️',
-      iconSize: 'text-2xl',
       type: 'main-section',
       headingClass: 'blog-title',
       headingSize: 'text-xl',
-      title: 'Mapping the Emotional Journey',
+      marginClass: 'mb-6',
+      spacingBetweenSections: 'mt-16',
+      title: '🗺️ Mapping the Emotional Journey',
       content: [
         'Every user interaction has an emotional dimension. Mapping these emotional states helps us identify opportunities to delight users and eliminate frustration points.'
       ],
       subSections: [
         {
           id: 'emotional-touchpoints',
-          icon: '💭',
-          iconSize: 'text-2xl',
           type: 'sub-section',
           headingClass: 'blog-subtitle',
           headingSize: 'text-xl',
-          title: 'Key Emotional Touchpoints',
+          marginClass: 'mb-6',
+          title: '💭 Key Emotional Touchpoints',
           content: [
             'First Impression: Curiosity, hope, or skepticism as users discover your product. This moment sets the tone for the entire relationship.',
             'Onboarding Experience: Confusion, excitement, or overwhelm during initial setup. Poor onboarding can destroy early enthusiasm.',
@@ -109,24 +105,23 @@ export const EmpathyDrivenDesignContent = () => {
     },
     {
       id: 'inclusive-design',
-      icon: '🌍',
-      iconSize: 'text-2xl',
       type: 'main-section',
       headingClass: 'blog-title',
       headingSize: 'text-xl',
-      title: 'Inclusive Design Principles',
+      marginClass: 'mb-6',
+      spacingBetweenSections: 'mt-16',
+      title: '🌍 Inclusive Design Principles',
       content: [
         'Empathetic design is inherently inclusive. It requires us to consider the full spectrum of human diversity and create experiences that work for everyone.'
       ],
       subSections: [
         {
           id: 'inclusion-essentials',
-          icon: '🤝',
-          iconSize: 'text-2xl',
           type: 'checklist-section',
           headingClass: 'blog-subtitle',
           headingSize: 'text-xl',
-          title: 'Inclusion Essentials',
+          marginClass: 'mb-6',
+          title: '🤝 Inclusion Essentials',
           checklistItems: [
             'Accessibility First - Design for users with diverse abilities from the beginning',
             'Cultural Sensitivity - Consider cultural differences in communication and interaction patterns',
@@ -140,12 +135,12 @@ export const EmpathyDrivenDesignContent = () => {
     },
     {
       id: 'empathy-in-teams',
-      icon: '🤝',
-      iconSize: 'text-2xl',
       type: 'main-section',
       headingClass: 'blog-title',
       headingSize: 'text-xl',
-      title: 'Building Empathy in Teams',
+      marginClass: 'mb-6',
+      spacingBetweenSections: 'mt-16',
+      title: '🤝 Building Empathy in Teams',
       content: [
         "Empathetic design isn't just the responsibility of UX designers—it requires the entire team to understand and care about user experiences."
       ],
@@ -155,6 +150,7 @@ export const EmpathyDrivenDesignContent = () => {
           type: 'bullet-section',
           headingClass: 'blog-subtitle',
           headingSize: 'text-xl',
+          marginClass: 'mb-6',
           title: 'Core Team Practices',
           bulletPoints: [
             'Regular User Exposure - Include developers and stakeholders in user research sessions',
@@ -169,24 +165,23 @@ export const EmpathyDrivenDesignContent = () => {
     },
     {
       id: 'measuring-empathy',
-      icon: '📊',
-      iconSize: 'text-2xl',
       type: 'main-section',
       headingClass: 'blog-title',
       headingSize: 'text-xl',
-      title: 'Measuring Empathetic Design',
+      marginClass: 'mb-6',
+      spacingBetweenSections: 'mt-16',
+      title: '📊 Measuring Empathetic Design',
       content: [
         'While empathy might seem unmeasurable, there are clear indicators that show when your design truly connects with users.'
       ],
       subSections: [
         {
           id: 'empathy-metrics',
-          icon: '📈',
-          iconSize: 'text-2xl',
           type: 'sub-section',
           headingClass: 'blog-subtitle',
           headingSize: 'text-xl',
-          title: 'Success Indicators',
+          marginClass: 'mb-6',
+          title: '📈 Success Indicators',
           content: [
             'User Satisfaction (NPS) scores of 50+ indicate strong emotional connection. Emotional Response Ratings of 4.5+ out of 5 show users feel understood.',
             'Support Ticket Sentiment trends positive when users feel heard. User Retention Rate of 70%+ at 6 months demonstrates lasting value.',
@@ -241,19 +236,25 @@ export const EmpathyDrivenDesignContent = () => {
   ]
 
   const renderSection = (section: any, sectionIndex: number) => (
-    <section key={`section-${section.id}-${sectionIndex}`} id={section.id} className='space-y-6'>
+    <section
+      key={`section-${section.id}-${sectionIndex}`}
+      id={section.id}
+      className={` ${section.type === 'main-section' ? section.spacingBetweenSections || '' : ''}`}
+    >
       {(section.icon || section.title) && (
         <div className='flex items-start gap-4'>
           {section.icon && <span className={section.iconSize || 'text-2xl'}>{section.icon}</span>}
           <div>
-            <h2 className={`${section.headingClass} text-foreground mb-4 ${section.headingSize} font-semibold`}>
+            <h2
+              className={`${section.headingClass} text-foreground ${section.marginClass || ''} ${section.headingSize} font-semibold`}
+            >
               {section.title}
             </h2>
             {section.content &&
               section.content.map((paragraph: string, index: number) => (
                 <p
                   key={`content-${sectionIndex}-${index}`}
-                  className={`text-muted-foreground ${section.contentSize ? `${section.contentSize} leading-relaxed` : 'mb-4'}`}
+                  className={`text-muted-foreground text-xl ${section.contentSize ? `${section.contentSize} leading-relaxed` : `${section.marginClass || ''}`}`}
                 >
                   {paragraph}
                 </p>
@@ -264,20 +265,22 @@ export const EmpathyDrivenDesignContent = () => {
 
       {section.type === 'bullet-section' && !section.icon && (
         <>
-          <h3 className={`${section.headingClass} text-foreground mb-4 ${section.headingSize} font-semibold`}>
+          <h3
+            className={`${section.headingClass} text-foreground ${section.marginClass || ''} ${section.headingSize} font-semibold`}
+          >
             {section.title}
           </h3>
           <div className='space-y-4'>
             {section.bulletPoints?.map((point: string, index: number) => (
               <div key={`bullet-${sectionIndex}-${index}`} className='flex items-start gap-3'>
                 <span className='text-muted-foreground'>•</span>
-                <p className='text-muted-foreground'>{point}</p>
+                <p className='text-muted-foreground text-xl'>{point}</p>
               </div>
             ))}
           </div>
           {section.content &&
             section.content.map((paragraph: string, index: number) => (
-              <p key={`bullet-content-${sectionIndex}-${index}`} className='text-muted-foreground mt-4'>
+              <p key={`bullet-content-${sectionIndex}-${index}`} className='text-muted-foreground mt-6 text-xl'>
                 {paragraph}
               </p>
             ))}
@@ -285,21 +288,19 @@ export const EmpathyDrivenDesignContent = () => {
       )}
 
       {section.subSections?.map((subSection: any, subIndex: number) => (
-        <section
-          key={`subsection-${subSection.id}-${sectionIndex}-${subIndex}`}
-          id={subSection.id}
-          className='space-y-6'
-        >
+        <section key={`subsection-${subSection.id}-${sectionIndex}-${subIndex}`} id={subSection.id} className={``}>
           {subSection.type === 'bullet-section' && !subSection.icon ? (
             <>
-              <h3 className={`${subSection.headingClass} text-foreground mb-4 ${subSection.headingSize} font-semibold`}>
+              <h3
+                className={`${subSection.headingClass} text-foreground ${subSection.marginClass || ''} ${subSection.headingSize} font-semibold`}
+              >
                 {subSection.title}
               </h3>
               <div className='space-y-4'>
                 {subSection.bulletPoints?.map((point: string, index: number) => (
                   <div key={`subbullet-${sectionIndex}-${subIndex}-${index}`} className='flex items-start gap-3'>
                     <span className='text-muted-foreground'>•</span>
-                    <p className='text-muted-foreground'>{point}</p>
+                    <p className='text-muted-foreground text-xl'>{point}</p>
                   </div>
                 ))}
               </div>
@@ -307,7 +308,7 @@ export const EmpathyDrivenDesignContent = () => {
                 subSection.content.map((paragraph: string, index: number) => (
                   <p
                     key={`subbullet-content-${sectionIndex}-${subIndex}-${index}`}
-                    className='text-muted-foreground mt-4'
+                    className='text-muted-foreground mt-6 text-xl'
                   >
                     {paragraph}
                   </p>
@@ -318,7 +319,7 @@ export const EmpathyDrivenDesignContent = () => {
               {subSection.icon && <span className={subSection.iconSize || 'text-2xl'}>{subSection.icon}</span>}
               <div>
                 <h3
-                  className={`${subSection.headingClass} text-foreground mb-4 ${subSection.headingSize} font-semibold`}
+                  className={`${subSection.headingClass} text-foreground mb-6 ${subSection.headingSize} font-semibold`}
                 >
                   {subSection.title}
                 </h3>
@@ -328,7 +329,7 @@ export const EmpathyDrivenDesignContent = () => {
                     {subSection.checklistItems.map((item: string, index: number) => (
                       <div key={`checklist-${sectionIndex}-${subIndex}-${index}`} className='flex items-start gap-3'>
                         <span className='text-blue-500'>✓</span>
-                        <p className='text-muted-foreground'>{item}</p>
+                        <p className='text-muted-foreground text-xl'>{item}</p>
                       </div>
                     ))}
                   </div>
@@ -338,7 +339,7 @@ export const EmpathyDrivenDesignContent = () => {
                   subSection.content.map((paragraph: string, index: number) => (
                     <p
                       key={`subcontent-${sectionIndex}-${subIndex}-${index}`}
-                      className={`text-muted-foreground ${subSection.type === 'checklist-section' ? 'mt-4' : 'mb-4'}`}
+                      className={`text-muted-foreground text-xl ${subSection.type === 'checklist-section' ? 'mt-4' : 'mb-4'}`}
                     >
                       {paragraph}
                     </p>
@@ -351,5 +352,5 @@ export const EmpathyDrivenDesignContent = () => {
     </section>
   )
 
-  return <div className='space-y-12'>{blogSections.map((section, index) => renderSection(section, index))}</div>
+  return <div className=''>{blogSections.map((section, index) => renderSection(section, index))}</div>
 }

@@ -7,7 +7,7 @@ export const aiDrivenWorkflowsData = {
   imageUrl: '/images/blog-post/post-7.webp',
   imageAlt: 'AI development tools',
   date: 'January 20, 2026',
-  category: 'Product',
+  category: 'UI',
   author: 'Allen Reilly',
   avatarUrl: '/images/avatars/avatar-1.webp',
   readTime: 6,
@@ -20,25 +20,22 @@ export const AIDrivenWorkflowsContent = () => {
   const blogSections = [
     {
       id: 'ai-powered-development',
-      icon: '🤖',
-      iconSize: 'text-3xl',
       type: 'main-section',
       headingClass: 'blog-title',
       headingSize: 'text-2xl',
-      title: 'AI-Powered Development: Accelerate Your Workflow',
+      marginClass: 'mb-6',
+      title: '🤖 AI-Powered Development: Accelerate Your Workflow',
       content: [
         'Artificial Intelligence is revolutionizing how we build products. From ideation to deployment, AI tools are enhancing creativity, accelerating development, and enabling teams to focus on high-value problem-solving rather than repetitive tasks.'
-      ],
-      contentSize: 'text-xl'
+      ]
     },
     {
       id: 'ai-transformation',
-      icon: '🚀',
-      iconSize: 'text-2xl',
       type: 'sub-section',
       headingClass: 'blog-subtitle',
       headingSize: 'text-xl',
-      title: 'The AI Development Revolution',
+      marginClass: 'mb-6',
+      title: '🚀 The AI Development Revolution',
       content: [
         "AI isn't replacing developers—it's amplifying their capabilities. Smart integration of AI tools allows teams to prototype faster, explore more ideas, and deliver higher quality solutions with greater efficiency.",
         'The key is understanding which AI tools excel at different stages of development and how to integrate them seamlessly into your existing workflow.'
@@ -46,24 +43,23 @@ export const AIDrivenWorkflowsContent = () => {
     },
     {
       id: 'ideation-ai',
-      icon: '💡',
-      iconSize: 'text-2xl',
       type: 'main-section',
       headingClass: 'blog-title',
       headingSize: 'text-xl',
-      title: 'AI-Enhanced Ideation and Planning',
+      marginClass: 'mb-6',
+      spacingBetweenSections: 'mt-10',
+      title: '💡 AI-Enhanced Ideation and Planning',
       content: [
         'The creative process benefits enormously from AI assistance. Use AI to generate ideas, explore alternatives, and validate concepts before diving into implementation.'
       ],
       subSections: [
         {
           id: 'ideation-tools',
-          icon: '🧠',
-          iconSize: 'text-2xl',
           type: 'checklist-section',
           headingClass: 'blog-subtitle',
           headingSize: 'text-xl',
-          title: 'Ideation AI Tools',
+          marginClass: 'mb-6',
+          title: '🧠 Ideation AI Tools',
           checklistItems: [
             'ChatGPT for brainstorming features, user stories, and problem exploration',
             'Claude for detailed technical planning and architecture discussions',
@@ -79,24 +75,23 @@ export const AIDrivenWorkflowsContent = () => {
     },
     {
       id: 'design-ai',
-      icon: '🎨',
-      iconSize: 'text-2xl',
       type: 'main-section',
       headingClass: 'blog-title',
       headingSize: 'text-xl',
-      title: 'AI-Powered Design and Prototyping',
+      marginClass: 'mb-6',
+      spacingBetweenSections: 'mt-16',
+      title: '🎨 AI-Powered Design and Prototyping',
       content: [
         'AI design tools are transforming how we create interfaces, generate assets, and iterate on visual concepts.'
       ],
       subSections: [
         {
           id: 'design-tools',
-          icon: '🖌️',
-          iconSize: 'text-2xl',
           type: 'checklist-section',
           headingClass: 'blog-subtitle',
           headingSize: 'text-xl',
-          title: 'AI Design Tools',
+          marginClass: 'mb-6',
+          title: '🖌️ AI Design Tools',
           checklistItems: [
             'Figma AI for automated layout suggestions and design system consistency',
             'Adobe Firefly for custom asset generation and image editing',
@@ -110,24 +105,23 @@ export const AIDrivenWorkflowsContent = () => {
     },
     {
       id: 'development-ai',
-      icon: '⚡',
-      iconSize: 'text-2xl',
       type: 'main-section',
       headingClass: 'blog-title',
       headingSize: 'text-xl',
-      title: 'AI-Assisted Development',
+      marginClass: 'mb-6',
+      spacingBetweenSections: 'mt-16',
+      title: '⚡ AI-Assisted Development',
       content: [
         'Code generation and development assistance have reached new levels of sophistication. AI can now help with everything from boilerplate code to complex logic implementation.'
       ],
       subSections: [
         {
           id: 'development-tools',
-          icon: '💻',
-          iconSize: 'text-2xl',
           type: 'checklist-section',
           headingClass: 'blog-subtitle',
           headingSize: 'text-xl',
-          title: 'Development AI Tools',
+          marginClass: 'mb-6',
+          title: '💻 Development AI Tools',
           checklistItems: [
             'GitHub Copilot for intelligent code completion and function generation',
             'Vercel v0 for rapid React component creation from descriptions',
@@ -141,24 +135,23 @@ export const AIDrivenWorkflowsContent = () => {
     },
     {
       id: 'testing-ai',
-      icon: '🧪',
-      iconSize: 'text-2xl',
       type: 'main-section',
       headingClass: 'blog-title',
       headingSize: 'text-xl',
-      title: 'AI-Powered Testing and QA',
+      marginClass: 'mb-6',
+      spacingBetweenSections: 'mt-16',
+      title: '🧪 AI-Powered Testing and QA',
       content: [
         'AI is revolutionizing software testing by automating test generation, identifying edge cases, and improving overall test coverage.'
       ],
       subSections: [
         {
           id: 'testing-tools',
-          icon: '🔍',
-          iconSize: 'text-2xl',
           type: 'checklist-section',
           headingClass: 'blog-subtitle',
           headingSize: 'text-xl',
-          title: 'AI Testing Tools',
+          marginClass: 'mb-6',
+          title: '🔍 AI Testing Tools',
           checklistItems: [
             'Testim for AI-powered automated testing and test maintenance',
             'Applitools for visual AI testing and cross-browser compatibility',
@@ -174,12 +167,12 @@ export const AIDrivenWorkflowsContent = () => {
     },
     {
       id: 'workflow-integration',
-      icon: '🔄',
-      iconSize: 'text-2xl',
       type: 'main-section',
       headingClass: 'blog-title',
       headingSize: 'text-xl',
-      title: 'Integrating AI into Your Workflow',
+      marginClass: 'mb-6',
+      spacingBetweenSections: 'mt-16',
+      title: '🔄 Integrating AI into Your Workflow',
       content: [
         'Successful AI adoption requires thoughtful integration into existing processes rather than wholesale replacement of current tools.'
       ],
@@ -189,6 +182,7 @@ export const AIDrivenWorkflowsContent = () => {
           type: 'bullet-section',
           headingClass: 'blog-subtitle',
           headingSize: 'text-xl',
+          marginClass: 'mb-6',
           title: 'Strategic Implementation Approach',
           bulletPoints: [
             'Start small with one AI tool per development phase and expand gradually',
@@ -203,12 +197,12 @@ export const AIDrivenWorkflowsContent = () => {
     },
     {
       id: 'ai-ethics',
-      icon: '⚖️',
-      iconSize: 'text-2xl',
       type: 'main-section',
       headingClass: 'blog-title',
       headingSize: 'text-xl',
-      title: 'Ethical AI Development Practices',
+      marginClass: 'mb-6',
+      spacingBetweenSections: 'mt-16',
+      title: '⚖️ Ethical AI Development Practices',
       content: [
         "As AI becomes integral to development workflows, it's important to maintain ethical standards and responsible usage practices."
       ],
@@ -218,6 +212,7 @@ export const AIDrivenWorkflowsContent = () => {
           type: 'bullet-section',
           headingClass: 'blog-subtitle',
           headingSize: 'text-xl',
+          marginClass: 'mb-6',
           title: 'Key Ethical Guidelines',
           bulletPoints: [
             'Respect intellectual property and licensing when using AI-generated content',
@@ -234,24 +229,23 @@ export const AIDrivenWorkflowsContent = () => {
     },
     {
       id: 'future-trends',
-      icon: '🔮',
-      iconSize: 'text-2xl',
       type: 'main-section',
       headingClass: 'blog-title',
       headingSize: 'text-xl',
-      title: 'Future of AI in Development',
+      marginClass: 'mb-6',
+      spacingBetweenSections: 'mt-16',
+      title: '🔮 Future of AI in Development',
       content: [
         'AI development tools continue evolving rapidly. Staying informed about emerging capabilities helps teams prepare for the next wave of productivity enhancements.'
       ],
       subSections: [
         {
           id: 'emerging-trends',
-          icon: '🌟',
-          iconSize: 'text-2xl',
           type: 'sub-section',
           headingClass: 'blog-subtitle',
           headingSize: 'text-xl',
-          title: 'Emerging AI Trends',
+          marginClass: 'mb-6',
+          title: '🌟 Emerging AI Trends',
           content: [
             'Multimodal AI that combines text, image, and code generation. Natural language to application development with minimal coding required.',
             'AI-powered project management that predicts bottlenecks and optimizes resource allocation. Intelligent code review systems that understand context and business logic.',
@@ -262,12 +256,12 @@ export const AIDrivenWorkflowsContent = () => {
     },
     {
       id: 'conclusion',
-      icon: '🎯',
-      iconSize: 'text-2xl',
       type: 'main-section',
       headingClass: 'blog-title',
       headingSize: 'text-xl',
-      title: 'Embracing AI-Enhanced Development',
+      marginClass: 'mb-6',
+      spacingBetweenSections: 'mt-16',
+      title: '🎯 Embracing AI-Enhanced Development',
       content: [
         "AI-powered development tools are not about replacing human creativity and problem-solving—they're about amplifying our capabilities and freeing us to focus on higher-level challenges.",
         'Start by integrating AI tools gradually into your workflow, focusing on areas where they provide the most immediate value. Experiment, measure results, and adapt your processes as you learn.',
@@ -277,19 +271,25 @@ export const AIDrivenWorkflowsContent = () => {
   ]
 
   const renderSection = (section: any, sectionIndex: number) => (
-    <section key={`section-${section.id}-${sectionIndex}`} id={section.id} className='space-y-6'>
+    <section
+      key={`section-${section.id}-${sectionIndex}`}
+      id={section.id}
+      className={` ${section.type === 'main-section' ? section.spacingBetweenSections || '' : ''}`}
+    >
       {(section.icon || section.title) && (
         <div className='flex items-start gap-4'>
           {section.icon && <span className={section.iconSize || 'text-2xl'}>{section.icon}</span>}
           <div>
-            <h2 className={`${section.headingClass} text-foreground mb-4 ${section.headingSize} font-semibold`}>
+            <h2
+              className={`${section.headingClass} text-foreground ${section.marginClass || ''} ${section.headingSize} font-semibold`}
+            >
               {section.title}
             </h2>
             {section.content &&
               section.content.map((paragraph: string, index: number) => (
                 <p
                   key={`content-${sectionIndex}-${index}`}
-                  className={`text-muted-foreground ${section.contentSize ? `${section.contentSize} leading-relaxed` : 'mb-4'}`}
+                  className={`text-muted-foreground text-xl ${section.contentSize ? `${section.contentSize} leading-relaxed` : `${section.marginClass || ''}`}`}
                 >
                   {paragraph}
                 </p>
@@ -300,20 +300,22 @@ export const AIDrivenWorkflowsContent = () => {
 
       {section.type === 'bullet-section' && !section.icon && (
         <>
-          <h3 className={`${section.headingClass} text-foreground mb-4 ${section.headingSize} font-semibold`}>
+          <h3
+            className={`${section.headingClass} text-foreground ${section.marginClass || ''} ${section.headingSize} font-semibold`}
+          >
             {section.title}
           </h3>
           <div className='space-y-4'>
             {section.bulletPoints?.map((point: string, index: number) => (
               <div key={`bullet-${sectionIndex}-${index}`} className='flex items-start gap-3'>
                 <span className='text-muted-foreground'>•</span>
-                <p className='text-muted-foreground'>{point}</p>
+                <p className='text-muted-foreground text-xl'>{point}</p>
               </div>
             ))}
           </div>
           {section.content &&
             section.content.map((paragraph: string, index: number) => (
-              <p key={`bullet-content-${sectionIndex}-${index}`} className='text-muted-foreground mt-4'>
+              <p key={`bullet-content-${sectionIndex}-${index}`} className='text-muted-foreground mt-6 text-xl'>
                 {paragraph}
               </p>
             ))}
@@ -321,21 +323,19 @@ export const AIDrivenWorkflowsContent = () => {
       )}
 
       {section.subSections?.map((subSection: any, subIndex: number) => (
-        <section
-          key={`subsection-${subSection.id}-${sectionIndex}-${subIndex}`}
-          id={subSection.id}
-          className='space-y-6'
-        >
+        <section key={`subsection-${subSection.id}-${sectionIndex}-${subIndex}`} id={subSection.id} className={``}>
           {subSection.type === 'bullet-section' && !subSection.icon ? (
             <>
-              <h3 className={`${subSection.headingClass} text-foreground mb-4 ${subSection.headingSize} font-semibold`}>
+              <h3
+                className={`${subSection.headingClass} text-foreground ${subSection.marginClass || ''} ${subSection.headingSize} font-semibold`}
+              >
                 {subSection.title}
               </h3>
               <div className='space-y-4'>
                 {subSection.bulletPoints?.map((point: string, index: number) => (
                   <div key={`subbullet-${sectionIndex}-${subIndex}-${index}`} className='flex items-start gap-3'>
                     <span className='text-muted-foreground'>•</span>
-                    <p className='text-muted-foreground'>{point}</p>
+                    <p className='text-muted-foreground text-xl'>{point}</p>
                   </div>
                 ))}
               </div>
@@ -343,7 +343,7 @@ export const AIDrivenWorkflowsContent = () => {
                 subSection.content.map((paragraph: string, index: number) => (
                   <p
                     key={`subbullet-content-${sectionIndex}-${subIndex}-${index}`}
-                    className='text-muted-foreground mt-4'
+                    className='text-muted-foreground mt-6 text-xl'
                   >
                     {paragraph}
                   </p>
@@ -354,7 +354,7 @@ export const AIDrivenWorkflowsContent = () => {
               {subSection.icon && <span className={subSection.iconSize || 'text-2xl'}>{subSection.icon}</span>}
               <div>
                 <h3
-                  className={`${subSection.headingClass} text-foreground mb-4 ${subSection.headingSize} font-semibold`}
+                  className={`${subSection.headingClass} text-foreground mb-6 ${subSection.headingSize} font-semibold`}
                 >
                   {subSection.title}
                 </h3>
@@ -364,7 +364,7 @@ export const AIDrivenWorkflowsContent = () => {
                     {subSection.checklistItems.map((item: string, index: number) => (
                       <div key={`checklist-${sectionIndex}-${subIndex}-${index}`} className='flex items-start gap-3'>
                         <span className='text-blue-500'>✓</span>
-                        <p className='text-muted-foreground'>{item}</p>
+                        <p className='text-muted-foreground text-xl'>{item}</p>
                       </div>
                     ))}
                   </div>
@@ -374,7 +374,7 @@ export const AIDrivenWorkflowsContent = () => {
                   subSection.content.map((paragraph: string, index: number) => (
                     <p
                       key={`subcontent-${sectionIndex}-${subIndex}-${index}`}
-                      className={`text-muted-foreground ${subSection.type === 'checklist-section' ? 'mt-4' : 'mb-4'}`}
+                      className={`text-muted-foreground text-xl ${subSection.type === 'checklist-section' ? 'mt-4' : 'mb-4'}`}
                     >
                       {paragraph}
                     </p>
@@ -387,5 +387,5 @@ export const AIDrivenWorkflowsContent = () => {
     </section>
   )
 
-  return <div className='space-y-12'>{blogSections.map((section, index) => renderSection(section, index))}</div>
+  return <div className=''>{blogSections.map((section, index) => renderSection(section, index))}</div>
 }

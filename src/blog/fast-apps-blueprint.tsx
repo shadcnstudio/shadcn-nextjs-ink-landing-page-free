@@ -20,25 +20,22 @@ export const FastAppsBlueprintContent = () => {
   const blogSections = [
     {
       id: 'speed-matters',
-      icon: '⚡',
-      iconSize: 'text-3xl',
       type: 'main-section',
       headingClass: 'blog-title',
       headingSize: 'text-2xl',
-      title: 'Performance-First Development',
+      marginClass: 'mb-6',
+      title: '⚡ Speed Matters: Building Lightning-Fast Apps Users Love',
       content: [
         "Speed isn't just a feature—it's the foundation of great user experience. Fast apps win users and keep them engaged. Every millisecond of delay can cost you users, conversions, and revenue."
-      ],
-      contentSize: 'text-xl'
+      ]
     },
     {
       id: 'performance-impact',
-      icon: '📈',
-      iconSize: 'text-2xl',
       type: 'sub-section',
       headingClass: 'blog-subtitle',
       headingSize: 'text-xl',
-      title: 'The Business Impact of Performance',
+      marginClass: 'mb-6',
+      title: '📈 The Business Impact of Performance',
       content: [
         'Performance directly impacts your bottom line. Amazon found that every 100ms of latency cost them 1% in sales. Google discovered that a 2-second delay in search results reduced traffic and ad revenues by 4.3%.',
         "Fast apps don't just perform better—they convert better, rank higher in search results, and create happier users who stick around longer."
@@ -46,24 +43,23 @@ export const FastAppsBlueprintContent = () => {
     },
     {
       id: 'core-web-vitals',
-      icon: '📊',
-      iconSize: 'text-2xl',
       type: 'main-section',
       headingClass: 'blog-title',
       headingSize: 'text-xl',
-      title: 'Mastering Core Web Vitals',
+      marginClass: 'mb-6',
+      spacingBetweenSections: 'mt-10',
+      title: '📊 Mastering Core Web Vitals',
       content: [
         "Core Web Vitals are Google's standardized metrics for measuring real-world user experience. These metrics directly influence your search rankings and user satisfaction."
       ],
       subSections: [
         {
           id: 'vital-metrics',
-          icon: '🎯',
-          iconSize: 'text-2xl',
           type: 'checklist-section',
           headingClass: 'blog-subtitle',
           headingSize: 'text-xl',
-          title: 'Essential Vital Metrics',
+          marginClass: 'mb-6',
+          title: '🎯 Essential Vital Metrics',
           checklistItems: [
             'Largest Contentful Paint (LCP) < 2.5s - How quickly main content loads',
             'First Input Delay (FID) < 100ms - Responsiveness to user interactions',
@@ -77,24 +73,23 @@ export const FastAppsBlueprintContent = () => {
     },
     {
       id: 'optimization-strategies',
-      icon: '🚀',
-      iconSize: 'text-2xl',
       type: 'main-section',
       headingClass: 'blog-title',
       headingSize: 'text-xl',
-      title: 'High-Impact Optimization Strategies',
+      marginClass: 'mb-6',
+      spacingBetweenSections: 'mt-16',
+      title: '🚀 High-Impact Optimization Strategies',
       content: [
         'Focus on optimizations that provide the biggest performance gains with reasonable effort. Not all optimizations are created equal.'
       ],
       subSections: [
         {
           id: 'image-optimization',
-          icon: '🖼️',
-          iconSize: 'text-2xl',
           type: 'checklist-section',
           headingClass: 'blog-subtitle',
           headingSize: 'text-xl',
-          title: 'Image Optimization',
+          marginClass: 'mb-6',
+          title: '🖼️ Image Optimization',
           checklistItems: [
             'Use WebP or AVIF formats for 25-50% smaller file sizes',
             'Implement lazy loading for images below the fold',
@@ -105,44 +100,26 @@ export const FastAppsBlueprintContent = () => {
           content: [
             'Images often account for 60-70% of page weight. Optimizing them provides immediate performance gains.'
           ]
-        },
-        {
-          id: 'code-optimization',
-          icon: '📦',
-          iconSize: 'text-2xl',
-          type: 'checklist-section',
-          headingClass: 'blog-subtitle',
-          headingSize: 'text-xl',
-          title: 'Code Splitting & Bundling',
-          checklistItems: [
-            'Implement route-based code splitting for smaller initial bundles',
-            'Use dynamic imports for heavy libraries and components',
-            'Enable tree shaking to eliminate unused code',
-            'Split vendor code into separate chunks for better caching',
-            'Preload critical resources and prefetch likely-needed assets'
-          ],
-          content: ['Smart bundling ensures users only download code they actually need when they need it.']
         }
       ]
     },
     {
       id: 'caching-strategies',
-      icon: '💾',
-      iconSize: 'text-2xl',
       type: 'main-section',
       headingClass: 'blog-title',
       headingSize: 'text-xl',
-      title: 'Advanced Caching Strategies',
+      marginClass: 'mb-6',
+      spacingBetweenSections: 'mt-16',
+      title: '💾 Advanced Caching Strategies',
       content: ['Effective caching can make subsequent page loads feel instant while reducing server load and costs.'],
       subSections: [
         {
           id: 'caching-layers',
-          icon: '🔄',
-          iconSize: 'text-2xl',
           type: 'checklist-section',
           headingClass: 'blog-subtitle',
           headingSize: 'text-xl',
-          title: 'Multi-Layer Caching',
+          marginClass: 'mb-6',
+          title: '🔄 Multi-Layer Caching',
           checklistItems: [
             'Browser cache with appropriate cache headers for static assets',
             'CDN edge caching for global content distribution',
@@ -156,12 +133,12 @@ export const FastAppsBlueprintContent = () => {
     },
     {
       id: 'performance-monitoring',
-      icon: '📏',
-      iconSize: 'text-2xl',
       type: 'main-section',
       headingClass: 'blog-title',
       headingSize: 'text-xl',
-      title: 'Performance Monitoring & Measurement',
+      marginClass: 'mb-6',
+      spacingBetweenSections: 'mt-16',
+      title: '📏 Performance Monitoring & Measurement',
       content: [
         "You can't optimize what you don't measure. Implement comprehensive monitoring to understand performance in real user environments."
       ],
@@ -171,6 +148,7 @@ export const FastAppsBlueprintContent = () => {
           type: 'bullet-section',
           headingClass: 'blog-subtitle',
           headingSize: 'text-xl',
+          marginClass: 'mb-6',
           title: 'Key Monitoring Tools',
           bulletPoints: [
             'Real User Monitoring (RUM) for actual user experience data',
@@ -185,24 +163,23 @@ export const FastAppsBlueprintContent = () => {
     },
     {
       id: 'mobile-optimization',
-      icon: '📱',
-      iconSize: 'text-2xl',
       type: 'main-section',
       headingClass: 'blog-title',
       headingSize: 'text-xl',
-      title: 'Mobile-First Performance',
+      marginClass: 'mb-6',
+      spacingBetweenSections: 'mt-16',
+      title: '📱 Mobile-First Performance',
       content: [
         'Mobile devices often have slower processors and network connections. Optimize for mobile first, and desktop performance will follow.'
       ],
       subSections: [
         {
           id: 'mobile-strategies',
-          icon: '⚡',
-          iconSize: 'text-2xl',
           type: 'checklist-section',
           headingClass: 'blog-subtitle',
           headingSize: 'text-xl',
-          title: 'Mobile Performance Strategies',
+          marginClass: 'mb-6',
+          title: '⚡ Mobile Performance Strategies',
           checklistItems: [
             'Minimize JavaScript execution time on slower CPUs',
             'Optimize for touch interactions and reduced input delay',
@@ -218,12 +195,12 @@ export const FastAppsBlueprintContent = () => {
     },
     {
       id: 'performance-culture',
-      icon: '🏗️',
-      iconSize: 'text-2xl',
       type: 'main-section',
       headingClass: 'blog-title',
       headingSize: 'text-xl',
-      title: 'Building a Performance Culture',
+      marginClass: 'mb-6',
+      spacingBetweenSections: 'mt-16',
+      title: '🏢 Building a Performance Culture',
       content: [
         'Sustainable performance requires team-wide commitment and processes that prevent performance regressions.'
       ],
@@ -233,6 +210,7 @@ export const FastAppsBlueprintContent = () => {
           type: 'bullet-section',
           headingClass: 'blog-subtitle',
           headingSize: 'text-xl',
+          marginClass: 'mb-6',
           title: 'Essential Culture Practices',
           bulletPoints: [
             'Performance reviews as part of code review process',
@@ -247,12 +225,12 @@ export const FastAppsBlueprintContent = () => {
     },
     {
       id: 'conclusion',
-      icon: '🎯',
-      iconSize: 'text-2xl',
       type: 'main-section',
       headingClass: 'blog-title',
       headingSize: 'text-xl',
-      title: 'Performance as Competitive Advantage',
+      marginClass: 'mb-6',
+      spacingBetweenSections: 'mt-16',
+      title: '🎯 Performance as Competitive Advantage',
       content: [
         "In an attention economy where users expect instant responses, performance isn't optional—it's essential. Fast apps don't just perform better; they convert better, rank higher, and create loyal users.",
         'Start with the biggest impact optimizations: images, code splitting, and caching. Measure everything, monitor continuously, and make performance a core part of your development process.',
@@ -262,19 +240,25 @@ export const FastAppsBlueprintContent = () => {
   ]
 
   const renderSection = (section: any, sectionIndex: number) => (
-    <section key={`section-${section.id}-${sectionIndex}`} id={section.id} className='space-y-6'>
+    <section
+      key={`section-${section.id}-${sectionIndex}`}
+      id={section.id}
+      className={` ${section.type === 'main-section' ? section.spacingBetweenSections || '' : ''}`}
+    >
       {(section.icon || section.title) && (
         <div className='flex items-start gap-4'>
           {section.icon && <span className={section.iconSize || 'text-2xl'}>{section.icon}</span>}
           <div>
-            <h2 className={`${section.headingClass} text-foreground mb-4 ${section.headingSize} font-semibold`}>
+            <h2
+              className={`${section.headingClass} text-foreground ${section.marginClass || ''} ${section.headingSize} font-semibold`}
+            >
               {section.title}
             </h2>
             {section.content &&
               section.content.map((paragraph: string, index: number) => (
                 <p
                   key={`content-${sectionIndex}-${index}`}
-                  className={`text-muted-foreground ${section.contentSize ? `${section.contentSize} leading-relaxed` : 'mb-4'}`}
+                  className={`text-muted-foreground text-xl ${section.contentSize ? `${section.contentSize} leading-relaxed` : `${section.marginClass || ''}`}`}
                 >
                   {paragraph}
                 </p>
@@ -285,20 +269,22 @@ export const FastAppsBlueprintContent = () => {
 
       {section.type === 'bullet-section' && !section.icon && (
         <>
-          <h3 className={`${section.headingClass} text-foreground mb-4 ${section.headingSize} font-semibold`}>
+          <h3
+            className={`${section.headingClass} text-foreground ${section.marginClass || ''} ${section.headingSize} font-semibold`}
+          >
             {section.title}
           </h3>
           <div className='space-y-4'>
             {section.bulletPoints?.map((point: string, index: number) => (
               <div key={`bullet-${sectionIndex}-${index}`} className='flex items-start gap-3'>
                 <span className='text-muted-foreground'>•</span>
-                <p className='text-muted-foreground'>{point}</p>
+                <p className='text-muted-foreground text-xl'>{point}</p>
               </div>
             ))}
           </div>
           {section.content &&
             section.content.map((paragraph: string, index: number) => (
-              <p key={`bullet-content-${sectionIndex}-${index}`} className='text-muted-foreground mt-4'>
+              <p key={`bullet-content-${sectionIndex}-${index}`} className='text-muted-foreground mt-6 text-xl'>
                 {paragraph}
               </p>
             ))}
@@ -306,21 +292,19 @@ export const FastAppsBlueprintContent = () => {
       )}
 
       {section.subSections?.map((subSection: any, subIndex: number) => (
-        <section
-          key={`subsection-${subSection.id}-${sectionIndex}-${subIndex}`}
-          id={subSection.id}
-          className='space-y-6'
-        >
+        <section key={`subsection-${subSection.id}-${sectionIndex}-${subIndex}`} id={subSection.id} className={``}>
           {subSection.type === 'bullet-section' && !subSection.icon ? (
             <>
-              <h3 className={`${subSection.headingClass} text-foreground mb-4 ${subSection.headingSize} font-semibold`}>
+              <h3
+                className={`${subSection.headingClass} text-foreground ${subSection.marginClass || ''} ${subSection.headingSize} font-semibold`}
+              >
                 {subSection.title}
               </h3>
               <div className='space-y-4'>
                 {subSection.bulletPoints?.map((point: string, index: number) => (
                   <div key={`subbullet-${sectionIndex}-${subIndex}-${index}`} className='flex items-start gap-3'>
                     <span className='text-muted-foreground'>•</span>
-                    <p className='text-muted-foreground'>{point}</p>
+                    <p className='text-muted-foreground text-xl'>{point}</p>
                   </div>
                 ))}
               </div>
@@ -328,7 +312,7 @@ export const FastAppsBlueprintContent = () => {
                 subSection.content.map((paragraph: string, index: number) => (
                   <p
                     key={`subbullet-content-${sectionIndex}-${subIndex}-${index}`}
-                    className='text-muted-foreground mt-4'
+                    className='text-muted-foreground mt-6 text-xl'
                   >
                     {paragraph}
                   </p>
@@ -339,7 +323,7 @@ export const FastAppsBlueprintContent = () => {
               {subSection.icon && <span className={subSection.iconSize || 'text-2xl'}>{subSection.icon}</span>}
               <div>
                 <h3
-                  className={`${subSection.headingClass} text-foreground mb-4 ${subSection.headingSize} font-semibold`}
+                  className={`${subSection.headingClass} text-foreground mb-6 ${subSection.headingSize} font-semibold`}
                 >
                   {subSection.title}
                 </h3>
@@ -349,7 +333,7 @@ export const FastAppsBlueprintContent = () => {
                     {subSection.checklistItems.map((item: string, index: number) => (
                       <div key={`checklist-${sectionIndex}-${subIndex}-${index}`} className='flex items-start gap-3'>
                         <span className='text-blue-500'>✓</span>
-                        <p className='text-muted-foreground'>{item}</p>
+                        <p className='text-muted-foreground text-xl'>{item}</p>
                       </div>
                     ))}
                   </div>
@@ -359,7 +343,7 @@ export const FastAppsBlueprintContent = () => {
                   subSection.content.map((paragraph: string, index: number) => (
                     <p
                       key={`subcontent-${sectionIndex}-${subIndex}-${index}`}
-                      className={`text-muted-foreground ${subSection.type === 'checklist-section' ? 'mt-4' : 'mb-4'}`}
+                      className={`text-muted-foreground text-xl ${subSection.type === 'checklist-section' ? 'mt-4' : 'mb-4'}`}
                     >
                       {paragraph}
                     </p>
@@ -372,5 +356,5 @@ export const FastAppsBlueprintContent = () => {
     </section>
   )
 
-  return <div className='space-y-12'>{blogSections.map((section, index) => renderSection(section, index))}</div>
+  return <div className=''>{blogSections.map((section, index) => renderSection(section, index))}</div>
 }

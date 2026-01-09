@@ -20,25 +20,22 @@ export const ProductLaunchChecklistContent = () => {
   const blogSections = [
     {
       id: 'nail-your-launch',
-      icon: '🚀',
-      iconSize: 'text-3xl',
       type: 'main-section',
       headingClass: 'blog-title',
       headingSize: 'text-2xl',
-      title: 'The Complete Launch Playbook',
+      marginClass: 'mb-6',
+      title: '🚀 The Complete Launch Playbook',
       content: [
         'A successful product launch can make the difference between breakthrough success and quiet obscurity. The key is thorough preparation, strategic timing, and flawless execution across every touchpoint.'
-      ],
-      contentSize: 'text-xl'
+      ]
     },
     {
       id: 'launch-strategy',
-      icon: '🎯',
-      iconSize: 'text-2xl',
       type: 'sub-section',
       headingClass: 'blog-subtitle',
       headingSize: 'text-xl',
-      title: 'Why Launch Strategy Matters',
+      marginClass: 'mb-6',
+      title: '🎯 Why Launch Strategy Matters',
       content: [
         'Your launch sets the tone for everything that follows. A well-planned debut generates momentum, attracts the right users, and creates lasting first impressions that drive long-term success.',
         'The most successful launches feel effortless to the outside world, but they are built on months of careful planning and preparation behind the scenes.'
@@ -46,23 +43,22 @@ export const ProductLaunchChecklistContent = () => {
     },
     {
       id: 'pre-launch-phase',
-      icon: '📋',
-      iconSize: 'text-2xl',
       type: 'main-section',
       headingClass: 'blog-title',
       headingSize: 'text-xl',
-      title: 'Pre-Launch: Foundation for Success',
+      spacingBetweenSections: 'mt-10',
+      marginClass: 'mb-6',
+      title: '📋 Pre-Launch: Foundation for Success',
       content: [
         'The pre-launch phase is where success is really determined. This is when you validate your assumptions, refine your product, and build anticipation.'
       ],
       subSections: [
         {
           id: 'market-validation',
-          icon: '🔍',
-          iconSize: 'text-2xl',
           type: 'checklist-section',
           headingClass: 'blog-subtitle',
           headingSize: 'text-xl',
+          marginClass: 'mb-6',
           title: 'Market Validation & Research',
           checklistItems: [
             'Conduct thorough competitor analysis and positioning',
@@ -77,11 +73,10 @@ export const ProductLaunchChecklistContent = () => {
         },
         {
           id: 'product-readiness',
-          icon: '⚙️',
-          iconSize: 'text-2xl',
           type: 'checklist-section',
           headingClass: 'blog-subtitle',
           headingSize: 'text-xl',
+          marginClass: 'mb-6',
           title: 'Product Readiness',
           checklistItems: [
             'Complete beta testing with real users in target market',
@@ -96,21 +91,20 @@ export const ProductLaunchChecklistContent = () => {
     },
     {
       id: 'marketing-preparation',
-      icon: '📢',
-      iconSize: 'text-2xl',
       type: 'main-section',
       headingClass: 'blog-title',
       headingSize: 'text-xl',
-      title: 'Marketing & Communication Strategy',
+      spacingBetweenSections: 'mt-16',
+      marginClass: 'mb-6',
+      title: '📢 Marketing & Communication Strategy',
       content: ['Build awareness and anticipation before your launch day to maximize impact and reach.'],
       subSections: [
         {
           id: 'content-assets',
-          icon: '📝',
-          iconSize: 'text-2xl',
           type: 'checklist-section',
           headingClass: 'blog-subtitle',
           headingSize: 'text-xl',
+          marginClass: 'mb-6',
           title: 'Content & Assets',
           checklistItems: [
             'Create compelling product demos and video content',
@@ -127,23 +121,22 @@ export const ProductLaunchChecklistContent = () => {
     },
     {
       id: 'launch-day',
-      icon: '🎉',
-      iconSize: 'text-2xl',
       type: 'main-section',
       headingClass: 'blog-title',
       headingSize: 'text-xl',
-      title: 'Launch Day: Execute with Precision',
+      spacingBetweenSections: 'mt-16',
+      marginClass: 'mb-6',
+      title: '🎉 Launch Day: Execute with Precision',
       content: [
         'Launch day is when all your preparation comes together. Stay organized, monitor closely, and be ready to respond quickly.'
       ],
       subSections: [
         {
           id: 'launch-execution',
-          icon: '⚡',
-          iconSize: 'text-2xl',
           type: 'checklist-section',
           headingClass: 'blog-subtitle',
           headingSize: 'text-xl',
+          marginClass: 'mb-6',
           title: 'Launch Execution',
           checklistItems: [
             'Coordinate simultaneous release across all channels',
@@ -160,21 +153,20 @@ export const ProductLaunchChecklistContent = () => {
     },
     {
       id: 'post-launch',
-      icon: '📈',
-      iconSize: 'text-2xl',
       type: 'main-section',
       headingClass: 'blog-title',
       headingSize: 'text-xl',
-      title: 'Post-Launch: Sustain and Optimize',
+      spacingBetweenSections: 'mt-16',
+      marginClass: 'mb-6',
+      title: '📈 Post-Launch: Sustain and Optimize',
       content: ['The launch is just the beginning. What you do in the weeks after determines long-term success.'],
       subSections: [
         {
           id: 'post-launch-activities',
-          icon: '🔄',
-          iconSize: 'text-2xl',
           type: 'checklist-section',
           headingClass: 'blog-subtitle',
           headingSize: 'text-xl',
+          marginClass: 'mb-6',
           title: 'Post-Launch Activities',
           checklistItems: [
             'Analyze launch performance and user acquisition metrics',
@@ -189,12 +181,12 @@ export const ProductLaunchChecklistContent = () => {
     },
     {
       id: 'common-mistakes',
-      icon: '⚠️',
-      iconSize: 'text-2xl',
       type: 'main-section',
       headingClass: 'blog-title',
       headingSize: 'text-xl',
-      title: 'Avoid These Common Launch Mistakes',
+      spacingBetweenSections: 'mt-16',
+      marginClass: 'mb-6',
+      title: '⚠️ Avoid These Common Launch Mistakes',
       content: ['Learn from others who have gone before you by avoiding these frequent launch pitfalls.'],
       subSections: [
         {
@@ -202,6 +194,7 @@ export const ProductLaunchChecklistContent = () => {
           type: 'bullet-section',
           headingClass: 'blog-subtitle',
           headingSize: 'text-xl',
+          marginClass: 'mb-6',
           title: 'Critical Mistakes to Avoid',
           bulletPoints: [
             'Launching too early without adequate testing and preparation',
@@ -218,11 +211,11 @@ export const ProductLaunchChecklistContent = () => {
     },
     {
       id: 'conclusion',
-      icon: '🎯',
-      iconSize: 'text-2xl',
       type: 'main-section',
       headingClass: 'blog-title',
       headingSize: 'text-xl',
+      spacingBetweenSections: 'mt-16',
+      marginClass: 'mb-6',
       title: 'Launch with Confidence',
       content: [
         'A successful product launch requires meticulous planning, flawless execution, and the ability to adapt quickly. By following this comprehensive checklist, you will increase your chances of a breakthrough debut.',
