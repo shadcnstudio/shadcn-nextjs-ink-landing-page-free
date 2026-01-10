@@ -67,6 +67,7 @@ export const metadata: Metadata = {
       }
     ]
   },
+  metadataBase: new URL(`${process.env.NEXT_PUBLIC_APP_URL ?? 'http://localhost:3000'}`),
   openGraph: {
     title: {
       template: '%s - Template Name',
@@ -75,7 +76,7 @@ export const metadata: Metadata = {
     description: 'Template Description',
     type: 'website',
     siteName: 'Template Name',
-    url: `${process.env.NEXT_PUBLIC_APP_URL}`,
+    url: `${process.env.NEXT_PUBLIC_APP_URL ?? 'http://localhost:3000'}`,
     images: [
       {
         url: '/images/og-image.png',
