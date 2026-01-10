@@ -24,7 +24,7 @@ export const ComponentSystemDesignContent = () => {
       headingClass: 'blog-title',
       headingSize: 'text-2xl',
       marginClass: 'mb-6',
-      title: '🚀 Scaling Design the Right Way with a Solid Component System'
+      title: 'Scaling Design the Right Way with a Solid Component System'
     },
     {
       id: 'long-term-growth',
@@ -55,14 +55,13 @@ export const ComponentSystemDesignContent = () => {
       headingSize: 'text-xl',
       spacingBetweenSections: 'mt-10',
       marginClass: 'mb-6',
-      title: '🎯 Why Component Systems Matter',
+      title: 'Why Component Systems Matter',
       content: [
         'A component system is more than reusable UI elements; it is a shared language between design and engineering.'
       ],
       subSections: [
         {
           id: 'what-they-solve',
-          type: 'bullet-section',
           headingClass: 'blog-subtitle',
           headingSize: 'text-xl',
           marginClass: 'mb-6',
@@ -86,7 +85,7 @@ export const ComponentSystemDesignContent = () => {
       headingSize: 'text-xl',
       marginClass: 'mb-4',
       spacingBetweenSections: 'mt-16',
-      title: '🌐 Collaborative Design: Bridging the Gap Between Teams',
+      title: 'Collaborative Design: Bridging the Gap Between Teams',
       subSections: [
         {
           id: 'stronger-collaboration',
@@ -108,7 +107,7 @@ export const ComponentSystemDesignContent = () => {
       headingClass: 'blog-title',
       headingSize: 'text-xl',
       marginClass: 'mb-6',
-      title: '🛠️ The Power of Design Tokens in Your Workflow',
+      title: 'The Power of Design Tokens in Your Workflow',
       subSections: [
         {
           id: 'visual-consistency',
@@ -136,7 +135,6 @@ export const ComponentSystemDesignContent = () => {
       subSections: [
         {
           id: 'system-benefits',
-          type: 'checklist-section',
           headingClass: 'blog-subtitle',
           headingSize: 'text-xl',
           marginClass: 'mb-4',

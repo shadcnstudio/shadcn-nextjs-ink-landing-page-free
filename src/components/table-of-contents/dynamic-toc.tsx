@@ -119,11 +119,7 @@ export const DynamicToc = ({ contentContainerId = 'content' }: DynamicTocProps) 
                 onClick={() => handleClick(group.main.id)}
                 className='text-muted-foreground hover:text-foreground flex items-start gap-2 text-left transition-colors'
               >
-                {group.main.icon ? (
-                  <span className='text-sm'>{group.main.icon}</span>
-                ) : (
-                  <span className='bg-primary/40 mt-2.5 inline-block h-0.5 w-3 shrink-0'></span>
-                )}
+                <span className='bg-primary/40 mt-2.5 inline-block h-0.5 w-3 shrink-0'></span>
                 <span>{group.main.title}</span>
               </button>
 

@@ -24,7 +24,7 @@ export const ProductKPIsTrackingContent = () => {
       headingClass: 'blog-title',
       headingSize: 'text-2xl',
       marginClass: 'mb-6',
-      title: '📈 Measure What Matters: Essential KPIs for Product Success',
+      title: 'Measure What Matters: Essential KPIs for Product Success',
       content: [
         'Not all metrics are created equal. The key to product success lies in identifying and tracking the KPIs that truly drive growth, user satisfaction, and business outcomes.'
       ]
@@ -35,7 +35,7 @@ export const ProductKPIsTrackingContent = () => {
       headingClass: 'blog-subtitle',
       headingSize: 'text-xl',
       marginClass: 'mb-6',
-      title: '🎯 Why the Right KPIs Matter',
+      title: 'Why the Right KPIs Matter',
       content: [
         'Tracking the wrong metrics can lead teams astray, while focusing on the right KPIs provides clarity, drives better decision-making, and aligns everyone toward common goals.',
         'The best product teams measure what directly impacts their users and business outcomes, not just vanity metrics that look good in reports.'
@@ -48,7 +48,7 @@ export const ProductKPIsTrackingContent = () => {
       headingSize: 'text-xl',
       marginClass: 'mb-6',
       spacingBetweenSections: 'mt-10',
-      title: '🎯 Acquisition: Getting Users to Your Product',
+      title: 'Acquisition: Getting Users to Your Product',
       content: [
         'Acquisition metrics help you understand how effectively you attract new users and the cost of growth.'
       ],
@@ -59,7 +59,7 @@ export const ProductKPIsTrackingContent = () => {
           headingClass: 'blog-subtitle',
           headingSize: 'text-xl',
           marginClass: 'mb-6',
-          title: '📊 Key Acquisition KPIs',
+          title: 'Key Acquisition KPIs',
           checklistItems: [
             'Customer Acquisition Cost (CAC) - What you spend to acquire each customer',
             'Conversion Rate - Percentage of visitors who become users',
@@ -78,7 +78,7 @@ export const ProductKPIsTrackingContent = () => {
       headingSize: 'text-xl',
       marginClass: 'mb-6',
       spacingBetweenSections: 'mt-16',
-      title: '💡 Engagement: Measuring User Activity',
+      title: 'Engagement: Measuring User Activity',
       content: [
         'Engagement metrics reveal how actively users interact with your product and which features provide the most value.'
       ],
@@ -89,7 +89,7 @@ export const ProductKPIsTrackingContent = () => {
           headingClass: 'blog-subtitle',
           headingSize: 'text-xl',
           marginClass: 'mb-6',
-          title: '⚡ Core Engagement KPIs',
+          title: 'Core Engagement KPIs',
           checklistItems: [
             'Daily/Monthly Active Users (DAU/MAU) - Regular usage patterns',
             'Session Duration - How long users spend in your product',
@@ -108,7 +108,7 @@ export const ProductKPIsTrackingContent = () => {
       headingSize: 'text-xl',
       marginClass: 'mb-6',
       spacingBetweenSections: 'mt-16',
-      title: '🔄 Retention: Keeping Users Coming Back',
+      title: 'Retention: Keeping Users Coming Back',
       content: [
         'Retention metrics show whether users find lasting value in your product. Strong retention is the foundation of sustainable growth.'
       ],
@@ -119,7 +119,7 @@ export const ProductKPIsTrackingContent = () => {
           headingClass: 'blog-subtitle',
           headingSize: 'text-xl',
           marginClass: 'mb-6',
-          title: '🎯 Retention KPI Essentials',
+          title: 'Retention KPI Essentials',
           checklistItems: [
             'Churn Rate - Percentage of users who stop using your product',
             'Cohort Analysis - User behavior patterns over time',
@@ -140,7 +140,7 @@ export const ProductKPIsTrackingContent = () => {
       headingSize: 'text-xl',
       marginClass: 'mb-6',
       spacingBetweenSections: 'mt-16',
-      title: '💰 Revenue: Tracking Business Impact',
+      title: 'Revenue: Tracking Business Impact',
       content: [
         'Revenue metrics connect user behavior to business outcomes, helping teams understand the financial impact of product decisions.'
       ],
@@ -151,7 +151,7 @@ export const ProductKPIsTrackingContent = () => {
           headingClass: 'blog-subtitle',
           headingSize: 'text-xl',
           marginClass: 'mb-6',
-          title: '📈 Revenue Tracking Essentials',
+          title: 'Revenue Tracking Essentials',
           checklistItems: [
             'Monthly/Annual Recurring Revenue (MRR/ARR) - Predictable income streams',
             'Average Revenue Per User (ARPU) - Revenue efficiency per customer',
@@ -170,7 +170,7 @@ export const ProductKPIsTrackingContent = () => {
       headingSize: 'text-xl',
       marginClass: 'mb-6',
       spacingBetweenSections: 'mt-16',
-      title: '🔬 Advanced KPI Considerations',
+      title: 'Advanced KPI Considerations',
       content: [
         'Beyond basic metrics, sophisticated product teams track leading indicators and contextual data that predict future performance.'
       ],
@@ -199,7 +199,7 @@ export const ProductKPIsTrackingContent = () => {
       headingSize: 'text-xl',
       marginClass: 'mb-6',
       spacingBetweenSections: 'mt-16',
-      title: '🚀 Building a Data-Driven Product Culture',
+      title: 'Building a Data-Driven Product Culture',
       content: [
         'Measuring what matters transforms how teams build products. When everyone understands which metrics drive success, decisions become clearer, priorities align, and products improve faster.',
         'Start with a few key metrics that directly impact your users and business goals. As your measurement capabilities mature, you can add sophistication and nuance to your tracking.',

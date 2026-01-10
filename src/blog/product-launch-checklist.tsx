@@ -24,7 +24,7 @@ export const ProductLaunchChecklistContent = () => {
       headingClass: 'blog-title',
       headingSize: 'text-2xl',
       marginClass: 'mb-6',
-      title: '🚀 The Complete Launch Playbook',
+      title: 'The Complete Launch Playbook',
       content: [
         'A successful product launch can make the difference between breakthrough success and quiet obscurity. The key is thorough preparation, strategic timing, and flawless execution across every touchpoint.'
       ]
@@ -35,7 +35,7 @@ export const ProductLaunchChecklistContent = () => {
       headingClass: 'blog-subtitle',
       headingSize: 'text-xl',
       marginClass: 'mb-6',
-      title: '🎯 Why Launch Strategy Matters',
+      title: 'Why Launch Strategy Matters',
       content: [
         'Your launch sets the tone for everything that follows. A well-planned debut generates momentum, attracts the right users, and creates lasting first impressions that drive long-term success.',
         'The most successful launches feel effortless to the outside world, but they are built on months of careful planning and preparation behind the scenes.'
@@ -48,7 +48,7 @@ export const ProductLaunchChecklistContent = () => {
       headingSize: 'text-xl',
       spacingBetweenSections: 'mt-10',
       marginClass: 'mb-6',
-      title: '📋 Pre-Launch: Foundation for Success',
+      title: 'Pre-Launch: Foundation for Success',
       content: [
         'The pre-launch phase is where success is really determined. This is when you validate your assumptions, refine your product, and build anticipation.'
       ],
@@ -96,7 +96,7 @@ export const ProductLaunchChecklistContent = () => {
       headingSize: 'text-xl',
       spacingBetweenSections: 'mt-16',
       marginClass: 'mb-6',
-      title: '📢 Marketing & Communication Strategy',
+      title: 'Marketing & Communication Strategy',
       content: ['Build awareness and anticipation before your launch day to maximize impact and reach.'],
       subSections: [
         {
@@ -126,7 +126,7 @@ export const ProductLaunchChecklistContent = () => {
       headingSize: 'text-xl',
       spacingBetweenSections: 'mt-16',
       marginClass: 'mb-6',
-      title: '🎉 Launch Day: Execute with Precision',
+      title: 'Launch Day: Execute with Precision',
       content: [
         'Launch day is when all your preparation comes together. Stay organized, monitor closely, and be ready to respond quickly.'
       ],
@@ -158,7 +158,7 @@ export const ProductLaunchChecklistContent = () => {
       headingSize: 'text-xl',
       spacingBetweenSections: 'mt-16',
       marginClass: 'mb-6',
-      title: '📈 Post-Launch: Sustain and Optimize',
+      title: 'Post-Launch: Sustain and Optimize',
       content: ['The launch is just the beginning. What you do in the weeks after determines long-term success.'],
       subSections: [
         {
@@ -186,7 +186,7 @@ export const ProductLaunchChecklistContent = () => {
       headingSize: 'text-xl',
       spacingBetweenSections: 'mt-16',
       marginClass: 'mb-6',
-      title: '⚠️ Avoid These Common Launch Mistakes',
+      title: 'Avoid These Common Launch Mistakes',
       content: ['Learn from others who have gone before you by avoiding these frequent launch pitfalls.'],
       subSections: [
         {

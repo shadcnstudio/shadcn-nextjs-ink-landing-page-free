@@ -15,18 +15,15 @@ const Footer = () => {
             <Logo className='gap-3' />
           </div>
         </Link>
-        <div className='flex items-center gap-5 whitespace-nowrap'>
-          <Link href='/#' className='opacity-80 transition-opacity duration-300 hover:opacity-100'>
-            Home
-          </Link>
-          <Link href='/#categories' className='opacity-80 transition-opacity duration-300 hover:opacity-100'>
-            Categories
+        <div className='flex flex-wrap items-center justify-center gap-x-3 gap-y-2 whitespace-nowrap sm:gap-5'>
+          <Link href='#' className='opacity-80 transition-opacity duration-300 hover:opacity-100'>
+            Support
           </Link>
           <Link href='#' className='opacity-80 transition-opacity duration-300 hover:opacity-100'>
-            Team
+            Terms & Conditions
           </Link>
           <Link href='#' className='opacity-80 transition-opacity duration-300 hover:opacity-100'>
-            About Us
+            Privacy Policy
           </Link>
         </div>
 
@@ -49,12 +46,16 @@ const Footer = () => {
       <Separator />
 
       <div className='mx-auto flex max-w-7xl justify-center px-4 py-8 sm:px-6 lg:px-8'>
-        <p className='flex items-center gap-1 text-center font-medium text-balance'>
-          {`©${new Date().getFullYear()}`}{' '}
-          <Link href='#' className='hover:underline'>
-            INK
-          </Link>
-          , Made with <HeartIcon fill='black' className='size-4 text-black' /> for better web.
+        <p className='flex items-center gap-1 text-center font-medium text-balance max-sm:flex-col'>
+          <span>
+            {`©${new Date().getFullYear()}`}{' '}
+            <Link href='#' className='hover:underline'>
+              INK
+            </Link>
+          </span>
+          <span>
+            , Made with <HeartIcon fill='black' className='inline size-4 text-black' /> for better web.
+          </span>
         </p>
       </div>
     </footer>

@@ -26,11 +26,11 @@ const geistMono = Geist_Mono({
 
 export const metadata: Metadata = {
   title: {
-    template: 'Demo: %s - Ink | Shadcn Studio',
-    default: 'Demo: Ink - Blog Landing Page | Shadcn Studio'
+    template: 'Demo: %s - Ink - Shadcn Studio',
+    default: 'Demo: Ink - Shadcn UI Blog Template - Shadcn Studio'
   },
   description:
-    'Explore the Ink Landing Page, a modern and creative template designed to showcase your ideas and projects.',
+    'Ink is a free Shadcn UI Blog Landing Page template to publish articles, insights, and categories with a clean, fast, and readable layout.',
   robots: 'index,follow',
   keywords: ['Ink Landing Page', 'creative template', 'modern design', 'showcase projects'],
   icons: {
@@ -76,32 +76,32 @@ export const metadata: Metadata = {
   metadataBase: new URL(`${process.env.NEXT_PUBLIC_APP_URL ?? 'http://localhost:3000'}`),
   openGraph: {
     title: {
-      template: 'Demo: %s - Ink | Shadcn Studio',
-      default: 'Demo: Ink - Blog Landing Page | Shadcn Studio'
+      template: 'Demo: %s - Ink - Shadcn Studio',
+      default: 'Demo: Ink - Shadcn UI Blog Template - Shadcn Studio'
     },
     description:
-      'Explore the Ink Landing Page, a modern and creative template designed to showcase your ideas and projects.',
+      'Ink is a free Shadcn UI Blog Landing Page template to publish articles, insights, and categories with a clean, fast, and readable layout.',
     type: 'website',
-    siteName: 'Ink - Blog Landing Page',
-    url: `${process.env.NEXT_PUBLIC_APP_URL ?? 'http://localhost:3000'}`,
+    siteName: 'Ink - Shadcn UI Blog Template',
+    url: `${process.env.NEXT_PUBLIC_APP_URL}`,
     images: [
       {
         url: '/images/og-image.png',
         type: 'image/png',
         width: 1200,
         height: 630,
-        alt: 'Ink - Blog Landing Page | Shadcn Studio'
+        alt: 'Ink - Shadcn UI Blog Template - Shadcn Studio'
       }
     ]
   },
   twitter: {
     card: 'summary_large_image',
     title: {
-      template: 'Demo: %s - Ink | Shadcn Studio',
-      default: 'Demo: Ink - Blog Landing Page | Shadcn Studio'
+      template: 'Demo: %s - Ink - Shadcn Studio',
+      default: 'Demo: Ink - Shadcn UI Blog Template - Shadcn Studio'
     },
     description:
-      'Explore the Ink Landing Page, a modern and creative template designed to showcase your ideas and projects.'
+      'Ink is a free Shadcn UI Blog Landing Page template to publish articles, insights, and categories with a clean, fast, and readable layout.'
   }
 }
 

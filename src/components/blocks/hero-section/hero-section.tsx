@@ -35,8 +35,8 @@ const HeroSection = ({ blogdata }: { blogdata: BlogPost[] }) => {
             frameworks.
           </p>
           <form className='gap-3 py-1 max-sm:space-y-2 sm:flex sm:flex-row md:w-sm'>
-            <Input type='email' placeholder='Your email' className='bg-background h-10 flex-1 rounded-lg text-base' />
-            <Button size='lg' className='rounded-lg text-base max-sm:w-full' type='submit'>
+            <Input type='email' placeholder='Your email' className='bg-background h-10 flex-1 text-base' />
+            <Button size='lg' className='text-base max-sm:w-full' type='submit'>
               Subscribe
             </Button>
           </form>

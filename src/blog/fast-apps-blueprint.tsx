@@ -24,7 +24,7 @@ export const FastAppsBlueprintContent = () => {
       headingClass: 'blog-title',
       headingSize: 'text-2xl',
       marginClass: 'mb-6',
-      title: '⚡ Speed Matters: Building Lightning-Fast Apps Users Love',
+      title: 'Speed Matters: Building Lightning-Fast Apps Users Love',
       content: [
         "Speed isn't just a feature—it's the foundation of great user experience. Fast apps win users and keep them engaged. Every millisecond of delay can cost you users, conversions, and revenue."
       ]
@@ -35,7 +35,7 @@ export const FastAppsBlueprintContent = () => {
       headingClass: 'blog-subtitle',
       headingSize: 'text-xl',
       marginClass: 'mb-6',
-      title: '📈 The Business Impact of Performance',
+      title: 'The Business Impact of Performance',
       content: [
         'Performance directly impacts your bottom line. Amazon found that every 100ms of latency cost them 1% in sales. Google discovered that a 2-second delay in search results reduced traffic and ad revenues by 4.3%.',
         "Fast apps don't just perform better—they convert better, rank higher in search results, and create happier users who stick around longer."
@@ -48,7 +48,7 @@ export const FastAppsBlueprintContent = () => {
       headingSize: 'text-xl',
       marginClass: 'mb-6',
       spacingBetweenSections: 'mt-10',
-      title: '📊 Mastering Core Web Vitals',
+      title: 'Mastering Core Web Vitals',
       content: [
         "Core Web Vitals are Google's standardized metrics for measuring real-world user experience. These metrics directly influence your search rankings and user satisfaction."
       ],
@@ -59,7 +59,7 @@ export const FastAppsBlueprintContent = () => {
           headingClass: 'blog-subtitle',
           headingSize: 'text-xl',
           marginClass: 'mb-6',
-          title: '🎯 Essential Vital Metrics',
+          title: 'Essential Vital Metrics',
           checklistItems: [
             'Largest Contentful Paint (LCP) < 2.5s - How quickly main content loads',
             'First Input Delay (FID) < 100ms - Responsiveness to user interactions',
@@ -78,7 +78,7 @@ export const FastAppsBlueprintContent = () => {
       headingSize: 'text-xl',
       marginClass: 'mb-6',
       spacingBetweenSections: 'mt-16',
-      title: '🚀 High-Impact Optimization Strategies',
+      title: 'High-Impact Optimization Strategies',
       content: [
         'Focus on optimizations that provide the biggest performance gains with reasonable effort. Not all optimizations are created equal.'
       ],
@@ -89,7 +89,7 @@ export const FastAppsBlueprintContent = () => {
           headingClass: 'blog-subtitle',
           headingSize: 'text-xl',
           marginClass: 'mb-6',
-          title: '🖼️ Image Optimization',
+          title: 'Image Optimization',
           checklistItems: [
             'Use WebP or AVIF formats for 25-50% smaller file sizes',
             'Implement lazy loading for images below the fold',
@@ -110,7 +110,7 @@ export const FastAppsBlueprintContent = () => {
       headingSize: 'text-xl',
       marginClass: 'mb-6',
       spacingBetweenSections: 'mt-16',
-      title: '💾 Advanced Caching Strategies',
+      title: 'Advanced Caching Strategies',
       content: ['Effective caching can make subsequent page loads feel instant while reducing server load and costs.'],
       subSections: [
         {
@@ -119,7 +119,7 @@ export const FastAppsBlueprintContent = () => {
           headingClass: 'blog-subtitle',
           headingSize: 'text-xl',
           marginClass: 'mb-6',
-          title: '🔄 Multi-Layer Caching',
+          title: 'Multi-Layer Caching',
           checklistItems: [
             'Browser cache with appropriate cache headers for static assets',
             'CDN edge caching for global content distribution',
@@ -138,7 +138,7 @@ export const FastAppsBlueprintContent = () => {
       headingSize: 'text-xl',
       marginClass: 'mb-6',
       spacingBetweenSections: 'mt-16',
-      title: '📏 Performance Monitoring & Measurement',
+      title: 'Performance Monitoring & Measurement',
       content: [
         "You can't optimize what you don't measure. Implement comprehensive monitoring to understand performance in real user environments."
       ],
@@ -168,7 +168,7 @@ export const FastAppsBlueprintContent = () => {
       headingSize: 'text-xl',
       marginClass: 'mb-6',
       spacingBetweenSections: 'mt-16',
-      title: '📱 Mobile-First Performance',
+      title: 'Mobile-First Performance',
       content: [
         'Mobile devices often have slower processors and network connections. Optimize for mobile first, and desktop performance will follow.'
       ],
@@ -179,7 +179,7 @@ export const FastAppsBlueprintContent = () => {
           headingClass: 'blog-subtitle',
           headingSize: 'text-xl',
           marginClass: 'mb-6',
-          title: '⚡ Mobile Performance Strategies',
+          title: 'Mobile Performance Strategies',
           checklistItems: [
             'Minimize JavaScript execution time on slower CPUs',
             'Optimize for touch interactions and reduced input delay',
@@ -200,7 +200,7 @@ export const FastAppsBlueprintContent = () => {
       headingSize: 'text-xl',
       marginClass: 'mb-6',
       spacingBetweenSections: 'mt-16',
-      title: '🏢 Building a Performance Culture',
+      title: 'Building a Performance Culture',
       content: [
         'Sustainable performance requires team-wide commitment and processes that prevent performance regressions.'
       ],
@@ -230,7 +230,7 @@ export const FastAppsBlueprintContent = () => {
       headingSize: 'text-xl',
       marginClass: 'mb-6',
       spacingBetweenSections: 'mt-16',
-      title: '🎯 Performance as Competitive Advantage',
+      title: 'Performance as Competitive Advantage',
       content: [
         "In an attention economy where users expect instant responses, performance isn't optional—it's essential. Fast apps don't just perform better; they convert better, rank higher, and create loyal users.",
         'Start with the biggest impact optimizations: images, code splitting, and caching. Measure everything, monitor continuously, and make performance a core part of your development process.',

@@ -24,7 +24,7 @@ export const EmpathyDrivenDesignContent = () => {
       headingClass: 'blog-title',
       headingSize: 'text-2xl',
       marginClass: 'mb-6',
-      title: '💝 Creating Products That Connect: The Power of Empathy in Design',
+      title: 'Creating Products That Connect: The Power of Empathy in Design',
       content: [
         "Empathy is the cornerstone of great design. When we truly understand our users' emotions, frustrations, and aspirations, we create products that don't just function—they resonate deeply and create lasting connections."
       ],
@@ -36,7 +36,7 @@ export const EmpathyDrivenDesignContent = () => {
       headingClass: 'blog-subtitle',
       headingSize: 'text-xl',
       marginClass: 'mb-6',
-      title: '🧠 Understanding Empathy in Design',
+      title: 'Understanding Empathy in Design',
       content: [
         "Empathy in design goes beyond user research—it's about genuinely caring about the people who use your product. It means acknowledging their context, constraints, and emotions at every touchpoint.",
         "True empathetic design requires us to step outside our own assumptions and experience the world through our users' eyes, considering their diverse backgrounds and needs."
@@ -49,7 +49,7 @@ export const EmpathyDrivenDesignContent = () => {
       headingSize: 'text-xl',
       marginClass: 'mb-6',
       spacingBetweenSections: 'mt-10',
-      title: '🔍 Methods for Building Empathy',
+      title: 'Methods for Building Empathy',
       content: [
         'Building empathy requires intentional methods and practices that help teams connect with users on a human level.'
       ],
@@ -60,7 +60,7 @@ export const EmpathyDrivenDesignContent = () => {
           headingClass: 'blog-subtitle',
           headingSize: 'text-xl',
           marginClass: 'mb-6',
-          title: '🔧 Core Empathy-Building Techniques',
+          title: 'Core Empathy-Building Techniques',
           checklistItems: [
             'Deep Listening Sessions - Go beyond typical user interviews with open, unstructured conversations',
             "Walk in Their Shoes - Experience your product from the user's perspective and constraints",
@@ -81,7 +81,7 @@ export const EmpathyDrivenDesignContent = () => {
       headingSize: 'text-xl',
       marginClass: 'mb-6',
       spacingBetweenSections: 'mt-16',
-      title: '🗺️ Mapping the Emotional Journey',
+      title: 'Mapping the Emotional Journey',
       content: [
         'Every user interaction has an emotional dimension. Mapping these emotional states helps us identify opportunities to delight users and eliminate frustration points.'
       ],
@@ -92,7 +92,7 @@ export const EmpathyDrivenDesignContent = () => {
           headingClass: 'blog-subtitle',
           headingSize: 'text-xl',
           marginClass: 'mb-6',
-          title: '💭 Key Emotional Touchpoints',
+          title: 'Key Emotional Touchpoints',
           content: [
             'First Impression: Curiosity, hope, or skepticism as users discover your product. This moment sets the tone for the entire relationship.',
             'Onboarding Experience: Confusion, excitement, or overwhelm during initial setup. Poor onboarding can destroy early enthusiasm.',
@@ -110,7 +110,7 @@ export const EmpathyDrivenDesignContent = () => {
       headingSize: 'text-xl',
       marginClass: 'mb-6',
       spacingBetweenSections: 'mt-16',
-      title: '🌍 Inclusive Design Principles',
+      title: 'Inclusive Design Principles',
       content: [
         'Empathetic design is inherently inclusive. It requires us to consider the full spectrum of human diversity and create experiences that work for everyone.'
       ],
@@ -121,7 +121,7 @@ export const EmpathyDrivenDesignContent = () => {
           headingClass: 'blog-subtitle',
           headingSize: 'text-xl',
           marginClass: 'mb-6',
-          title: '🤝 Inclusion Essentials',
+          title: 'Inclusion Essentials',
           checklistItems: [
             'Accessibility First - Design for users with diverse abilities from the beginning',
             'Cultural Sensitivity - Consider cultural differences in communication and interaction patterns',
@@ -140,7 +140,7 @@ export const EmpathyDrivenDesignContent = () => {
       headingSize: 'text-xl',
       marginClass: 'mb-6',
       spacingBetweenSections: 'mt-16',
-      title: '🤝 Building Empathy in Teams',
+      title: 'Building Empathy in Teams',
       content: [
         "Empathetic design isn't just the responsibility of UX designers—it requires the entire team to understand and care about user experiences."
       ],
@@ -170,7 +170,7 @@ export const EmpathyDrivenDesignContent = () => {
       headingSize: 'text-xl',
       marginClass: 'mb-6',
       spacingBetweenSections: 'mt-16',
-      title: '📊 Measuring Empathetic Design',
+      title: 'Measuring Empathetic Design',
       content: [
         'While empathy might seem unmeasurable, there are clear indicators that show when your design truly connects with users.'
       ],
@@ -181,7 +181,7 @@ export const EmpathyDrivenDesignContent = () => {
           headingClass: 'blog-subtitle',
           headingSize: 'text-xl',
           marginClass: 'mb-6',
-          title: '📈 Success Indicators',
+          title: 'Success Indicators',
           content: [
             'User Satisfaction (NPS) scores of 50+ indicate strong emotional connection. Emotional Response Ratings of 4.5+ out of 5 show users feel understood.',
             'Support Ticket Sentiment trends positive when users feel heard. User Retention Rate of 70%+ at 6 months demonstrates lasting value.',
@@ -192,8 +192,6 @@ export const EmpathyDrivenDesignContent = () => {
     },
     {
       id: 'empathy-challenges',
-      icon: '⚡',
-      iconSize: 'text-2xl',
       type: 'main-section',
       headingClass: 'blog-title',
       headingSize: 'text-xl',
@@ -221,8 +219,6 @@ export const EmpathyDrivenDesignContent = () => {
     },
     {
       id: 'conclusion',
-      icon: '🎯',
-      iconSize: 'text-2xl',
       type: 'main-section',
       headingClass: 'blog-title',
       headingSize: 'text-xl',
