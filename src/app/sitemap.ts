@@ -14,6 +14,6 @@ export default async function sitemap(): Promise<MetadataRoute.Sitemap> {
   ]
 
   return routes.map(route => ({
-    url: `${process.env.NEXT_PUBLIC_APP_URL}${route}`
+    url: `${process.env.NEXT_PUBLIC_APP_URL ?? 'http://localhost:3000'}${route}`
   }))
 }
