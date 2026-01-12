@@ -1,4 +1,4 @@
-import InkLogo from '@/assets/svg/ink-logo'
+import LogoSvg from '@/assets/svg/logo'
 
 // Util Imports
 import { cn } from '@/lib/utils'
@@ -6,7 +6,7 @@ import { cn } from '@/lib/utils'
 const Logo = ({ className }: { className?: string }) => {
   return (
     <div className={cn('flex items-center gap-2.5', className)}>
-      <InkLogo />
+      <LogoSvg />
       <span className='text-primary text-[20px] font-semibold'>INK</span>
     </div>
   )

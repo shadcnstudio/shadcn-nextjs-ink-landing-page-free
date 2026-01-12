@@ -17,7 +17,7 @@ import type { NavigationSection } from '@/components/blocks/menu-navigation'
 
 import { cn } from '@/lib/utils'
 
-import InkLogo from '@/assets/svg/ink-logo'
+import InkLogo from '@/assets/svg/logo'
 
 type HeaderProps = {
   navigationData: NavigationSection[]
