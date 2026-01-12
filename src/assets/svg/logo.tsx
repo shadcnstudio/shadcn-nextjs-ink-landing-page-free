@@ -2,7 +2,7 @@ import type { SVGAttributes } from 'react'
 
 const LogoSvg = (props: SVGAttributes<SVGElement>) => {
   return (
-    <div className='bg-primary text-background relative flex size-8 overflow-hidden rounded-full'>
+    <div className='bg-primary text-background relative flex size-8 overflow-hidden rounded-full dark:text-white'>
       <svg
         className='absolute -top-px right-0'
         width='32'

@@ -26,12 +26,12 @@ const navigationData: NavigationSection[] = [
 
 const PagesLayout = ({ children }: Readonly<{ children: ReactNode }>) => {
   return (
-    <div>
+    <div className='flex h-full w-full min-w-0 flex-col'>
       {/* Header Section */}
       <Header navigationData={navigationData} />
 
       {/* Main Content */}
-      <main className='flex flex-col pt-16'>{children}</main>
+      <main className='flex flex-col'>{children}</main>
 
       {/* Footer Section */}
       <Footer />

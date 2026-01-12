@@ -8,4 +8,16 @@ All notable changes to this template will be documented in this file
 
 ### Added
 
-- Initial Release
+- Initial release
+- Contains following sections
+  - Header
+  - Hero Section
+  - Blog List
+  - Blog Detail Page
+  - Related posts
+  - Call-to-action (CTA)
+  - Footer
+- Responsive Design
+- Dark/Light Mode Toggle
+- Smooth Scrolling
+- SEO Optimization

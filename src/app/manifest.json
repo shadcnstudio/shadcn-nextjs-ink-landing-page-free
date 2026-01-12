@@ -1,7 +1,7 @@
 {
-  "name": "Template Name - Template Slogan",
-  "short_name": "Template Name",
-  "description": "Build lightning-fast, SEO-optimized websites with Astro, shadcn/ui, and Tailwind CSS",
+  "name": "Ink - Blog Landing Page | Shadcn Studio",
+  "short_name": "Ink - Blog Landing Page",
+  "description": "Ink is a free Shadcn UI Blog Landing Page template to publish articles, insights, and categories with a clean, fast, and readable layout.",
   "start_url": "/",
   "scope": "/",
   "display": "standalone",
@@ -54,12 +54,6 @@
       "short_name": "Home",
       "description": "Go to homepage",
       "url": "/"
-    },
-    {
-      "name": "Blog",
-      "short_name": "Blog",
-      "description": "Read our blog",
-      "url": "/blog"
     }
   ]
 }

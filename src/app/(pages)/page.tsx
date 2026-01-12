@@ -1,4 +1,4 @@
-import { allBlogPosts } from '@/blog'
+import { blogPosts } from '@/assets/data/blog-posts'
 
 import HeroSection from '@/components/blocks/hero-section/hero-section'
 import Blog from '@/components/blocks/blog-component/blog-component'
@@ -11,8 +11,9 @@ const jsonLd = {
       '@context': 'https://schema.org',
       '@type': 'WebSite',
       '@id': `${process.env.NEXT_PUBLIC_APP_URL}#website`,
-      name: 'Template Name',
-      description: 'Template Description',
+      name: 'Ink - Blog Landing Page',
+      description:
+        'Ink is a free Shadcn UI Blog Landing Page template to publish articles, insights, and categories with a clean, fast, and readable layout.',
       url: `${process.env.NEXT_PUBLIC_APP_URL}`,
       inLanguage: 'en-US'
     }
@@ -22,7 +23,7 @@ const jsonLd = {
 const Home = () => {
   return (
     <div>
-      <HeroSection blogdata={allBlogPosts} />
+      <HeroSection blogData={blogPosts} />
       <Blog />
       <CTA />
       {/* Add JSON-LD to your page */}

@@ -1,4 +1,4 @@
-import { FacebookIcon, InstagramIcon, TwitterIcon, YoutubeIcon, HeartIcon } from 'lucide-react'
+import { FacebookIcon, InstagramIcon, TwitterIcon, YoutubeIcon } from 'lucide-react'
 
 import Link from 'next/link'
 
@@ -53,9 +53,7 @@ const Footer = () => {
               INK
             </Link>
           </span>
-          <span>
-            , Made with <HeartIcon fill='black' className='inline size-4 text-black' /> for better web.
-          </span>
+          <span>, Made with ❤️ for better web.</span>
         </p>
       </div>
     </footer>

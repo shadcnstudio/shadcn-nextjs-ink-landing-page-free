@@ -9,10 +9,10 @@ import { Button } from '@/components/ui/button'
 import { Badge } from '@/components/ui/badge'
 import { Input } from '@/components/ui/input'
 import { Card, CardContent } from '@/components/ui/card'
-import { type BlogPost } from '@/blog'
+import type { BlogPost } from '@/components/blocks/blog-component/blog-component'
 
-const HeroSection = ({ blogdata }: { blogdata: BlogPost[] }) => {
-  const featuredPosts = blogdata.filter(post => post.featured)
+const HeroSection = ({ blogData }: { blogData: BlogPost[] }) => {
+  const featuredPosts = blogData.filter(post => post.featured)
   const router = useRouter()
 
   const handleCardClick = (post: BlogPost) => {
@@ -84,8 +84,7 @@ const HeroSection = ({ blogdata }: { blogdata: BlogPost[] }) => {
                     <span className='cursor-pointer text-sm font-medium'>{item.author}</span>
                     <Button
                       size='icon'
-                      variant='outline'
-                      className='group-hover:bg-primary! hover:bg-primary! hover:text-primary-foreground group-hover:text-primary-foreground group-hover:border-transparent hover:border-transparent'
+                      className='group-hover:bg-primary! bg-background text-foreground hover:bg-primary! hover:text-primary-foreground group-hover:text-primary-foreground border group-hover:border-transparent hover:border-transparent'
                       asChild
                     >
                       <Link href={`/blog-detail/${item.slug}`}>

@@ -4,9 +4,9 @@
 @custom-variant dark (&:is(.dark *));
 
 :root {
-  --background: oklch(0.947 0.0151 273.85);
+  --background: oklch(0.9555 0.0125 271.28);
   --foreground: oklch(0.21 0.03 263.61);
-  --card: oklch(1 0 0);
+  --card: oklch(0.9793 0.0083 271.33);
   --card-foreground: oklch(0.21 0.03 263.61);
   --popover: oklch(1 0 0);
   --popover-foreground: oklch(0.21 0.03 263.61);
@@ -14,13 +14,13 @@
   --primary-foreground: oklch(1 0 0);
   --secondary: oklch(0.97 0 0);
   --secondary-foreground: oklch(0.37 0.03 259.73);
-  --muted: oklch(0.9293 0.0207 274.03);
+  --muted: oklch(0.9443 0.0165 274.82);
   --muted-foreground: oklch(0.55 0.02 264.41);
   --accent: oklch(0.95 0.02 260.18);
   --accent-foreground: oklch(0.48 0.2 260.47);
   --destructive: oklch(0.58 0.22 27.29);
   --border: oklch(0.8893 0.0169 259.42);
-  --input: oklch(0.93 0.01 261.82);
+  --input: oklch(0.9002 0.013 266.69);
   --ring: oklch(0.48 0.2 260.47);
   --chart-1: oklch(0.48 0.2 260.47);
   --chart-2: oklch(0.56 0.24 260.92);
@@ -57,7 +57,7 @@
 .dark {
   --background: oklch(0.2598 0.0306 262.67);
   --foreground: oklch(0.93 0.01 261.82);
-  --card: oklch(0.3 0.03 260.51);
+  --card: oklch(0.3452 0.0243 255.69);
   --card-foreground: oklch(0.93 0.01 261.82);
   --popover: oklch(0.3 0.03 260.51);
   --popover-foreground: oklch(0.93 0.01 261.82);
@@ -122,8 +122,8 @@
   --color-sidebar-ring: var(--sidebar-ring);
 
   --font-sans: var(--font-inter);
-  --font-mono: var(--font-open-sans);
-  --font-serif: var(--font-geist-mono);
+  --font-serif: var(--font-source-serif-4);
+  --font-mono: var(--font-ibm-plex-mono);
 
   --radius-sm: calc(var(--radius) - 4px);
   --radius-md: calc(var(--radius) - 2px);

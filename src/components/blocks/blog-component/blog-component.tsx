@@ -21,12 +21,27 @@ import {
   BreadcrumbSeparator
 } from '@/components/ui/breadcrumb'
 
-// Import the blog posts data for navigation
-import { allBlogPosts as allBlogPostsData, type BlogPost } from '@/blog'
+// Import the blog posts data from centralized location
+import { blogPosts } from '@/assets/data/blog-posts'
+
+export type BlogPost = {
+  id: number
+  slug: string
+  title: string
+  description: string
+  imageUrl: string
+  imageAlt: string
+  date: string
+  category: string
+  author: string
+  avatarUrl: string
+  readTime: number
+  featured: boolean
+}
 
 // Simply use all blog posts since they already have correct slugs and correspond to existing pages
 const getAvailableBlogPosts = () => {
-  return allBlogPostsData
+  return blogPosts
 }
 
 const BlogGrid = ({ posts, onCategoryClick }: { posts: BlogPost[]; onCategoryClick: (category: string) => void }) => {
@@ -39,9 +54,9 @@ const BlogGrid = ({ posts, onCategoryClick }: { posts: BlogPost[]; onCategoryCli
 
   return (
     <div className='grid gap-6 sm:grid-cols-2 lg:grid-cols-3'>
-      {posts.map((post, index) => (
+      {posts.map(post => (
         <Card
-          key={index}
+          key={post.id}
           className='group h-full cursor-pointer overflow-hidden shadow-none transition-all duration-300'
           onClick={() => handleCardClick(post)}
         >
@@ -75,8 +90,7 @@ const BlogGrid = ({ posts, onCategoryClick }: { posts: BlogPost[]; onCategoryCli
               <span className='text-sm font-medium'>{post.author}</span>
               <Button
                 size='icon'
-                variant='outline'
-                className='group-hover:bg-primary! group-hover:text-primary-foreground group-hover:border-primary hover:border-primary hover:bg-primary! hover:text-primary-foreground pointer-events-none'
+                className='group-hover:bg-primary! bg-background text-foreground hover:bg-primary! hover:text-primary-foreground group-hover:text-primary-foreground border group-hover:border-transparent hover:border-transparent'
               >
                 <ArrowRightIcon className='size-4 -rotate-45' />
                 <span className='sr-only'>Read more: {post.title}</span>

@@ -22,7 +22,7 @@ export const DynamicToc = ({ contentContainerId = 'content' }: DynamicTocProps) 
 
       if (!container) return []
 
-      const headings = container.querySelectorAll('.blog-title, .blog-subtitle')
+      const headings = container.querySelectorAll('h2, h3')
       const items: TocItem[] = []
 
       headings.forEach(heading => {
@@ -37,27 +37,15 @@ export const DynamicToc = ({ contentContainerId = 'content' }: DynamicTocProps) 
         if (!id) {
           id = title
             .toLowerCase()
-            .replace(/[^\w\s-]/g, '')
+            .replace(/[^\\w\s-]/g, '')
             .replace(/\s+/g, '-')
           element.id = id
         }
 
-        // Determine level based on class
-        const level = element.classList.contains('blog-title') ? 2 : 3
+        // Determine level based on tag name
+        const level = element.tagName === 'H2' ? 2 : 3
 
-        // Extract icon from the previous sibling span element (if it exists)
-        let icon = ''
-        const section = element.closest('section')
-
-        if (section) {
-          const iconSpan = section.querySelector('span[class*="text-"]')
-
-          if (iconSpan && iconSpan.textContent) {
-            icon = iconSpan.textContent.trim()
-          }
-        }
-
-        items.push({ id, title, level, icon })
+        items.push({ id, title, level })
       })
 
       return items
@@ -85,7 +73,7 @@ export const DynamicToc = ({ contentContainerId = 'content' }: DynamicTocProps) 
     return null
   }
 
-  // Group items: create structure where blog-title items have their following blog-subtitle items
+  // Group items: create structure where h2 items have their following h3 items
   const groupedItems: Array<{ main: TocItem; subs: TocItem[] }> = []
   let currentGroup: { main: TocItem; subs: TocItem[] } | null = null
 

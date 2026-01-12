@@ -8,9 +8,13 @@ import Link from 'next/link'
 import { Badge } from '@/components/ui/badge'
 import { Button } from '@/components/ui/button'
 import { Card, CardContent } from '@/components/ui/card'
-import { type BlogPost } from '@/blog'
+import { blogPosts as allBlogPosts } from '@/assets/data/blog-posts'
 
-const Blog = ({ blogPosts }: { blogPosts: BlogPost[] }) => {
+interface BlogProps {
+  blogPosts?: typeof allBlogPosts
+}
+
+const Blog = ({ blogPosts = allBlogPosts.slice(0, 3) }: BlogProps) => {
   const router = useRouter()
 
   return (
@@ -31,7 +35,7 @@ const Blog = ({ blogPosts }: { blogPosts: BlogPost[] }) => {
         <div className='grid grid-cols-1 gap-6 sm:grid-cols-2 lg:grid-cols-3'>
           {blogPosts.map(post => (
             <Card
-              key={post.title}
+              key={post.id}
               className='group h-full cursor-pointer overflow-hidden shadow-none transition-all duration-300 hover:shadow-md'
               onClick={() => router.push(`/blog-detail/${post.slug}`)}
             >
@@ -68,8 +72,7 @@ const Blog = ({ blogPosts }: { blogPosts: BlogPost[] }) => {
                   <span className='text-sm font-medium'>{post.author}</span>
                   <Button
                     size='icon'
-                    variant='outline'
-                    className='group-hover:bg-primary! group-hover:text-primary-foreground group-hover:border-primary hover:border-primary hover:bg-primary! hover:text-primary-foreground transition-colors duration-300'
+                    className='group-hover:bg-primary! bg-background text-foreground hover:bg-primary! hover:text-primary-foreground group-hover:text-primary-foreground border group-hover:border-transparent hover:border-transparent'
                     asChild
                   >
                     <Link href={`/blog-detail/${post.slug}`}>
