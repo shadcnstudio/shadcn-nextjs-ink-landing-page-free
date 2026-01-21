@@ -13,6 +13,7 @@ import {
 import MDXContent from '@/components/mdx-content'
 
 import { getPostBySlug, getPosts } from '@/lib/posts'
+import { Avatar, AvatarFallback, AvatarImage } from '@/components/ui/avatar'
 
 export async function generateStaticParams() {
   const posts = await getPosts()
@@ -132,14 +133,32 @@ const BlogDetailsPage = async ({ params }: { params: Promise<{ slug: string }> }
         </Breadcrumb>
 
         <div className='mb-8 flex items-center justify-between'>
-          <p className='font-medium'>By {metadata.author}</p>
-          <p className='text-muted-foreground text-sm'>
-            {new Date(metadata.publishedAt ?? '').toLocaleDateString('en-US', {
-              year: 'numeric',
-              month: 'long',
-              day: 'numeric'
-            })}
-          </p>
+          <div className='flex items-center gap-2'>
+            <Avatar>
+              <AvatarImage src={metadata.author?.picture} alt={metadata.author?.name} />
+              <AvatarFallback>{metadata.author?.name.charAt(0)}</AvatarFallback>
+            </Avatar>
+            <div className='flex flex-col'>
+              <span className='text-muted-foreground text-sm'>Written by</span>
+              <span>{metadata.author?.name}</span>
+            </div>
+          </div>
+
+          <div className='flex flex-col'>
+            <span className='text-muted-foreground text-sm'>Read Time</span>
+            <span>{metadata.readTime}</span>
+          </div>
+
+          <div className='flex flex-col'>
+            <span className='text-muted-foreground text-sm'>Posted on</span>
+            <span>
+              {new Date(metadata.publishedAt ?? '').toLocaleDateString('en-US', {
+                year: 'numeric',
+                month: 'long',
+                day: '2-digit'
+              })}
+            </span>
+          </div>
         </div>
 
         <img src={metadata.image} alt={metadata.title} className='mx-auto mb-8 max-w-xl rounded-xl' />

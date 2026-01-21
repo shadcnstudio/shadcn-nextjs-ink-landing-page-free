@@ -59,12 +59,15 @@ const BlogPage = async () => {
             </div>
             <h2 className='text-3xl font-semibold'>{post.title}</h2>
             <p>{post.description}</p>
-            <div className='text-muted-foreground flex justify-end text-sm'>
-              {new Date(post.publishedAt ?? '').toLocaleDateString('en-US', {
-                year: 'numeric',
-                month: 'long',
-                day: 'numeric'
-              })}
+            <div className='flex justify-between text-sm'>
+              <span>{post.author?.name}</span>
+              <span className='text-muted-foreground'>
+                {new Date(post.publishedAt ?? '').toLocaleDateString('en-US', {
+                  year: 'numeric',
+                  month: 'long',
+                  day: '2-digit'
+                })}
+              </span>
             </div>
           </Link>
         ))}
