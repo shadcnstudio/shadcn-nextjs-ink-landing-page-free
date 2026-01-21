@@ -32,6 +32,14 @@ const Header = () => {
         >
           Contact
         </Link>
+        <Link
+          href='/blog'
+          className={cn('text-muted-foreground hover:text-foreground active:text-foreground font-medium', {
+            'text-primary': pathname.startsWith('/blog')
+          })}
+        >
+          Blog
+        </Link>
       </nav>
 
       <div className='flex items-center gap-2'>
