@@ -1,7 +1,7 @@
-import Link from 'next/link'
 import type { Metadata } from 'next'
 
 import { getPosts } from '@/lib/posts'
+import BlogSection from '@/components/blog/blog-section/blog-section'
 
 export const metadata: Metadata = {
   title: 'Blog',
@@ -48,30 +48,8 @@ const BlogPage = async () => {
   return (
     <div className='p-6'>
       <h1>Blog Page</h1>
-      <div className='mx-auto grid w-full max-w-7xl grid-cols-3 gap-6 px-8'>
-        {posts.map(post => (
-          <Link key={post.slug} href={`/blog/${post.slug}`} className='space-y-2 rounded-xl border p-6 shadow-sm'>
-            <img src={post.image} alt={post.title} className='rounded-md' />
-            <div>
-              <span className='bg-destructive/10 text-destructive rounded-full px-2 py-0.5 text-xs'>
-                {post.category}
-              </span>
-            </div>
-            <h2 className='text-3xl font-semibold'>{post.title}</h2>
-            <p>{post.description}</p>
-            <div className='flex justify-between text-sm'>
-              <span>{post.author?.name}</span>
-              <span className='text-muted-foreground'>
-                {new Date(post.publishedAt ?? '').toLocaleDateString('en-US', {
-                  year: 'numeric',
-                  month: 'long',
-                  day: '2-digit'
-                })}
-              </span>
-            </div>
-          </Link>
-        ))}
-      </div>
+
+      <BlogSection posts={posts} />
 
       {/* Add JSON-LD to your page */}
       <script
