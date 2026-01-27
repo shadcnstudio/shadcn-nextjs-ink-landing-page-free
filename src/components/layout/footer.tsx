@@ -10,7 +10,7 @@ const Footer = () => {
   return (
     <footer>
       <div className='mx-auto flex max-w-7xl items-center justify-between gap-3 px-4 py-4 max-md:flex-col sm:px-6 sm:py-6 md:gap-6 md:py-8 lg:px-8'>
-        <Link href='#'>
+        <Link href='/#'>
           <div className='flex items-center gap-3'>
             <Logo className='gap-3' />
           </div>
@@ -28,16 +28,16 @@ const Footer = () => {
         </div>
 
         <div className='flex items-center gap-4'>
-          <Link href='#' target='blank'>
+          <Link href='#' target='_blank'>
             <FacebookIcon className='size-5' />
           </Link>
-          <Link href='#' target='blank'>
+          <Link href='#' target='_blank'>
             <InstagramIcon className='size-5' />
           </Link>
-          <Link href='#' target='blank'>
+          <Link href='#' target='_blank'>
             <TwitterIcon className='size-5' />
           </Link>
-          <Link href='#' target='blank'>
+          <Link href='#' target='_blank'>
             <YoutubeIcon className='size-5' />
           </Link>
         </div>
@@ -49,11 +49,11 @@ const Footer = () => {
         <p className='flex items-center gap-1 text-center font-medium text-balance max-sm:flex-col'>
           <span>
             {`©${new Date().getFullYear()}`}{' '}
-            <Link href='#' className='hover:underline'>
-              INK
+            <Link href='/#' className='hover:underline'>
+              INK,
             </Link>
           </span>
-          <span>, Made with ❤️ for better web.</span>
+          <span> Made with ❤️ for better web.</span>
         </p>
       </div>
     </footer>
