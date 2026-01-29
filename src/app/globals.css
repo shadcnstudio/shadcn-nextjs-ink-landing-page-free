@@ -167,3 +167,7 @@
     letter-spacing: var(--tracking-normal);
   }
 }
+
+button {
+  @apply cursor-pointer;
+}
