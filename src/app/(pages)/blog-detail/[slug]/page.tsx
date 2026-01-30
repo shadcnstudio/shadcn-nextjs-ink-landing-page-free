@@ -45,7 +45,7 @@ export async function generateStaticParams() {
 
 // Navigation component for previous/next posts
 const PostNavigation = ({ currentPost }: { currentPost: (typeof blogPosts)[0] }) => {
-  const sortedPosts = blogPosts.sort((a, b) => b.id - a.id)
+  const sortedPosts = blogPosts.sort((a, b) => a.id - b.id) // Changed from b.id - a.id
   const currentIndex = sortedPosts.findIndex(post => post.id === currentPost.id)
 
   const previousPost = currentIndex > 0 ? sortedPosts[currentIndex - 1] : null
