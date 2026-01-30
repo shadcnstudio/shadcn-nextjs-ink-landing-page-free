@@ -50,7 +50,7 @@ export const dynamicParams = false
 
 const BlogDetailsPage = async ({ params }: { params: Promise<{ slug: string }> }) => {
   const { slug } = await params
-  const allPosts = await getPosts()
+  const posts = await getPosts()
 
   const post = await getPostBySlug(slug)
 
@@ -59,6 +59,9 @@ const BlogDetailsPage = async ({ params }: { params: Promise<{ slug: string }> }
   }
 
   const { metadata, content } = post
+
+  // Sort posts by published date
+  const allPosts = posts.sort((a, b) => new Date(a.publishedAt??'').getTime() - new Date(b.publishedAt??'').getTime())
 
   // Find the current post index
   const currentPostIndex = allPosts.findIndex(p => p.slug === slug)
