@@ -55,10 +55,7 @@ const PostNavigation = ({ currentPost }: { currentPost: (typeof blogPosts)[0] })
     <div className='flex w-full justify-between'>
       {previousPost ? (
         <Link href={`/blog-detail/${previousPost.slug}`}>
-          <Button
-            className='rounded-[8px] bg-sky-600/10 text-sky-600 hover:bg-sky-600/20 focus-visible:ring-sky-600/20 dark:bg-sky-400/10 dark:text-sky-400 dark:hover:bg-sky-400/20 dark:focus-visible:ring-sky-400/40'
-            variant='outline'
-          >
+          <Button className='rounded-[8px]' variant='outline'>
             <ChevronLeftIcon className='size-4' />
             Previous Post
           </Button>
@@ -67,7 +64,10 @@ const PostNavigation = ({ currentPost }: { currentPost: (typeof blogPosts)[0] })
 
       {nextPost ? (
         <Link className='ml-auto' href={`/blog-detail/${nextPost.slug}`}>
-          <Button className='rounded-[8px]' variant='outline'>
+          <Button
+            className='rounded-[8px] bg-sky-600/10 text-sky-600 hover:bg-sky-600/20 focus-visible:ring-sky-600/20 dark:bg-sky-400/10 dark:text-sky-400 dark:hover:bg-sky-400/20 dark:focus-visible:ring-sky-400/40'
+            variant='outline'
+          >
             Next Post
             <ChevronRightIcon className='size-4' />
           </Button>

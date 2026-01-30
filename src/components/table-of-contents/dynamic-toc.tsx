@@ -15,6 +15,7 @@ interface DynamicTocProps {
 
 export const DynamicToc = ({ contentContainerId = 'content' }: DynamicTocProps) => {
   const [tocItems, setTocItems] = useState<TocItem[]>([])
+  const [activeId, setActiveId] = useState<string>('')
 
   useEffect(() => {
     const extractHeadings = () => {
@@ -37,7 +38,7 @@ export const DynamicToc = ({ contentContainerId = 'content' }: DynamicTocProps) 
         if (!id) {
           id = title
             .toLowerCase()
-            .replace(/[^\\w\s-]/g, '')
+            .replace(/[^\w\s-]/g, '')
             .replace(/\s+/g, '-')
           element.id = id
         }
@@ -56,16 +57,50 @@ export const DynamicToc = ({ contentContainerId = 'content' }: DynamicTocProps) 
       const items = extractHeadings()
 
       setTocItems(items)
+
+      // Set initial active heading
+      if (items.length > 0) {
+        setActiveId(items[0].id)
+      }
     }, 100)
 
     return () => clearTimeout(timer)
   }, [contentContainerId])
+
+  useEffect(() => {
+    const observerCallback = (entries: IntersectionObserverEntry[]) => {
+      entries.forEach(entry => {
+        if (entry.isIntersecting) {
+          setActiveId(entry.target.id)
+        }
+      })
+    }
+
+    const observerOptions = {
+      root: null,
+      rootMargin: '-20% 0px -70% 0px', // Trigger when element is near top of viewport
+      threshold: 0
+    }
+
+    const observer = new IntersectionObserver(observerCallback, observerOptions)
+
+    const container = document.getElementById(contentContainerId)
+
+    if (container) {
+      const headings = container.querySelectorAll('h2, h3')
+
+      headings.forEach(heading => observer.observe(heading))
+    }
+
+    return () => observer.disconnect()
+  }, [contentContainerId, tocItems])
 
   const handleClick = (id: string) => {
     const element = document.getElementById(id)
 
     if (element) {
       element.scrollIntoView({ behavior: 'smooth', block: 'start' })
+      setActiveId(id)
     }
   }
 
@@ -105,9 +140,17 @@ export const DynamicToc = ({ contentContainerId = 'content' }: DynamicTocProps) 
             <li key={`toc-group-${group.main.id}-${groupIndex}`}>
               <button
                 onClick={() => handleClick(group.main.id)}
-                className='text-muted-foreground hover:text-foreground flex items-start gap-2 text-left transition-colors'
+                className={`flex items-start gap-2 text-left transition-colors ${
+                  activeId === group.main.id
+                    ? 'text-foreground font-medium'
+                    : 'text-muted-foreground hover:text-foreground'
+                }`}
               >
-                <span className='bg-primary/40 mt-2.5 inline-block h-0.5 w-3 shrink-0'></span>
+                <span
+                  className={`mt-2.5 inline-block h-0.5 w-3 shrink-0 transition-colors ${
+                    activeId === group.main.id ? 'bg-primary' : 'bg-primary/40'
+                  }`}
+                ></span>
                 <span>{group.main.title}</span>
               </button>
 
@@ -118,9 +161,17 @@ export const DynamicToc = ({ contentContainerId = 'content' }: DynamicTocProps) 
                     <li key={`toc-sub-${subtitle.id}-${groupIndex}-${subIndex}`}>
                       <button
                         onClick={() => handleClick(subtitle.id)}
-                        className='text-muted-foreground hover:text-foreground flex items-start gap-2 text-left transition-colors'
+                        className={`flex items-start gap-2 text-left transition-colors ${
+                          activeId === subtitle.id
+                            ? 'text-foreground font-medium'
+                            : 'text-muted-foreground hover:text-foreground'
+                        }`}
                       >
-                        <span className='bg-primary/40 mt-2.5 inline-block h-0.5 w-3 shrink-0'></span>
+                        <span
+                          className={`mt-2.5 inline-block h-0.5 w-3 shrink-0 transition-colors ${
+                            activeId === subtitle.id ? 'bg-primary' : 'bg-primary/40'
+                          }`}
+                        ></span>
                         <span>{subtitle.title}</span>
                       </button>
                     </li>

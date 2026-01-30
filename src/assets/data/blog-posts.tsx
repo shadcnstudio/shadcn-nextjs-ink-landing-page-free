@@ -11,7 +11,7 @@ export const blogPosts: BlogPost[] = [
     date: 'July 03, 2025',
     category: 'Coding',
     author: 'Sara Wilkerson',
-    avatarUrl: '/images/avatars/avatar-6.webp',
+    avatarUrl: '/images/avatars/8.webp',
     readTime: 8,
     featured: true
   },
@@ -25,7 +25,7 @@ export const blogPosts: BlogPost[] = [
     date: 'February 15, 2025',
     category: 'Design',
     author: 'Sarah Johnson',
-    avatarUrl: '/images/avatars/avatar-2.webp',
+    avatarUrl: '/images/avatars/2.webp',
     readTime: 6,
     featured: false
   },
@@ -39,7 +39,7 @@ export const blogPosts: BlogPost[] = [
     date: 'April 08, 2025',
     category: 'Product',
     author: 'Alex Chen',
-    avatarUrl: '/images/avatars/avatar-3.webp',
+    avatarUrl: '/images/avatars/3.webp',
     readTime: 7,
     featured: false
   },
@@ -53,7 +53,7 @@ export const blogPosts: BlogPost[] = [
     date: 'May 22, 2025',
     category: 'Startup Growth',
     author: 'Emma Wilson',
-    avatarUrl: '/images/avatars/avatar-4.webp',
+    avatarUrl: '/images/avatars/5.webp',
     readTime: 5,
     featured: false
   },
@@ -67,7 +67,7 @@ export const blogPosts: BlogPost[] = [
     date: 'January 20, 2025',
     category: 'Startup Growth',
     author: 'Michael Brown',
-    avatarUrl: '/images/avatars/avatar-5.webp',
+    avatarUrl: '/images/avatars/4.webp',
     readTime: 3,
     featured: false
   },
@@ -81,7 +81,7 @@ export const blogPosts: BlogPost[] = [
     date: 'January 20, 2026',
     category: 'UI',
     author: 'Allen Reilly',
-    avatarUrl: '/images/avatars/avatar-1.webp',
+    avatarUrl: '/images/avatars/1.webp',
     readTime: 6,
     featured: true
   },
@@ -95,7 +95,7 @@ export const blogPosts: BlogPost[] = [
     date: 'March 05, 2025',
     category: 'Design',
     author: 'Dylan Field',
-    avatarUrl: '/images/avatars/avatar-7.webp',
+    avatarUrl: '/images/avatars/7.webp',
     readTime: 4,
     featured: false
   },
@@ -109,7 +109,7 @@ export const blogPosts: BlogPost[] = [
     date: 'March 12, 2025',
     category: 'Product',
     author: 'Phillip Palmer',
-    avatarUrl: '/images/avatars/avatar-8.webp',
+    avatarUrl: '/images/avatars/6.webp',
     readTime: 5,
     featured: false
   }

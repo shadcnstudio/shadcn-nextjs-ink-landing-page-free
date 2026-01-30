@@ -51,7 +51,7 @@ const Blog = ({ blogPosts = allBlogPosts.slice(0, 3) }: BlogProps) => {
                 </div>
                 <div className='flex items-center justify-between gap-1.5'>
                   <div className='text-muted-foreground flex items-center gap-1.5'>
-                    <CalendarDaysIcon className='size-6' />
+                    <CalendarDaysIcon className='size-5' />
                     <span>{post.date}</span>
                   </div>
                   <Badge
