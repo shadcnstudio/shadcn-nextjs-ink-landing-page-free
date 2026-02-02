@@ -128,8 +128,8 @@ export default async function BlogDetailPage({ params }: { params: Promise<{ slu
 
                 <Separator />
 
-                <div className='flex justify-between'>
-                  <div className='flex items-center gap-3'>
+                <div className='flex justify-between flex-wrap gap-4'>
+                  <div className='flex items-center flex-wrap gap-3'>
                     <Avatar className='size-11.5'>
                       <AvatarImage src={post.avatarUrl} alt={post.author} />
                       <AvatarFallback className='text-xs'>

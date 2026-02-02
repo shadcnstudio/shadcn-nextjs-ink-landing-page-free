@@ -114,7 +114,7 @@ const RootLayout = ({ children }: Readonly<{ children: ReactNode }>) => {
         inter.variable,
         sourceSerif4.variable,
         ibmPlexMono.variable,
-        'flex min-h-full w-full scroll-smooth antialiased'
+        'flex min-h-full w-full scroll-smooth'
       )}
       suppressHydrationWarning
     >

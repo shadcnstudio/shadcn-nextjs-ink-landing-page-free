@@ -36,7 +36,7 @@ const Blog = ({ blogPosts = allBlogPosts.slice(0, 3) }: BlogProps) => {
           {blogPosts.map(post => (
             <Card
               key={post.id}
-              className='group h-full cursor-pointer overflow-hidden shadow-none transition-all duration-300 hover:shadow-md'
+              className='group h-full cursor-pointer overflow-hidden shadow-none transition-all duration-300'
               onClick={() => router.push(`/blog-detail/${post.slug}`)}
             >
               <CardContent className='space-y-3.5'>

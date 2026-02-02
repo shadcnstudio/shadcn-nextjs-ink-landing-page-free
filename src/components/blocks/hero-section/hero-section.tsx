@@ -42,7 +42,7 @@ const HeroSection = ({ blogData }: { blogData: BlogPost[] }) => {
           </form>
         </div>
 
-        <div className='grid grid-cols-1 gap-6 md:grid-cols-2'>
+        <div className='grid grid-cols-1 gap-6 sm:grid-cols-2'>
           {featuredPosts.map((item, index) => (
             <Card
               key={`${item.author}-${index}`}
