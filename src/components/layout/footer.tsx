@@ -16,28 +16,37 @@ const Footer = () => {
           </div>
         </Link>
         <div className='flex flex-wrap items-center justify-center gap-x-3 gap-y-2 whitespace-nowrap sm:gap-5'>
-          <Link href='#' className='opacity-80 transition-opacity duration-300 hover:opacity-100'>
+          <Link
+            href='#'
+            className='text-muted-foreground hover:text-foreground opacity-80 transition-opacity duration-300 hover:opacity-100'
+          >
             Support
           </Link>
-          <Link href='#' className='opacity-80 transition-opacity duration-300 hover:opacity-100'>
+          <Link
+            href='#'
+            className='text-muted-foreground hover:text-foreground opacity-80 transition-opacity duration-300 hover:opacity-100'
+          >
             Terms & Conditions
           </Link>
-          <Link href='#' className='opacity-80 transition-opacity duration-300 hover:opacity-100'>
+          <Link
+            href='#'
+            className='text-muted-foreground hover:text-foreground opacity-80 transition-opacity duration-300 hover:opacity-100'
+          >
             Privacy Policy
           </Link>
         </div>
 
         <div className='flex items-center gap-4'>
-          <Link href='#'>
+          <Link href='#' className='text-muted-foreground hover:text-foreground'>
             <FacebookIcon className='size-5' />
           </Link>
-          <Link href='#'>
+          <Link href='#' className='text-muted-foreground hover:text-foreground'>
             <InstagramIcon className='size-5' />
           </Link>
-          <Link href='#'>
+          <Link href='#' className='text-muted-foreground hover:text-foreground'>
             <TwitterIcon className='size-5' />
           </Link>
-          <Link href='#'>
+          <Link href='#' className='text-muted-foreground hover:text-foreground'>
             <YoutubeIcon className='size-5' />
           </Link>
         </div>

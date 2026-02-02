@@ -40,12 +40,23 @@ const Header = ({ navigationData, className }: HeaderProps) => {
     }
   }, [])
 
-  const [activeSection, setActiveSection] = useState('home')
+  const [activeSection, setActiveSection] = useState('')
 
   useEffect(() => {
     const handleScroll = () => {
       const sections = document.querySelectorAll('section[id]')
       const scrollPosition = window.scrollY + window.innerHeight / 2
+
+      // If no sections exist on the page, clear active section
+      if (sections.length === 0) {
+        if (activeSection !== '') {
+          setActiveSection('')
+        }
+
+        return
+      }
+
+      let foundSection = false
 
       for (const section of sections) {
         const element = section as HTMLElement
@@ -56,8 +67,14 @@ const Header = ({ navigationData, className }: HeaderProps) => {
             setActiveSection(element.id)
           }
 
+          foundSection = true
           break
         }
+      }
+
+      // If no section matched, clear active section
+      if (!foundSection && activeSection !== '') {
+        setActiveSection('')
       }
     }
 
