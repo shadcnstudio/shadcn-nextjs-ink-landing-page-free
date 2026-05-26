@@ -159,13 +159,13 @@ const Blog = () => {
         <Tabs defaultValue='All' value={selectedTab} onValueChange={handleTabChange} className='gap-8 lg:gap-16'>
           <div className='flex flex-col items-start justify-between gap-4 sm:flex-row sm:items-center'>
             <ScrollArea className='bg-muted w-full rounded-lg sm:w-auto'>
-              <TabsList className='h-auto gap-1 group-data-horizontal/tabs:h-fit'>
+              <TabsList className='h-auto gap-1 group-data-horizontal/tabs:h-auto'>
                 {categories.map(category => (
                   <TabsTrigger
                     key={category}
                     value={category}
                     id={`category-${category}`}
-                    className='hover:bg-primary/10 cursor-pointer rounded-lg px-4 text-base'
+                    className='hover:bg-primary/10 cursor-pointer rounded-lg px-4 text-base group-data-horizontal/tabs:after:h-0'
                   >
                     {category}
                   </TabsTrigger>
@@ -182,7 +182,7 @@ const Blog = () => {
               <Input
                 type='search'
                 placeholder='Search'
-                className='peer h-10 px-9 [&::-webkit-search-cancel-button]:appearance-none [&::-webkit-search-decoration]:appearance-none [&::-webkit-search-results-button]:appearance-none [&::-webkit-search-results-decoration]:appearance-none'
+                className='peer input-lg px-9 [&::-webkit-search-cancel-button]:appearance-none [&::-webkit-search-decoration]:appearance-none [&::-webkit-search-results-button]:appearance-none [&::-webkit-search-results-decoration]:appearance-none'
               />
             </div>
           </div>
