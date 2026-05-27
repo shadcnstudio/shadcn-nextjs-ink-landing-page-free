@@ -74,7 +74,7 @@ const Blog = ({ blogPosts = allBlogPosts.slice(0, 3) }: BlogProps) => {
                   <span className='text-sm font-medium'>{post.author}</span>
                   <Button
                     size='icon'
-                    className='group-hover:bg-primary! bg-background text-foreground hover:bg-primary! hover:text-primary-foreground group-hover:text-primary-foreground hover:border-primary group-hover:border-primary border-border border'
+                    className='group-hover:bg-primary! bg-background text-foreground hover:bg-primary! hover:text-primary-foreground group-hover:text-primary-foreground hover:border-primary group-hover:border-primary border-border border bg-clip-border'
                     asChild
                   >
                     <Link href={`/blog-detail/${post.slug}`}>

@@ -90,7 +90,7 @@ const BlogGrid = ({ posts, onCategoryClick }: { posts: BlogPost[]; onCategoryCli
               <span className='text-sm font-medium'>{post.author}</span>
               <Button
                 size='icon'
-                className='group-hover:bg-primary! bg-background text-foreground hover:bg-primary! hover:text-primary-foreground group-hover:text-primary-foreground group-hover:border-primary border-border hover:border-primary border'
+                className='group-hover:bg-primary! bg-background text-foreground hover:bg-primary! hover:text-primary-foreground group-hover:text-primary-foreground group-hover:border-primary border-border hover:border-primary border bg-clip-border'
               >
                 <ArrowRightIcon className='size-4 -rotate-45' />
                 <span className='sr-only'>Read more: {post.title}</span>

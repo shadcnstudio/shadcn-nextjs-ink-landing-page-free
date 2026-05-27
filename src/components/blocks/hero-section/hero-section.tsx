@@ -36,8 +36,8 @@ const HeroSection = ({ blogData }: { blogData: BlogPost[] }) => {
           </p>
           <form className='gap-3 py-1 max-sm:w-full max-sm:space-y-2 sm:flex sm:flex-row md:w-sm'>
             <Input type='email' placeholder='Your email' className='bg-background input-lg flex-1 px-3 text-base' />
-            <Button size='lg' className='text-base max-sm:w-full' asChild type='submit'>
-              <a href='#'>Subscribe</a>
+            <Button size='lg' className='text-base max-sm:w-full' type='submit'>
+              Subscribe
             </Button>
           </form>
         </div>
@@ -84,7 +84,7 @@ const HeroSection = ({ blogData }: { blogData: BlogPost[] }) => {
                     <span className='cursor-pointer text-sm font-medium'>{item.author}</span>
                     <Button
                       size='icon'
-                      className='group-hover:bg-primary! bg-background text-foreground hover:bg-primary! hover:text-primary-foreground border-border group-hover:text-primary-foreground hover:border-primary group-hover:border-primary border'
+                      className='group-hover:bg-primary! bg-background text-foreground hover:bg-primary! hover:text-primary-foreground border-border group-hover:text-primary-foreground hover:border-primary group-hover:border-primary border bg-clip-border'
                       asChild
                     >
                       <Link href={`/blog-detail/${item.slug}`}>

@@ -171,7 +171,7 @@ export default async function BlogDetailPage({ params }: { params: Promise<{ slu
               </div>
 
               <div>
-                <img src={post.imageUrl} alt={post.imageAlt} className='max-h-148 w-full' />
+                <img src={post.imageUrl} alt={post.imageAlt} className='max-h-148 w-full rounded-[8px]' />
               </div>
 
               <article id='content' className='space-y-12'>
