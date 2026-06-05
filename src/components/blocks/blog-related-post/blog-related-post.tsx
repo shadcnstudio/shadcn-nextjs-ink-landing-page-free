@@ -22,7 +22,9 @@ const Blog = ({ blogPosts = allBlogPosts.slice(0, 3) }: BlogProps) => {
       <div className='mx-auto max-w-7xl space-y-16 px-4 py-8 sm:px-6 lg:px-8'>
         {/* Header */}
         <div className='space-y-4'>
-          <Badge variant='outline'>Trending</Badge>
+          <Badge variant='outline' className='h-auto'>
+            Trending
+          </Badge>
 
           <h2 className='text-2xl font-semibold md:text-3xl lg:text-4xl'>Related Post</h2>
 
@@ -36,7 +38,7 @@ const Blog = ({ blogPosts = allBlogPosts.slice(0, 3) }: BlogProps) => {
           {blogPosts.map(post => (
             <Card
               key={post.id}
-              className='group h-full cursor-pointer overflow-hidden shadow-none transition-all duration-300'
+              className='group h-full cursor-pointer shadow-none transition-all duration-300'
               onClick={() => router.push(`/blog-detail/${post.slug}`)}
             >
               <CardContent className='space-y-3.5'>
@@ -52,10 +54,10 @@ const Blog = ({ blogPosts = allBlogPosts.slice(0, 3) }: BlogProps) => {
                 <div className='flex items-center justify-between gap-1.5'>
                   <div className='text-muted-foreground flex items-center gap-1.5'>
                     <CalendarDaysIcon className='size-5' />
-                    <span>{post.date}</span>
+                    <p className='text-base'>{post.date}</p>
                   </div>
                   <Badge
-                    className='bg-primary/10 text-primary border-0 text-sm'
+                    className='bg-primary/10 text-primary h-auto border-0 text-sm'
                     onClick={e => {
                       e.stopPropagation()
                       router.push(`/#category-${post.category}`)
@@ -67,12 +69,12 @@ const Blog = ({ blogPosts = allBlogPosts.slice(0, 3) }: BlogProps) => {
                 <h3 className='line-clamp-2 text-lg font-medium md:text-xl'>
                   <Link href={`/blog-detail/${post.slug}`}>{post.title}</Link>
                 </h3>
-                <p className='text-muted-foreground line-clamp-2'>{post.description}</p>
+                <p className='text-muted-foreground line-clamp-2 text-base'>{post.description}</p>
                 <div className='flex items-center justify-between'>
                   <span className='text-sm font-medium'>{post.author}</span>
                   <Button
                     size='icon'
-                    className='group-hover:bg-primary! bg-background text-foreground hover:bg-primary! hover:text-primary-foreground group-hover:text-primary-foreground border group-hover:border-transparent hover:border-transparent'
+                    className='group-hover:bg-primary! bg-background text-foreground hover:bg-primary! hover:text-primary-foreground group-hover:text-primary-foreground hover:border-primary group-hover:border-primary border-border border bg-clip-border'
                     asChild
                   >
                     <Link href={`/blog-detail/${post.slug}`}>

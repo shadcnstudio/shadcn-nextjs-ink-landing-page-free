@@ -57,7 +57,7 @@ const BlogGrid = ({ posts, onCategoryClick }: { posts: BlogPost[]; onCategoryCli
       {posts.map(post => (
         <Card
           key={post.id}
-          className='group h-full cursor-pointer overflow-hidden shadow-none transition-all duration-300'
+          className='group h-full cursor-pointer shadow-none transition-all duration-300'
           onClick={() => handleCardClick(post)}
         >
           <CardContent className='space-y-3.5'>
@@ -71,10 +71,10 @@ const BlogGrid = ({ posts, onCategoryClick }: { posts: BlogPost[]; onCategoryCli
             <div className='flex items-center justify-between gap-1.5'>
               <div className='text-muted-foreground flex items-center gap-1.5'>
                 <CalendarDaysIcon className='size-5' />
-                <span>{post.date}</span>
+                <p className='text-base'>{post.date}</p>
               </div>
               <Badge
-                className='bg-primary/10 text-primary rounded-full border-0 text-sm'
+                className='bg-primary/10 text-primary h-auto rounded-full border-0 text-sm'
                 onClick={e => {
                   e.stopPropagation()
                   onCategoryClick(post.category)
@@ -85,12 +85,12 @@ const BlogGrid = ({ posts, onCategoryClick }: { posts: BlogPost[]; onCategoryCli
               </Badge>
             </div>
             <h3 className='line-clamp-2 text-lg font-medium md:text-xl'>{post.title}</h3>
-            <p className='text-muted-foreground line-clamp-2'>{post.description}</p>
+            <p className='text-muted-foreground line-clamp-2 text-base'>{post.description}</p>
             <div className='flex items-center justify-between'>
               <span className='text-sm font-medium'>{post.author}</span>
               <Button
                 size='icon'
-                className='group-hover:bg-primary! bg-background text-foreground hover:bg-primary! hover:text-primary-foreground group-hover:text-primary-foreground border group-hover:border-transparent hover:border-transparent'
+                className='group-hover:bg-primary! bg-background text-foreground hover:bg-primary! hover:text-primary-foreground group-hover:text-primary-foreground group-hover:border-primary border-border hover:border-primary border bg-clip-border'
               >
                 <ArrowRightIcon className='size-4 -rotate-45' />
                 <span className='sr-only'>Read more: {post.title}</span>
@@ -159,13 +159,13 @@ const Blog = () => {
         <Tabs defaultValue='All' value={selectedTab} onValueChange={handleTabChange} className='gap-8 lg:gap-16'>
           <div className='flex flex-col items-start justify-between gap-4 sm:flex-row sm:items-center'>
             <ScrollArea className='bg-muted w-full rounded-lg sm:w-auto'>
-              <TabsList className='h-auto gap-1'>
+              <TabsList className='h-auto gap-1 group-data-horizontal/tabs:h-auto'>
                 {categories.map(category => (
                   <TabsTrigger
                     key={category}
                     value={category}
                     id={`category-${category}`}
-                    className='hover:bg-primary/10 cursor-pointer rounded-lg px-4 text-base'
+                    className='hover:bg-primary/10 cursor-pointer rounded-lg px-4 text-base group-data-horizontal/tabs:after:h-0'
                   >
                     {category}
                   </TabsTrigger>
@@ -182,7 +182,7 @@ const Blog = () => {
               <Input
                 type='search'
                 placeholder='Search'
-                className='peer h-10 px-9 [&::-webkit-search-cancel-button]:appearance-none [&::-webkit-search-decoration]:appearance-none [&::-webkit-search-results-button]:appearance-none [&::-webkit-search-results-decoration]:appearance-none'
+                className='peer input-lg px-9 [&::-webkit-search-cancel-button]:appearance-none [&::-webkit-search-decoration]:appearance-none [&::-webkit-search-results-button]:appearance-none [&::-webkit-search-results-decoration]:appearance-none'
               />
             </div>
           </div>
