@@ -1,16 +1,70 @@
-<p align="center"></p>
-
 <p align="center">
-   <a href="https://shadcnstudio.com" target="_blank">
-      <img src="https://cdn.shadcnstudio.com/ss-assets/logo/logo.png" alt="$brand_name-logo" width="40px" height="auto">
+   <a href="https://shadcnstudio.com/templates/ink-blog-template-free" target="_blank">
+      <img src="https://cdn.shadcnstudio.com/ss-assets/template/landing-page/ink/logo.png" alt="ink-logo" width="32px" height="32px">
    </a>
 </p>
 
 <h1 align="center">
-   <a href="https://shadcnstudio.com" target="_blank" align="center">
-      shadcn/studio
+   <a href="https://shadcnstudio.com/templates/ink-blog-template-free" target="_blank" align="center">
+      Ink - Shadcn UI Blog Landing Page Template - Free
    </a>
 </h1>
+
+<p align="start">Ink is a Free Shadcn UI Blog Landing Page template to publish articles, insights, and categories with a clean, fast, and readable layout.</p>
+
+![GitHub](https://img.shields.io/github/license/shadcnstudio/shadcn-nextjs-ink-landing-page-free) ![GitHub issues](https://img.shields.io/github/issues/shadcnstudio/shadcn-nextjs-ink-landing-page-free) ![GitHub closed issues](https://img.shields.io/github/issues-closed/shadcnstudio/shadcn-nextjs-ink-landing-page-free) ![Twitter Follow](https://img.shields.io/twitter/follow/ShadcnStudio?style=social)
+
+<kbd>[![Ink - Shadcn UI Blog Landing Page Template Demo Screenshot](https://cdn.shadcnstudio.com/ss-assets/landing-page/template-page/template-detail-page/landing-page/ink/og-image.png)](https://shadcnstudio.com/templates/ink-blog-template-free)</kbd>
+
+## Introduction 🚀
+
+Ink is a Free Shadcn UI Blog Landing Page template to publish articles, insights, and categories with a clean, fast, and readable layout. Designed for modern content creators, Ink delivers a responsive, SEO-friendly experience with polished visuals, smooth animations, and easy customization.
+
+[View Demo](https://shadcnstudio.com/preview/templates/shadcn-nextjs-ink-landing-page)
+
+[View Documentation](https://shadcnstudio.com/docs/getting-started/shadcn-studio-template-nextjs)
+
+<p>
+  Supported by
+  <a href="https://shadcnstudio.com" target="_blank">
+    Shadcn Studio
+  </a>
+  , with a commitment to empowering the open-source community.
+</p>
+
+## Key Features ✨
+
+- **SEO & Performance Optimized** - Fast load times, Core Web Vitals ready, and search-engine friendly structure out of the box
+- **Built with Next.js** - Server-side rendering, optimal performance, and built-in SEO capabilities
+- **Fully Accessible** - WCAG compliant design ensures your content reaches all audiences
+- **Dark Mode Support** - Light, dark, and system theme modes with complete customization
+- **Figma Design Files Included** - Design-to-code collaboration made seamless for teams
+
+## Page Structure & Sections
+
+**Pages**
+
+- **Homepage** - Hero section with featured posts, category browsing, and latest articles grid
+- **Blog List** - Filterable article catalog with search, category filtering, and pagination for easy content discovery
+- **Blog Detail** - Full-width article page with MDX support, table of contents, related posts, and author information
+- **Contact Page** - Ready-to-use contact form integrated with your blog's messaging system
+
+**Key UI Sections**
+
+- **Hero Section** - Customizable headline and call-to-action to set the tone for your blog
+- **Featured Posts** - Highlight your best content with a dedicated carousel or grid
+- **Category Navigation** - Help readers explore topics that interest them
+- **Related Posts** - Automatically suggest relevant articles at the end of each post
+- **CTA Blocks** - Convert readers with strategically placed call-to-action sections
+- **Footer** - Social links, newsletter signup, and navigation footer
+
+---
+
+<br />
+
+<a href="https://shadcnstudio.com" target="_blank">
+  <img src="https://cdn.shadcnstudio.com/ss-assets/smm/marketing/shadcn-studio-smm-banner.png" alt="shadcn/studio banner" width="1200">
+</a>
 
 <p>
    <a href="https://shadcnstudio.com" target="_blank">
@@ -18,35 +72,6 @@
    </a>
    is an open-source collection of copy-and-paste shadcn components, blocks, and templates - paired with a powerful theme generator & AI Tools to craft, customize, and ship faster. 🚀
 </p>
-
-<a href="https://shadcnstudio.com" target="_blank">
-  <img src="https://cdn.shadcnstudio.com/ss-assets/smm/marketing/shadcn-studio-smm-banner.png" alt="shadcn/studio banner" width="1200">
-</a>
-
-<p>
-    <a href="https://github.com/themeselection/shadcn-studio/blob/main/LICENSE.md"><img src="https://img.shields.io/badge/license-MIT-blue" alt="MIT License"></a>
-    <a href="https://x.com/ShadcnStudio" target="_blank">
-      <img alt="Twitter Follow" src="https://img.shields.io/twitter/follow/ShadcnStudio">
-   </a>
-</p>
-
-<a href="https://themeselection.com" target="_blank">
-  <img
-    src="https://cdn.shadcnstudio.com/ts-assets/themeselection/logo/logo.png"
-    alt="themeselection logo"
-    height="30"
-  />
-</a>
-
-<p>
-  Supported by
-  <a href="https://themeselection.com" target="_blank">
-    ThemeSelection
-  </a>
-  , with a commitment to empowering the open-source community.
-</p>
-
----
 
 ## Table of Contents 📋
 
