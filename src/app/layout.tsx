@@ -5,6 +5,7 @@ import type { Metadata } from 'next'
 
 import { ThemeProvider } from '@/components/theme-provider'
 import { TooltipProvider } from '@/components/ui/tooltip'
+import DownloadButton from '@/components/layout/Download'
 
 import { cn } from '@/lib/utils'
 
@@ -122,6 +123,7 @@ const RootLayout = ({ children }: Readonly<{ children: ReactNode }>) => {
       <body className='flex min-h-full w-full flex-auto flex-col'>
         <ThemeProvider attribute='class' enableSystem={false} disableTransitionOnChange>
           <TooltipProvider>{children}</TooltipProvider>
+          <DownloadButton />
         </ThemeProvider>
       </body>
     </html>
